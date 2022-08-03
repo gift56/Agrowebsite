@@ -27,10 +27,16 @@ export const Headerone = styled.div`
       padding-left: 20px;
       font-size: 15px;
       color: ${({ theme }) => theme.textColor};
-      &:focus{
+      &:focus {
         outline: none;
         border: 2px solid ${({ theme }) => theme.Greenbg};
       }
+    }
+    button {
+      background-color: ${({ theme }) => theme.Greenbg};
+      color: ${({theme})=>theme.whiteColor};
+      border-color: ${({ theme }) => theme.Greenbg};
+      border-radius: 0px 8px 8px 0px;
     }
   }
 `;

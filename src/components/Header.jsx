@@ -1,13 +1,14 @@
 import React from "react";
 import { Container } from "./styled/Container.styled";
-import { Headers } from "./styled/Headers.styled";
+import { Headers, Headerone } from "./styled/Headers.styled";
 
 const Header = () => {
-  return <Headers>
-    <Container>
-      Hello Me
-    </Container>
-  </Headers>;
+  return (
+    <Headers>
+      <Headerone>Good</Headerone>
+      <Container></Container>
+    </Headers>
+  );
 };
 
 export default Header;

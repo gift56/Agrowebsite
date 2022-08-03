@@ -10,9 +10,28 @@ export const Headerone = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  border-bottom: 1px solid;
   .logo {
     width: 12%;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    input {
+      width: 100%;
+      padding: 10px 0;
+      background-color: ${({ theme }) => theme.inputColor};
+      border: 1px solid ${({ theme }) => theme.Greenbg};
+      border-radius: 8px 0px 0px 8px;
+      padding-left: 20px;
+      font-size: 15px;
+      color: ${({ theme }) => theme.textColor};
+      &:focus{
+        outline: none;
+        border: 2px solid ${({ theme }) => theme.Greenbg};
+      }
+    }
   }
 `;
 

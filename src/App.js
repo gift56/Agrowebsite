@@ -1,5 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
+import Header from "./components/Header";
 import { Container } from "./components/styled/Container.styled";
 
 const App = () => {
@@ -11,8 +12,9 @@ const App = () => {
     textColor: "#333333",
   };
   return (
-    <ThemeProvider>
+    <ThemeProvider theme={theme}>
       <>
+        <Header />
         <Container>Hello World</Container>
       </>
     </ThemeProvider>

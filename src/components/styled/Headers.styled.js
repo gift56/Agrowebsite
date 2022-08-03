@@ -5,5 +5,6 @@ export const Headers = styled.header`
 `;
 
 export const Headerone = styled.div`
-  background-color: ${({ theme }) => theme.Greenbg};
+  background-color: ${({ theme }) => theme.whiteColor};
 `;
+

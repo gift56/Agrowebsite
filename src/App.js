@@ -1,11 +1,21 @@
 import React from "react";
+import { ThemeProvider } from "styled-components";
 import { Container } from "./components/styled/Container.styled";
 
 const App = () => {
+  const theme = {
+    Greenbg: "#217C2C",
+    whiteColor: "#FFFFFF",
+    inputColor: "#F2F2F2",
+    buttonBg: "#FFDD00",
+    textColor: "#333333",
+  };
   return (
-    <>
-      <Container>Hello World</Container>
-    </>
+    <ThemeProvider>
+      <>
+        <Container>Hello World</Container>
+      </>
+    </ThemeProvider>
   );
 };
 

@@ -34,7 +34,7 @@ export const Headerone = styled.div`
     }
     button {
       background-color: ${({ theme }) => theme.Greenbg};
-      color: ${({theme})=>theme.whiteColor};
+      color: ${({ theme }) => theme.whiteColor};
       border-color: ${({ theme }) => theme.Greenbg};
       border-radius: 0px 8px 8px 0px;
     }
@@ -43,6 +43,15 @@ export const Headerone = styled.div`
 
 export const Nav = styled.nav`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 3rem;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    img {
+      width: 33.33px;
+    }
+  }
 `;

@@ -57,4 +57,5 @@ export const Rightside = styled.div`
   }
 `;
 
+export const Cardcontainer = styled.div``;
 export const Card = styled.div``;

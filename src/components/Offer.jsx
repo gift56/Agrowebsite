@@ -5,6 +5,7 @@ import {
   Leftside,
   Rightside,
   Card,
+  Cardcontainer,
 } from "./styled/Offer.styled";
 import { Container } from "./styled/Container.styled";
 
@@ -37,6 +38,9 @@ const Offer = () => {
             </p>
           </Rightside>
         </Welcometxt>
+        <Cardcontainer>
+          
+        </Cardcontainer>
       </Container>
     </Offerarea>
   );

@@ -40,7 +40,9 @@ const Offer = () => {
           </Rightside>
         </Welcometxt>
         <Cardcontainer>
-          
+          {CardData.map((item, index) => (
+            <Card key={index}></Card>
+          ))}
         </Cardcontainer>
       </Container>
     </Offerarea>

@@ -1,6 +1,6 @@
-import cardImg from "../agroImg/mechl.png";
+import cardImg from "../agroImg/mechI.png";
 import cardImg2 from "../agroImg/manUi.png";
-import cardImg3 from "../agroImg/shipl.png";
+import cardImg3 from "../agroImg/shipI.png";
 
 export const CardData = [
   {

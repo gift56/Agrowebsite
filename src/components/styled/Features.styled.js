@@ -42,4 +42,26 @@ export const Imgcontainer = styled.div`
 
 export const Buttons = styled.div``;
 
-export const Greencard = styled.div``;
+export const Greencard = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 20px 0 10px;
+  padding-left: 1rem;
+  width: 100%;
+  border-radius: 6.94728px 6.94728px 0px 0px;
+  background-color: ${({ theme }) => theme.Greenbg};
+  transform: translateY(-7px);
+  h3 {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    color: ${({ theme }) => theme.whiteColor};
+  }
+  p {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+    color: ${({ theme }) => theme.whiteColor};
+  }
+`;

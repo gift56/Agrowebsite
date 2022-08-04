@@ -4,14 +4,20 @@ import LogoImg from "../agroImg/logo.svg";
 import User from "../agroImg/user.png";
 import Heart from "../agroImg/heart.png";
 import Cart from "../agroImg/cart.png";
-import { Headers, Headerone, Nav } from "./styled/Headers.styled";
+import {
+  Headers,
+  Headerone,
+  Nav,
+  HeaderTwo,
+  NavTwo,
+} from "./styled/Headers.styled";
 
 const Header = () => {
   return (
     <Headers>
       <Container>
         <Headerone>
-          <img src={LogoImg} alt="logo" className="logo"/>
+          <img src={LogoImg} alt="logo" className="logo" />
           <form>
             <input type="text" />
             <button className="btn">Search</button>
@@ -30,8 +36,25 @@ const Header = () => {
               <span>Cart</span>
             </div>
           </Nav>
+          <div className="toggle"></div>
         </Headerone>
       </Container>
+      <HeaderTwo>
+        <Container>
+          <NavTwo>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Stock</li>
+            <li>Hire</li>
+            <li>Gallery</li>
+            <li>Consultation</li>
+            <li>Parts & Maintenance </li>
+            <li>FAQs</li>
+            <li>Contact Us</li>
+          </NavTwo>
+        </Container>
+      </HeaderTwo>
     </Headers>
   );
 };

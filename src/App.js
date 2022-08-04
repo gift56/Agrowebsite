@@ -10,6 +10,11 @@ const App = () => {
     inputColor: "#F2F2F2",
     buttonBg: "#FFDD00",
     textColor: "#333333",
+    mobile: {
+      minLap: "1080px",
+      tab: "902px",
+      phone: "768px",
+    },
   };
   return (
     <ThemeProvider theme={theme}>

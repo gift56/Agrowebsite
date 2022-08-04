@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Bg from "../../agroImg/thirdbg.png";
 
 export const Offerarea = styled.section`
+  padding: 80px 0 20px;
   background-image: url(${Bg});
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,6 +14,10 @@ export const Welcometxt = styled.div`
   justify-content: space-between;
 `;
 
-export const Leftside = styled.div``;
+export const Leftside = styled.div`
+  flex: 1.3;
+`;
 
-export const Rightside = styled.div``;
+export const Rightside = styled.div`
+  flex: 1;
+`;

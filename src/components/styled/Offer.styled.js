@@ -12,7 +12,15 @@ export const Welcometxt = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin-bottom: 20px;
+  @media screen and (max-width: ${({ theme }) => theme.mobile.minLap}) {
+    align-items: stretch;
+  }
+  @media screen and (max-width: 909px) {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const Leftside = styled.div`
@@ -53,6 +61,9 @@ export const Rightside = styled.div`
     span {
       display: block;
     }
+    @media screen and (max-width: ${({ theme }) => theme.mobile.optionminLap}) {
+      font-size: 14px;
+    }
   }
 `;
 
@@ -61,6 +72,11 @@ export const Cardcontainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-top: 52px;
+  @media screen and (max-width: 909px) {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+  }
 `;
 
 export const Card = styled.div`
@@ -74,6 +90,13 @@ export const Card = styled.div`
   height: 307px;
   border-radius: 8px;
   padding: 1.5rem;
+  @media screen and (max-width: ${({ theme }) => theme.mobile.minLap}) {
+    width: 30%;
+    padding: 1rem;
+  }
+  @media screen and (max-width: 909px) {
+    width: 100%;
+  }
   img {
     width: 50.63px;
   }

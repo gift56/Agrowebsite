@@ -6,5 +6,8 @@ export const Clientarea = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
+      flex-direction: column;
+    }
   }
 `;

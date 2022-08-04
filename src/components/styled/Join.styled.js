@@ -19,6 +19,14 @@ export const Imgarea = styled.div`
   img {
     width: 412px;
   }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.minLap}) {
+    img {
+      width: 86%;
+    }
+  }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
+    display: none;
+  }
 `;
 
 export const Joinarea = styled.div`
@@ -27,6 +35,7 @@ export const Joinarea = styled.div`
   justify-content: center;
   text-align: center;
   gap: 1rem;
+
   form {
     display: flex;
     align-items: center;
@@ -54,6 +63,20 @@ export const Joinarea = styled.div`
       border-radius: 0px 3px 3px 0px;
     }
   }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    form {
+      width: 100%;
+      input{
+        font-size: 13px;
+      }
+      button {
+        padding: 8px 2px;
+      }
+    }
+  }
 `;
 
 export const Title = styled.h2`
@@ -68,4 +91,7 @@ export const Detail = styled.p`
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  @media screen and (max-width: ${({ theme }) => theme.mobile.minLap}) {
+    font-size: 14px;
+  }
 `;

@@ -43,7 +43,7 @@ export const FeatureData = [
     ],
   },
   {
-    img: Truck5,
+    img: Truck6,
     greenCard: [
       {
         title: "Massey Ferguson",
@@ -52,7 +52,7 @@ export const FeatureData = [
     ],
   },
   {
-    img: Truck6,
+    img: Truck5,
     greenCard: [
       {
         title: "New Holland 6640 TL",
@@ -115,7 +115,7 @@ export const FeatureData = [
     ],
   },
   {
-    img: Truck3,
+    img: Truck6,
     greenCard: [
       {
         title: "Sonalika DI 75 RX Tractor",
@@ -124,7 +124,7 @@ export const FeatureData = [
     ],
   },
   {
-    img: Truck4,
+    img: Truck3,
     greenCard: [
       {
         title: "Mahindra",
@@ -133,7 +133,7 @@ export const FeatureData = [
     ],
   },
   {
-    img: Truck5,
+    img: Truck1,
     greenCard: [
       {
         title: "Massey Ferguson",
@@ -142,7 +142,7 @@ export const FeatureData = [
     ],
   },
   {
-    img: Truck1,
+    img: Truck5,
     greenCard: [
       {
         title: "John Deere",

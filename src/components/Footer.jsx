@@ -68,6 +68,24 @@ const Footer = () => {
             ))}
           </SocialRow>
         </FooterRow>
+        <div className="recomemdations">
+          <p>
+            <span>
+              We have built a place where our customers can rely on to deliver
+              geninue and excellent products to care for their farming and
+              business
+            </span>{" "}
+            <span>
+              needs. We are able to supply a wide range of machinery from
+              reputable manufactures such as, New Holland, John Deere, JCB, Case
+              and
+            </span>{" "}
+            <span>Massey Ferguson, to name a few.</span>
+          </p>
+        </div>
+        <span className="copy">
+          Copyright &copy; 2022. All rights reserved. AgroMech - RC 203884
+        </span>
       </Container>
     </FooterArea>
   );

@@ -14,7 +14,9 @@ const App = () => {
     textColor: "#333333",
     mobile: {
       minLap: "1080px",
+      optionminLap: "1175px",
       tab: "902px",
+      tab2: "982px",
       phone: "768px",
     },
   };

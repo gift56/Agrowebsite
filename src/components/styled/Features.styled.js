@@ -20,11 +20,32 @@ export const Featurecontainer = styled.div`
   gap: 2rem;
   column-gap: 0;
   grid-template-columns: repeat(4, 1fr);
+  @media screen and (max-width: 1360px) {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0;
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.mobile.minLap}) {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const Featurecards = styled.div`
   width: 335px;
   padding: 1rem;
+  @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
+    width: 100%;
+    padding: 0;
+  }
 `;
 
 export const Imgcontainer = styled.div`

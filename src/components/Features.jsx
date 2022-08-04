@@ -4,6 +4,7 @@ import {
   Title,
   Featurecontainer,
   Featurecards,
+  Imgcontainer,
 } from "./styled/Features.styled";
 import { Container } from "./styled/Container.styled";
 import { FeatureData } from "../Data/Feature";
@@ -15,7 +16,11 @@ const Features = () => {
         <Title>Featured Products</Title>
         <Featurecontainer>
           {FeatureData.map((feature, index) => (
-            <Featurecards key={index}></Featurecards>
+            <Featurecards key={index}>
+              <Imgcontainer>
+                <img src={feature.img} alt="/" />
+              </Imgcontainer>
+            </Featurecards>
           ))}
         </Featurecontainer>
       </Container>

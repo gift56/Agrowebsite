@@ -18,3 +18,5 @@ export const Title = styled.h2`
 export const Featurecontainer = styled.div``;
 
 export const Featurecards = styled.div``;
+
+export const Imgcontainer = styled.div``;

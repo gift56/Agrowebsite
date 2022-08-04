@@ -9,7 +9,21 @@ import Whatsapp from "../agroImg/chat.png";
 import Mail from "../agroImg/mail.png";
 
 const Footer = () => {
-    
+  const Quicklinks = ["About Us", "Services", "Faqs"];
+
+  const Usefullinks = ["Privacy Policy", "Terms and Conditions ", "Support"];
+
+  const Contactus = [
+    {
+      img: Whatsapp,
+      phone: "+1 575 567 5673",
+    },
+    {
+      img: Mail,
+      phone: "agromech@gmail.com",
+    },
+  ];
+
   return (
     <FooterArea>
       <Container></Container>

@@ -5,7 +5,7 @@ import { Container } from "./styled/Container.styled";
 const Hero = () => {
   return (
     <Herosec>
-      <Container>Hello</Container>
+      <Container></Container>
     </Herosec>
   );
 };

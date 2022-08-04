@@ -30,12 +30,19 @@ const Footer = () => {
     <FooterArea>
       <Container>
         <FooterRow>
-            <Row>
-                <div className="brand">
-                  <img src={Logo} alt="" />
-                </div>
-            </Row>
-            
+          <Row>
+            <div className="brand">
+              <img src={Logo} alt="" />
+            </div>
+          </Row>
+          <Row>
+            <h3>Quick Links</h3>
+            <ul>
+              {Quicklinks.map((link, index) => (
+                <li key={index}>{link}</li>
+              ))}
+            </ul>
+          </Row>
         </FooterRow>
       </Container>
     </FooterArea>

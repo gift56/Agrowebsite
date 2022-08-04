@@ -12,6 +12,15 @@ export const Row = styled.div`
     font-size: 20px;
     line-height: 30px;
   }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    li {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
 `;
 
 export const FooterRow = styled.div`

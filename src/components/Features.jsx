@@ -5,6 +5,8 @@ import {
   Featurecontainer,
   Featurecards,
   Imgcontainer,
+  Greencard,
+  Buttons
 } from "./styled/Features.styled";
 import { Container } from "./styled/Container.styled";
 import { FeatureData } from "../Data/Feature";
@@ -20,6 +22,13 @@ const Features = () => {
               <Imgcontainer>
                 <img src={feature.img} alt="/" />
               </Imgcontainer>
+              {feature.greenCard.map((item, index) => (
+                <Greencard key={index}>
+                  <h3>{item.title}</h3>
+                  <p>{item.price}</p>
+                  <Buttons></Buttons>
+                </Greencard>
+              ))}
             </Featurecards>
           ))}
         </Featurecontainer>

@@ -20,3 +20,7 @@ export const Featurecontainer = styled.div``;
 export const Featurecards = styled.div``;
 
 export const Imgcontainer = styled.div``;
+
+export const Buttons = styled.div``;
+
+export const Greencard = styled.div``;

@@ -63,8 +63,8 @@ const Footer = () => {
             </ul>
           </Row>
           <SocialRow>
-            {socialIcons.map((icon,index)=>(
-                <img src=""  />
+            {socialIcons.map((icon, index) => (
+              <img src={icon} key={index} />
             ))}
           </SocialRow>
         </FooterRow>

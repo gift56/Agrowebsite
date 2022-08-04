@@ -24,10 +24,21 @@ export const Featurecontainer = styled.div`
 export const Featurecards = styled.div`
   width: 325px;
   padding: 1rem;
-  background-color: red;
 `;
 
-export const Imgcontainer = styled.div``;
+export const Imgcontainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${({ theme }) => theme.whiteColor};
+  width: 100%;
+  border: 1px solid ${({ theme }) => theme.Greenbg};
+  border-radius: 5.21046px;
+  height: 180px;
+  img {
+    width: fit-content;
+  }
+`;
 
 export const Buttons = styled.div``;
 

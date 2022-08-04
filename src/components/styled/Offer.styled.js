@@ -57,5 +57,20 @@ export const Rightside = styled.div`
   }
 `;
 
-export const Cardcontainer = styled.div``;
-export const Card = styled.div``;
+export const Cardcontainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 52px;
+`;
+
+export const Card = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: ${({ theme }) => theme.whiteColor};
+  width: 329px;
+  height: 307px;
+  border-radius: 8px;
+`;

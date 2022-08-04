@@ -9,6 +9,7 @@ const App = () => {
     whiteColor: "#FFFFFF",
     inputColor: "#F2F2F2",
     buttonBg: "#FFDD00",
+    featureBg: "#FFFDE6",
     textColor: "#333333",
     mobile: {
       minLap: "1080px",

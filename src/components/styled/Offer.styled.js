@@ -13,6 +13,7 @@ export const Welcometxt = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  margin-bottom: 20px;
 `;
 
 export const Leftside = styled.div`

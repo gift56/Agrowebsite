@@ -40,4 +40,18 @@ export const Leftside = styled.div`
 
 export const Rightside = styled.div`
   flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  height: 11vh;
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    color: ${({ theme }) => theme.whiteColor};
+    span {
+      display: block;
+    }
+  }
 `;

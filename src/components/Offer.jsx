@@ -23,9 +23,16 @@ const Offer = () => {
           </Leftside>
           <Rightside>
             <p>
-              AgroMech Company is an online based supplier of machines and
-              equipments for agricultural and farming industry, We are dedicated
-              to providing a first class service to all of our customers.
+              <span>
+                AgroMech Company is an online based supplier of machines
+              </span>{" "}
+              <span>
+                and equipments for agricultural and farming industry, We are
+              </span>{" "}
+              <span>
+                dedicated to providing a first class service to all of our
+              </span>
+              <span>customers.</span>
             </p>
           </Rightside>
         </Welcometxt>

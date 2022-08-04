@@ -15,9 +15,17 @@ export const Title = styled.h2`
   margin-bottom: 20px;
 `;
 
-export const Featurecontainer = styled.div``;
+export const Featurecontainer = styled.div`
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+`;
 
-export const Featurecards = styled.div``;
+export const Featurecards = styled.div`
+  width: 325px;
+  padding: 1rem;
+  background-color: red;
+`;
 
 export const Imgcontainer = styled.div``;
 

@@ -4,6 +4,7 @@ import {
   Welcometxt,
   Leftside,
   Rightside,
+  Card,
 } from "./styled/Offer.styled";
 import { Container } from "./styled/Container.styled";
 

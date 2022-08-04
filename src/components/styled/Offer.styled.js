@@ -56,3 +56,5 @@ export const Rightside = styled.div`
     }
   }
 `;
+
+export const Card = styled.div``;

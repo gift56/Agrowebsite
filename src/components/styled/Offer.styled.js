@@ -5,6 +5,7 @@ export const Offerarea = styled.section`
   background-image: url(${Bg});
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 699px;
 `;
 
 export const Welcometxt = styled.div`

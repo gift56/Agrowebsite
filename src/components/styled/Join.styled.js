@@ -9,6 +9,7 @@ export const Joincontainer = styled.div`
   gap: 3rem;
   align-items: center;
   padding: 10px 0;
+  padding-bottom: 0;
 `;
 
 export const Imgarea = styled.div`
@@ -37,7 +38,7 @@ export const Joinarea = styled.div`
       padding: 10px 0;
       background-color: ${({ theme }) => theme.inputColor};
       border: 1px solid ${({ theme }) => theme.buttonBg};
-      border-radius: 8px 0px 0px 8px;
+      border-radius: 6px 0px 0px 6px;
       padding-left: 20px;
       font-size: 15px;
       color: ${({ theme }) => theme.textColor};
@@ -50,7 +51,7 @@ export const Joinarea = styled.div`
       background-color: ${({ theme }) => theme.buttonBg};
       color: ${({ theme }) => theme.whiteColor};
       border-color: ${({ theme }) => theme.buttonBg};
-      border-radius: 0px 8px 8px 0px;
+      border-radius: 0px 3px 3px 0px;
     }
   }
 `;

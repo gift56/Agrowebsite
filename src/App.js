@@ -1,8 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Home from "./page/Home";
+import Pageroutes from "./Routes/Pageroutes";
 
 const App = () => {
   const theme = {
@@ -23,9 +21,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <>
-        <Header />
-        <Home />
-        <Footer />
+        <Pageroutes />
       </>
     </ThemeProvider>
   );

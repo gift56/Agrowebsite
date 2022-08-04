@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Container } from "./styled/Container.styled";
 import { BsGridFill } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
@@ -56,8 +57,12 @@ const Header = () => {
               size={28}
               className="close"
             />
-            <li>Home</li>
-            <li>About Us</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="about">About Us</Link>
+            </li>
             <li>Services</li>
             <li>Stock</li>
             <li>Hire</li>

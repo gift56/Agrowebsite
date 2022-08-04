@@ -41,7 +41,11 @@ const Offer = () => {
         </Welcometxt>
         <Cardcontainer>
           {CardData.map((item, index) => (
-            <Card key={index}></Card>
+            <Card key={index}>
+              <img src={item.img} alt="" />
+              <h2>{item.title}</h2>
+              <p>{item.details}</p>
+            </Card>
           ))}
         </Cardcontainer>
       </Container>

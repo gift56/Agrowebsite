@@ -14,3 +14,7 @@ export const Title = styled.h2`
   line-height: 34px;
   margin-bottom: 20px;
 `;
+
+export const Featurecontainer = styled.div``;
+
+export const Featurecards = styled.div``;

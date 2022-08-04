@@ -25,7 +25,7 @@ const Join = () => {
               offers
             </Detail>
             <form>
-              <input type="text" />
+              <input type="text" placeholder="Enter your email address" />
               <button className="btn">Submit</button>
             </form>
           </Joinarea>

@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Container } from "./styled/Container.styled";
 
 const Hero = () => {
   return (
-    <div>Hero</div>
-  )
-}
+    <Hero>
+      <Container>Hello</Container>
+    </Hero>
+  );
+};
 
-export default Hero
+export default Hero;

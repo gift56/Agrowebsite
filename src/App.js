@@ -1,7 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import Header from "./components/Header";
-import { Container } from "./components/styled/Container.styled";
 import Home from "./page/Home";
 
 const App = () => {

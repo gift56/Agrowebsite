@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "./styled/Container.styled";
-import { FooterArea, Row, FooterRow } from "./styled/Footer.styled";
+import { FooterArea, Row, FooterRow, SocialRow } from "./styled/Footer.styled";
 import Logo from "../agroImg/logo.svg";
 import Twiter from "../agroImg/twitter.png";
 import Facebook from "../agroImg/facebook.png";
@@ -43,6 +43,26 @@ const Footer = () => {
               ))}
             </ul>
           </Row>
+          <Row>
+            <h3>Useful Links</h3>
+            <ul>
+              {Usefullinks.map((link, index) => (
+                <li key={index}>{link}</li>
+              ))}
+            </ul>
+          </Row>
+          <Row>
+            <h3>Contact Us</h3>
+            <ul className="contact">
+              {Contactus.map((link, index) => (
+                <li key={index}>
+                  <img src={link.img} alt="" />
+                  <span>{link.phone}</span>
+                </li>
+              ))}
+            </ul>
+          </Row>
+          <SocialRow></SocialRow>
         </FooterRow>
       </Container>
     </FooterArea>

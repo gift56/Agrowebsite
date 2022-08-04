@@ -40,12 +40,7 @@ const Header = () => {
         <Container>
           <div className="togglebar">
             {isMobile ? (
-              <AiOutlineClose
-                onClick={() => setIsmobile(false)}
-                style={{ color: "#ffff" }}
-                size={28}
-                className="close"
-              />
+              ""
             ) : (
               <BsGridFill
                 style={{ color: "#ffff" }}
@@ -55,6 +50,12 @@ const Header = () => {
             )}
           </div>
           <ul className={`ul ${!isMobile ? "show" : ""}`}>
+            <AiOutlineClose
+              onClick={() => setIsmobile(false)}
+              style={{ color: "#ffff" }}
+              size={28}
+              className="close"
+            />
             <li>Home</li>
             <li>About Us</li>
             <li>Services</li>

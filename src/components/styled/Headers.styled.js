@@ -79,7 +79,7 @@ export const Nav = styled.nav`
     gap: 1rem;
     div {
       img {
-        width: 33.33px;
+        width: 30px;
       }
       span {
         display: none;
@@ -90,12 +90,13 @@ export const Nav = styled.nav`
 
 export const HeaderTwo = styled.div`
   background-color: ${({ theme }) => theme.Greenbg};
+  position: relative;
   .ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    position: relative;
+    transition: all 300ms ease;
     .close {
       display: none;
     }
@@ -112,6 +113,7 @@ export const HeaderTwo = styled.div`
     }
   }
   @media screen and (max-width: ${({ theme }) => theme.mobile.tab}) {
+    z-index: 10;
     .show {
       display: none !important;
     }
@@ -123,11 +125,16 @@ export const HeaderTwo = styled.div`
     }
     .ul {
       flex-direction: column;
-      padding-top: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: ${({ theme }) => theme.Greenbg};
+      width: 100%;
+
       .close {
         display: flex;
         position: absolute;
-        right: 0rem;
+        right: 1rem;
         top: 0.5rem;
       }
       li {

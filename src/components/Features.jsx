@@ -6,7 +6,7 @@ import {
   Featurecards,
   Imgcontainer,
   Greencard,
-  Buttons
+  Buttons,
 } from "./styled/Features.styled";
 import { Container } from "./styled/Container.styled";
 import { FeatureData } from "../Data/Feature";
@@ -26,7 +26,10 @@ const Features = () => {
                 <Greencard key={index}>
                   <h3>{item.title}</h3>
                   <p>{item.price}</p>
-                  <Buttons></Buttons>
+                  <Buttons>
+                    <button className="btn">View</button>
+                    <button className="btn">Add to Cart</button>
+                  </Buttons>
                 </Greencard>
               ))}
             </Featurecards>

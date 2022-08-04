@@ -62,7 +62,11 @@ const Footer = () => {
               ))}
             </ul>
           </Row>
-          <SocialRow></SocialRow>
+          <SocialRow>
+            {socialIcons.map((icon,index)=>(
+                <img src=""  />
+            ))}
+          </SocialRow>
         </FooterRow>
       </Container>
     </FooterArea>

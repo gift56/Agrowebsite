@@ -2,11 +2,10 @@ import styled from "styled-components";
 import Bg from "../../agroImg/thirdbg.png";
 
 export const Offerarea = styled.section`
-  padding: 90px 0 20px;
+  padding: 90px 0 80px;
   background-image: url(${Bg});
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 699px;
 `;
 
 export const Welcometxt = styled.div`
@@ -67,10 +66,27 @@ export const Cardcontainer = styled.div`
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
   align-items: flex-start;
   justify-content: flex-start;
   background-color: ${({ theme }) => theme.whiteColor};
   width: 329px;
   height: 307px;
   border-radius: 8px;
+  padding: 1.5rem;
+  img {
+    width: 50.63px;
+  }
+  h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: ${({ theme }) => theme.textColor};
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: ${({ theme }) => theme.textColor};
+  }
 `;

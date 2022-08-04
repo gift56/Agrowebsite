@@ -11,9 +11,6 @@ export const Headerone = styled.div`
   .logo {
     width: 14%;
   }
-  .toggle {
-    display: none;
-  }
   form {
     display: flex;
     align-items: center;
@@ -53,6 +50,11 @@ export const Headerone = styled.div`
       width: 20%;
     }
   }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
+    .logo {
+      width: 139px;
+    }
+  }
 `;
 
 export const Nav = styled.nav`
@@ -73,25 +75,64 @@ export const Nav = styled.nav`
       color: #000000;
     }
   }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
+    gap: 1rem;
+    div {
+      img {
+        width: 33.33px;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
 `;
 
 export const HeaderTwo = styled.div`
   background-color: ${({ theme }) => theme.Greenbg};
-`;
-
-export const NavTwo = styled.ul`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  li {
-    color: ${({ theme }) => theme.whiteColor};
-    font-size: 16px;
-    font-weight: 400;
-    cursor: pointer;
-    padding-bottom: 5px;
-    &:hover {
-      border-bottom: 2px solid ${({ theme }) => theme.whiteColor};
+  .ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+    .close {
+      display: none;
+    }
+    li {
+      color: ${({ theme }) => theme.whiteColor};
+      font-size: 16px;
+      font-weight: 400;
+      cursor: pointer;
+      padding-bottom: 5px;
+      transition: all 300ms ease;
+      &:hover {
+        border-bottom: 2px solid ${({ theme }) => theme.whiteColor};
+      }
+    }
+  }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.tab}) {
+    .show {
+      display: none !important;
+    }
+    .togglebar {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 10px 0;
+    }
+    .ul {
+      flex-direction: column;
+      padding-top: 0;
+      .close {
+        display: flex;
+        position: absolute;
+        right: 0rem;
+        top: 0.5rem;
+      }
+      li {
+        margin-top: 20px;
+      }
     }
   }
 `;

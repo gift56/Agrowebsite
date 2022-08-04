@@ -1,18 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "./styled/Container.styled";
+import { BsGridFill } from "react-icons/bs";
+import { AiOutlineClose } from "react-icons/ai";
 import LogoImg from "../agroImg/logo.svg";
 import User from "../agroImg/user.png";
 import Heart from "../agroImg/heart.png";
 import Cart from "../agroImg/cart.png";
-import {
-  Headers,
-  Headerone,
-  Nav,
-  HeaderTwo,
-  NavTwo,
-} from "./styled/Headers.styled";
+import { Headers, Headerone, Nav, HeaderTwo } from "./styled/Headers.styled";
+import "../App.css";
 
 const Header = () => {
+  const [isMobile, setIsmobile] = useState(false);
   return (
     <Headers>
       <Container>
@@ -36,12 +34,27 @@ const Header = () => {
               <span>Cart</span>
             </div>
           </Nav>
-          <div className="toggle"></div>
         </Headerone>
       </Container>
       <HeaderTwo>
         <Container>
-          <NavTwo>
+          <div className="togglebar">
+            {isMobile ? (
+              <AiOutlineClose
+                onClick={() => setIsmobile(false)}
+                style={{ color: "#ffff" }}
+                size={28}
+                className="close"
+              />
+            ) : (
+              <BsGridFill
+                style={{ color: "#ffff" }}
+                size={28}
+                onClick={() => setIsmobile(true)}
+              />
+            )}
+          </div>
+          <ul className={`ul ${!isMobile ? "show" : ""}`}>
             <li>Home</li>
             <li>About Us</li>
             <li>Services</li>
@@ -52,7 +65,7 @@ const Header = () => {
             <li>Parts & Maintenance </li>
             <li>FAQs</li>
             <li>Contact Us</li>
-          </NavTwo>
+          </ul>
         </Container>
       </HeaderTwo>
     </Headers>

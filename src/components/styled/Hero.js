@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Homebg from "../../agroImg/homeImg.png";
 
-export const Herosec = styled.div`
+export const Herosec = styled.section`
   background-image: url(${Homebg});
   background-repeat: no-repeat;
   background-size: cover;

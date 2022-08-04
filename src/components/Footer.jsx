@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "./styled/Container.styled";
-import { FooterArea } from "./styled/Footer.styled";
+import { FooterArea, Row, FooterRow } from "./styled/Footer.styled";
 import Logo from "../agroImg/logo.svg";
 import Twiter from "../agroImg/twitter.png";
 import Facebook from "../agroImg/facebook.png";
@@ -24,9 +24,20 @@ const Footer = () => {
     },
   ];
 
+  const socialIcons = [Twiter, Facebook, Instagram];
+
   return (
     <FooterArea>
-      <Container></Container>
+      <Container>
+        <FooterRow>
+            <Row>
+                <div className="brand">
+                  <img src={Logo} alt="" />
+                </div>
+            </Row>
+            
+        </FooterRow>
+      </Container>
     </FooterArea>
   );
 };

@@ -9,6 +9,10 @@ export const Storyarea = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  @media screen and (max-width: ${({ theme }) => theme.mobile.tab}) {
+    flex-direction: column;
+    gap: 2rem;
+  }
 `;
 
 export const Textside = styled.div`
@@ -48,6 +52,17 @@ export const Textside = styled.div`
       display: block;
     }
   }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.minLap}) {
+    p {
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
+    gap: 0.5rem;
+    p {
+      line-height: 20px;
+    }
+  }
 `;
 
 export const Cardside = styled.div`
@@ -56,4 +71,9 @@ export const Cardside = styled.div`
   justify-content: flex-end;
   align-items: center;
   height: 59vh;
+  @media screen and (max-width: ${({ theme }) => theme.mobile.minLap}) {
+    & > div {
+      width: 100%;
+    }
+  }
 `;

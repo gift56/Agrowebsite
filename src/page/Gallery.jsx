@@ -4,6 +4,7 @@ import AboutH from "../components/AboutH";
 import GalleryBg from "../agroImg/galleryBg.png";
 import GalleryImgs from "../components/GalleryImgs";
 
+
 const Gallery = () => {
   return (
     <>

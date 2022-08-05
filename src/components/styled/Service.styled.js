@@ -52,13 +52,12 @@ export const ServiceArea = styled.div`
   }
   @media screen and (max-width: 469px) {
     & > div:nth-child(2) {
-        padding: 0;
+      padding: 0;
       & > div {
         padding: 1rem;
         h3 {
           font-size: 18px;
           line-height: 36px;
-          
         }
         p {
           font-size: 15px;
@@ -90,3 +89,5 @@ export const TitleServe = styled.div`
     }
   }
 `;
+
+export const NextBtns = styled.div``;

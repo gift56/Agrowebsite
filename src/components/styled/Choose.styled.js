@@ -39,7 +39,7 @@ export const ChooseCardContainer = styled.div`
 `;
 
 export const ChooseCard = styled.div`
-  padding: 2rem;
+  padding: 2rem 2rem;
   background-color: ${({ theme }) => theme.whiteColor};
   display: flex;
   gap: 1rem;
@@ -48,4 +48,16 @@ export const ChooseCard = styled.div`
   align-items: center;
   text-align: center;
   border-radius: 11px;
+  h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: ${({ theme }) => theme.textColor};
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: ${({ theme }) => theme.textColor};
+  }
 `;

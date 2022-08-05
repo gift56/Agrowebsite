@@ -5,10 +5,10 @@ export const ChooseCon = styled.section`
 `;
 
 export const ChooseArea = styled.div`
-  padding: 20px 0 30px;
+  padding: 20px 0 90px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 `;
 
 export const ChooseTitle = styled.div`
@@ -31,6 +31,21 @@ export const ChooseTitle = styled.div`
   }
 `;
 
-export const ChooseCardContainer = styled.div``;
+export const ChooseCardContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+`;
 
-export const ChooseCard = styled.div``;
+export const ChooseCard = styled.div`
+  padding: 2rem;
+  background-color: ${({ theme }) => theme.whiteColor};
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 11px;
+`;

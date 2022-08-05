@@ -58,13 +58,19 @@ const Header = () => {
               className="close"
             />
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={() => setIsmobile(false)}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="about">About Us</Link>
+              <Link to="about" onClick={() => setIsmobile(false)}>
+                About Us
+              </Link>
             </li>
             <li>
-              <Link to="service">Services</Link>
+              <Link to="service" onClick={() => setIsmobile(false)}>
+                Services
+              </Link>
             </li>
             <li>Stock</li>
             <li>Hire</li>

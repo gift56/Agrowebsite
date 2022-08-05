@@ -11,7 +11,7 @@ const About = () => {
   return (
     <>
       <AboutHsec bg={AboutBg}>
-        <AboutH title="About Us" />
+        <AboutH title="About Us" detailsT="About Us"/>
       </AboutHsec>
       <Story />
       <Choose />

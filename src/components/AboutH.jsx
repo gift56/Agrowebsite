@@ -3,7 +3,7 @@ import { Herotext } from "./styled/Hero";
 import { IoMdHome } from "react-icons/io";
 import { BiChevronRight } from "react-icons/bi";
 
-const AboutH = ({ title }) => {
+const AboutH = ({ title, detailsT }) => {
   return (
     <Herotext>
       <h2>{title}</h2>
@@ -11,7 +11,7 @@ const AboutH = ({ title }) => {
         <IoMdHome />
         <span>
           <BiChevronRight />
-          About Us
+          {detailsT}
         </span>
       </p>
     </Herotext>

@@ -13,15 +13,35 @@ const Story = () => {
             <h2>Our Story</h2>
             <h4>Who Are We?</h4>
             <p>
-              AgroMech Company is an online based supplier of machines and
-              equipments for agricultural and farming industry, We are dedicated
-              to providing a first class service to all of our customers, both
-              home and abroad, using experienced hauliers to ensure the highest
-              quality service AgroMech is registered with the Corporate Affairs
-              Commission of the Federal Republic of Nigeria, established under
-              the Companies and Allied matters Act 1990 AgroMech ensures the
-              clearing of machine, certificate and paper works are completed to
-              the highest standard.
+              <span>
+                AgroMech Company is an online based supplier of machines and
+              </span>
+              <span>
+                equipments for agricultural and farming industry, We are
+                dedicated to
+              </span>
+              <span>
+                providing a first class service to all of our customers, both
+                home and
+              </span>{" "}
+              <span>
+                abroad, using experienced hauliers to ensure the highest quality
+                service
+              </span>{" "}
+              <span>
+                AgroMech is registered with the Corporate Affairs Commission of
+                the
+              </span>
+              <span>
+                Federal Republic of Nigeria, established under the Companies and
+                Allied
+              </span>{" "}
+              <span>matters Act 1990</span>
+              <span>
+                AgroMech ensures the clearing of machine, certificate and paper
+                works are
+              </span>
+              <span>completed to the highest standard.</span>
             </p>
           </Textside>
           <Cardside>

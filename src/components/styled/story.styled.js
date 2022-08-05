@@ -38,10 +38,22 @@ export const Textside = styled.div`
     line-height: 30px;
     color: ${({ theme }) => theme.textColor};
   }
+  p {
+    text-align: justify;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 42px;
+    width: 100%;
+    span {
+      display: block;
+    }
+  }
 `;
 
 export const Cardside = styled.div`
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  height: 59vh;
 `;

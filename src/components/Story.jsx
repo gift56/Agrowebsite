@@ -1,6 +1,8 @@
 import React from "react";
 import { Container } from "./styled/Container.styled";
 import { Cardside, Storyarea, StoryCon, Textside } from "./styled/story.styled";
+import { Card } from "./styled/Offer.styled";
+import cardImg from "../agroImg/mechI.png";
 
 const Story = () => {
   return (
@@ -23,7 +25,14 @@ const Story = () => {
             </p>
           </Textside>
           <Cardside>
-            
+            <Card>
+              <img src={cardImg} alt="/" />
+              <h2>Machinery Provider</h2>
+              <p>
+                We provide a platform where you can hire various machines and
+                equipments for both long and short term
+              </p>
+            </Card>
           </Cardside>
         </Storyarea>
       </Container>

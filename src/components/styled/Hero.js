@@ -21,3 +21,5 @@ export const AboutHsec = styled.section`
     height: 500px;
   }
 `;
+
+export const Herotext=styled.div``

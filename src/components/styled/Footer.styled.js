@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const FooterArea = styled.footer`
-  min-height: 481px;
   .copy {
     display: block;
     text-align: center;

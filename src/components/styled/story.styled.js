@@ -33,9 +33,10 @@ export const Textside = styled.div`
     }
   }
   h4 {
-    font-weight: 500;
     font-size: 20px;
+    font-weight: 500;
     line-height: 30px;
+    color: ${({ theme }) => theme.textColor};
   }
 `;
 

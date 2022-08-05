@@ -6,10 +6,12 @@ import { AboutHsec } from "../components/styled/Hero";
 
 const About = () => {
   return (
-    <AboutHsec bg={AboutBg}>
-      <AboutH title="About Us" />
+    <>
+      <AboutHsec bg={AboutBg}>
+        <AboutH title="About Us" />
+      </AboutHsec>
       <Story />
-    </AboutHsec>
+    </>
   );
 };
 

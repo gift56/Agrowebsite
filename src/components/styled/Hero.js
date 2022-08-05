@@ -22,4 +22,28 @@ export const AboutHsec = styled.section`
   }
 `;
 
-export const Herotext=styled.div``
+export const Herotext = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  h2 {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 68px;
+    color: ${({ theme }) => theme.whiteColor};
+  }
+  p {
+    color: ${({ theme }) => theme.whiteColor};
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    span {
+      display: flex;
+      align-items: center;
+    }
+  }
+`;

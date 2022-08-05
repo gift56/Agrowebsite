@@ -103,6 +103,24 @@ export const NextBtns = styled.div`
     padding: 1px;
     cursor: pointer;
     color: #000000;
+    width: 21px;
+    height: 21px;
+  }
+  .numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    span {
+      font-size: 15px;
+      font-weight: 400;
+      background-color: ${({ theme }) => theme.whiteColor};
+      border: 1px solid ${({ theme }) => theme.Greenbg};
+      width: 21px;
+      height: 21px;
+      cursor: pointer;
+      text-align: center;
+    }
   }
   .back {
     color: rgba(0, 0, 0, 0.28);

@@ -14,7 +14,7 @@ const About = () => {
         <AboutH title="About Us" />
       </AboutHsec>
       <Story />
-      <Choose />
+      {/* <Choose /> */}
       <AboutClients />
       <Join />
     </>

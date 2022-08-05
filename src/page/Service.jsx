@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import { AboutHsec } from "../components/styled/Hero";
+import ServiceBg from "../agroImg/service.png";
 
 const Service = () => {
   return (
-    <div>Service</div>
-  )
-}
+    <>
+      <AboutHsec bg={ServiceBg}></AboutHsec>
+    </>
+  );
+};
 
-export default Service
+export default Service;

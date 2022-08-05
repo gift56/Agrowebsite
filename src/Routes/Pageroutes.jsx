@@ -5,6 +5,9 @@ import Footer from "../components/Footer";
 import Home from "../page/Home";
 import About from "../page/About";
 import Service from "../page/Service";
+import Gallery from "../page/Gallery";
+import Consultion from "../page/Consultion";
+import Partandmaintenace from "../page/Partandmaintenace";
 
 const Pageroutes = () => {
   return (
@@ -14,6 +17,9 @@ const Pageroutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="service" element={<Service />} />
+        <Route path="gallerys" element={<Gallery />} />
+        <Route path="consultion" element={<Consultion />} />
+        <Route path="partandmaintenace" element={<Partandmaintenace />} />
       </Routes>
       <Footer />
     </>

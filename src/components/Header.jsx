@@ -74,9 +74,15 @@ const Header = () => {
             </li>
             <li>Stock</li>
             <li>Hire</li>
-            <li>Gallery</li>
-            <li>Consultation</li>
-            <li>Parts & Maintenance </li>
+            <li>
+              <Link to="gallerys">Gallery</Link>
+            </li>
+            <li>
+              <Link to="consultion">Consultation</Link>
+            </li>
+            <li>
+              <Link to="partandmaintenace">Parts & Maintenance </Link>
+            </li>
             <li>FAQs</li>
             <li>Contact Us</li>
           </ul>

@@ -1,5 +1,6 @@
 import React from "react";
 import AboutBg from "../agroImg/aboutImg.png";
+import AboutClients from "../components/AboutClients";
 import AboutH from "../components/AboutH";
 import Choose from "../components/Choose";
 import Story from "../components/Story";
@@ -13,6 +14,7 @@ const About = () => {
       </AboutHsec>
       <Story />
       <Choose />
+      <AboutClients />
     </>
   );
 };

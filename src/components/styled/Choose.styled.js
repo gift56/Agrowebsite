@@ -36,6 +36,9 @@ export const ChooseCardContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  @media screen and (max-width: ${({ theme }) => theme.mobile.tab}) {
+    flex-direction: column;
+  }
 `;
 
 export const ChooseCard = styled.div`
@@ -48,6 +51,7 @@ export const ChooseCard = styled.div`
   align-items: center;
   text-align: center;
   border-radius: 11px;
+
   h3 {
     font-weight: 600;
     font-size: 16px;
@@ -59,5 +63,11 @@ export const ChooseCard = styled.div`
     font-size: 16px;
     line-height: 24px;
     color: ${({ theme }) => theme.textColor};
+  }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.optionminLap}) {
+    padding: 1rem 1rem;
+    p {
+      font-size: 14px;
+    }
   }
 `;

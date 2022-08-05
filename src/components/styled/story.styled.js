@@ -12,7 +12,16 @@ export const Storyarea = styled.div`
 `;
 
 export const Textside = styled.div`
-  flex: 1;
+  flex: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+  }
 `;
 
 export const Cardside = styled.div`

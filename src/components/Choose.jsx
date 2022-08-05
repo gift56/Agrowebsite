@@ -8,6 +8,7 @@ import {
 } from "./styled/Choose.styled";
 import { Container } from "./styled/Container.styled";
 import Star from "../agroImg/star.png";
+import { ChooseData } from "../Data/ChooseData";
 
 const Choose = () => {
   return (
@@ -25,7 +26,13 @@ const Choose = () => {
             </p>
           </ChooseTitle>
           <ChooseCardContainer>
-            
+            {ChooseData.map((card, index) => (
+              <ChooseCard key={index}>
+                <img src={card.img} alt="/" />
+                <h3>{card.title}</h3>
+                <p>{card.details}</p>
+              </ChooseCard>
+            ))}
           </ChooseCardContainer>
         </ChooseArea>
       </Container>

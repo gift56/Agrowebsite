@@ -14,7 +14,7 @@ import {
   MdOutlineNavigateNext,
   MdOutlineArrowBackIosNew,
 } from "react-icons/md";
-import { AiFillBackward } from "react-icons/ai";
+import { AiFillBackward, AiFillForward } from "react-icons/ai";
 
 const GalleryImgs = () => {
   const GalleryW = [
@@ -46,7 +46,17 @@ const GalleryImgs = () => {
               <img src={item} alt="" key={index} />
             ))}
           </ChooseCardContainer>
-          <NextBtns></NextBtns>
+          <NextBtns>
+            <AiFillBackward className="icons back" />
+            <MdOutlineArrowBackIosNew className="icons  back" />
+            <div className="numbers">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+            <AiFillForward className="icons" />
+            <MdOutlineNavigateNext className="icons" />
+          </NextBtns>
         </ServiceArea>
       </Container>
     </ServiceCon>

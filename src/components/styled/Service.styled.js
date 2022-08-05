@@ -90,4 +90,21 @@ export const TitleServe = styled.div`
   }
 `;
 
-export const NextBtns = styled.div``;
+export const NextBtns = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  .icons {
+    font-size: 18px;
+    font-weight: 400;
+    background-color: ${({ theme }) => theme.whiteColor};
+    border: 1px solid ${({ theme }) => theme.Greenbg};
+    padding: 1px;
+    cursor: pointer;
+    color: #000000;
+  }
+  .back {
+    color: rgba(0, 0, 0, 0.28);
+  }
+`;

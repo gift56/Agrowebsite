@@ -5,6 +5,10 @@ import Gallery3 from "../agroImg/gall3.png";
 import { ServiceCon, ServiceArea, TitleServe } from "./styled/Service.styled";
 import { ChooseCardContainer } from "./styled/Choose.styled";
 import { Container } from "./styled/Container.styled";
+import {
+  MdOutlineNavigateNext,
+  MdOutlineArrowBackIosNew,
+} from "react-icons/md";
 
 const GalleryImgs = () => {
   const GalleryW = [

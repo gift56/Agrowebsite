@@ -6,7 +6,7 @@ import { AboutHsec } from "../components/styled/Hero";
 const About = () => {
   return (
     <AboutHsec bg={AboutBg}>
-      <AboutH />
+      <AboutH title="About Us" />
     </AboutHsec>
   );
 };

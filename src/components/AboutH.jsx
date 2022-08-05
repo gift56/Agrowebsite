@@ -3,10 +3,10 @@ import { Herotext } from "./styled/Hero";
 import { IoMdHome } from "react-icons/io";
 import { BiChevronRight } from "react-icons/bi";
 
-const AboutH = () => {
+const AboutH = ({ title }) => {
   return (
     <Herotext>
-      <h2>About Us</h2>
+      <h2>{title}</h2>
       <p>
         <IoMdHome />
         <span>

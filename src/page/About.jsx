@@ -5,6 +5,7 @@ import AboutH from "../components/AboutH";
 import Choose from "../components/Choose";
 import Story from "../components/Story";
 import { AboutHsec } from "../components/styled/Hero";
+import Join from "../components/Join";
 
 const About = () => {
   return (
@@ -15,6 +16,7 @@ const About = () => {
       <Story />
       <Choose />
       <AboutClients />
+      <Join />
     </>
   );
 };

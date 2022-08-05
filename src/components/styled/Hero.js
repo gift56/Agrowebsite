@@ -46,4 +46,9 @@ export const Herotext = styled.div`
       align-items: center;
     }
   }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
+    h2 {
+      font-size: 35px;
+    }
+  }
 `;

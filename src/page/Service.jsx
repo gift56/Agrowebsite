@@ -4,6 +4,7 @@ import ServiceBg from "../agroImg/service.png";
 import AboutH from "../components/AboutH";
 import ServiceT from "../components/ServiceT";
 import AboutClients from "../components/AboutClients";
+import Join from "../components/Join";
 
 const Service = () => {
   return (
@@ -13,6 +14,7 @@ const Service = () => {
       </AboutHsec>
       <ServiceT />
       <AboutClients />
+      <Join />
     </>
   );
 };

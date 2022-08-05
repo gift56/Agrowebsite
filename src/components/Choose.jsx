@@ -1,11 +1,34 @@
 import React from "react";
-import { ChooseCon } from "./styled/Choose.styled";
+import {
+  ChooseArea,
+  ChooseCon,
+  ChooseTitle,
+  ChooseCardContainer,
+  ChooseCard,
+} from "./styled/Choose.styled";
 import { Container } from "./styled/Container.styled";
+import Star from "../agroImg/star.png";
 
 const Choose = () => {
   return (
     <ChooseCon>
-      <Container></Container>
+      <Container>
+        <ChooseArea>
+          <ChooseTitle>
+            <h2>Why Choose Us</h2>
+            <div className="star">
+              <img src={Star} alt="" />
+            </div>
+            <p>
+              AgroMech is a First Class Provider of Agricultural Machineries and
+              Equipments
+            </p>
+          </ChooseTitle>
+          <ChooseCardContainer>
+            
+          </ChooseCardContainer>
+        </ChooseArea>
+      </Container>
     </ChooseCon>
   );
 };

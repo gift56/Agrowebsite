@@ -4,6 +4,13 @@ import Truck3 from "../agroImg/truck3.png";
 import Truck4 from "../agroImg/truck4.png";
 import Truck5 from "../agroImg/truck5.png";
 import Truck6 from "../agroImg/truck6.png";
+import Product1 from "../agroImg/pm1.png";
+import Product2 from "../agroImg/pm2.png";
+import Product3 from "../agroImg/pm3.png";
+import Product4 from "../agroImg/pm4.png";
+import Product5 from "../agroImg/pm5.png";
+import Product6 from "../agroImg/pm6.png";
+import Product7 from "../agroImg/pm7.png";
 
 export const FeatureData = [
   {

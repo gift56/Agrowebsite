@@ -11,13 +11,21 @@ export const PartArea = styled.div`
 `;
 
 export const PleftSide = styled.div`
-  position: relative;
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: flex-start;
-  justify-content: flex-start;
+  div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem;
+    background-color: ${({ theme }) => theme.whiteColor};
+    width: 691px;
+    height: 658px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px 8px 95px 8px;
+  }
 `;
 
 export const PrightSide = styled.div``;

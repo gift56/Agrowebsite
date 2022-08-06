@@ -151,4 +151,10 @@ export const TitleText = styled.div`
       display: block;
     }
   }
+  button {
+    font-weight: 500;
+    font-size: 13px;
+    background-color: ${({ theme }) => theme.Greenbg};
+    color: ${({ theme }) => theme.whiteColor};
+  }
 `;

@@ -49,6 +49,9 @@ export const Herotext = styled.div`
   @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
     h2 {
       font-size: 35px;
+      text-align: center;
+      line-height: 40px;
+      margin-bottom: 20px;
     }
   }
 `;

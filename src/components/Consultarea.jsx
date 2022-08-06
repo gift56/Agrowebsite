@@ -15,9 +15,13 @@ const Consultarea = () => {
           <TitleText>
             <h2>For Consultation</h2>
             <p>
-              We are always looking forward to give the best products and
-              services, Our round the clock customer service agents ensures
-              smooth shopping experience
+              <span>
+                We are always looking forward to give the best products and
+                services, Our round the clock
+              </span>
+              <span>
+                customer service agents ensures smooth shopping experience
+              </span>
             </p>
           </TitleText>
         </ServiceArea>

@@ -143,5 +143,12 @@ export const TitleText = styled.div`
   }
   p {
     color: ${({ theme }) => theme.Greenbg};
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    span {
+      display: block;
+    }
   }
 `;

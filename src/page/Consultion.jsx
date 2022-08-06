@@ -3,6 +3,8 @@ import { AboutHsec } from "../components/styled/Hero";
 import AboutH from "../components/AboutH";
 import ConsultBg from "../agroImg/consultBg.png";
 import Consultarea from "../components/Consultarea";
+import AboutClients from "../components/AboutClients";
+import Join from "../components/Join";
 
 const Consultion = () => {
   return (
@@ -11,6 +13,8 @@ const Consultion = () => {
         <AboutH title="Consultation" detailsT="Consultation" />
       </AboutHsec>
       <Consultarea />
+      <AboutClients />
+      <Join />
     </>
   );
 };

@@ -48,12 +48,18 @@ export const PleftSide = styled.div`
       border-color: #efe503;
       color: #45914a;
     }
-    img{
-        position: absolute;
-        right: 3%;
-        top: 1%;
+    img {
+      position: absolute;
+      right: 3%;
+      top: 1%;
     }
   }
 `;
 
-export const PrightSide = styled.div``;
+export const PrightSide = styled.div`
+  display: flex;
+  align-items: center;
+  img{
+    width: 90%;
+  }
+`;

@@ -3,6 +3,7 @@ import PMbg from "../agroImg/PMBg.png";
 import AboutClients from "../components/AboutClients";
 import AboutH from "../components/AboutH";
 import PartM from "../components/PartM";
+import PMfeatures from "../components/PMfeatures";
 import { AboutHsec } from "../components/styled/Hero";
 
 const Partandmaintenace = () => {
@@ -16,6 +17,7 @@ const Partandmaintenace = () => {
       </AboutHsec>
       <AboutClients />
       <PartM />
+      <PMfeatures />
     </>
   );
 };

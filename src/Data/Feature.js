@@ -11,7 +11,6 @@ import Product4 from "../agroImg/pm4.png";
 import Product5 from "../agroImg/pm5.png";
 import Product6 from "../agroImg/pm6.png";
 import Product7 from "../agroImg/pm7.png";
-import Star from "../agroImg/starg.png";
 
 export const FeatureData = [
   {
@@ -163,98 +162,146 @@ export const FeatureData = [
 export const FeatureData2 = [
   {
     img: Product1,
-    title: "Clutch Pad",
-    price: "$200",
-    stars: [Star, Star, Star, Star, Star],
+    greenCard: [
+      {
+        title: "Clutch Pad",
+        price: "$200",
+      },
+    ],
   },
   {
     img: Product2,
-    title: "Oil Filter",
-    price: "$100",
-    stars: [Star, Star, Star, Star, Star],
+    greenCard: [
+      {
+        title: "Oil Filter",
+        price: "$100",
+      },
+    ],
   },
   {
     img: Product3,
-    title: "Brake Pad",
-    price: "$150",
-    stars: [Star, Star, Star, Star, Star],
+    greenCard: [
+      {
+        title: "Brake Pad",
+        price: "$150",
+      },
+    ],
   },
   {
     img: Product4,
-    title: "Engine Oil",
-    price: "$165",
-    stars: [Star, Star, Star, Star, Star],
+    greenCard: [
+      {
+        title: "Engine Oil",
+        price: "$165",
+      },
+    ],
   },
   {
     img: Product5,
-    title: "Oil Filter",
-    price: "$200",
-    stars: [Star, Star, Star, Star, Star],
+    greenCard: [
+      {
+        title: "Oil Filter",
+        price: "$200",
+      },
+    ],
   },
   {
     img: Product6,
-    title: "Gear Oil",
-    price: "$200",
-    stars: [Star, Star, Star, Star, Star],
+    greenCard: [
+      {
+        title: "Gear Oil",
+        price: "$200",
+      },
+    ],
   },
   {
     img: Product7,
-    title: "Oil Filter",
-    price: "$100",
-    stars: [Star, Star, Star, Star, Star],
+    greenCard: [
+      {
+        title: "Oil Filter",
+        price: "$100",
+      },
+    ],
   },
   {
     img: Product1,
-    title: "Clutch Pad",
-    price: "$200",
-    stars: [Star, Star, Star, Star, Star],
+    greenCard: [
+      {
+        title: "Clutch Pad",
+        price: "$200",
+      },
+    ],
   },
   {
     img: Product7,
-    title: "Oil Filter",
-    price: "$100",
-    stars: [Star, Star, Star, Star, Star],
+    greenCard: [
+      {
+        title: "Oil Filter",
+        price: "$100",
+      },
+    ],
   },
   {
     img: Product2,
-    title: "Oil Filter",
-    price: "$100",
-    stars: [Star, Star, Star, Star, Star],
+    greenCard: [
+      {
+        title: "Oil Filter",
+        price: "$100",
+      },
+    ],
   },
   {
     img: Product3,
-    title: "Brake Pad",
-    price: "$150",
-    stars: [Star, Star, Star, Star, Star],
+    greenCard: [
+      {
+        title: "Brake Pad",
+        price: "$150",
+      },
+    ],
   },
   {
     img: Product4,
-    title: "Engine Oil",
-    price: "$165",
-    stars: [Star, Star, Star, Star, Star],
+    greenCard: [
+      {
+        title: "Engine Oil",
+        price: "$165",
+      },
+    ],
   },
   {
     img: Product5,
-    title: "Oil Filter",
-    price: "$200",
-    stars: [Star, Star, Star, Star, Star],
+    greenCard: [
+      {
+        title: "Oil Filter",
+        price: "$200",
+      },
+    ],
   },
   {
     img: Product6,
-    title: "Gear Oil",
-    price: "$200",
-    stars: [Star, Star, Star, Star, Star],
+    greenCard: [
+      {
+        title: "Gear Oil",
+        price: "$200",
+      },
+    ],
   },
   {
     img: Product7,
-    title: "Oil Filter",
-    price: "$100",
-    stars: [Star, Star, Star, Star, Star],
+    greenCard: [
+      {
+        title: "Oil Filter",
+        price: "$100",
+      },
+    ],
   },
   {
     img: Product1,
-    title: "Clutch Pad",
-    price: "$200",
-    stars: [Star, Star, Star, Star, Star],
+    greenCard: [
+      {
+        title: "Clutch Pad",
+        price: "$200",
+      },
+    ],
   },
 ];

@@ -209,4 +209,52 @@ export const FeatureData2 = [
     price: "$200",
     stars: [Star, Star, Star, Star, Star],
   },
+  {
+    img: Product7,
+    title: "Oil Filter",
+    price: "$100",
+    stars: [Star, Star, Star, Star, Star],
+  },
+  {
+    img: Product2,
+    title: "Oil Filter",
+    price: "$100",
+    stars: [Star, Star, Star, Star, Star],
+  },
+  {
+    img: Product3,
+    title: "Brake Pad",
+    price: "$150",
+    stars: [Star, Star, Star, Star, Star],
+  },
+  {
+    img: Product4,
+    title: "Engine Oil",
+    price: "$165",
+    stars: [Star, Star, Star, Star, Star],
+  },
+  {
+    img: Product5,
+    title: "Oil Filter",
+    price: "$200",
+    stars: [Star, Star, Star, Star, Star],
+  },
+  {
+    img: Product6,
+    title: "Gear Oil",
+    price: "$200",
+    stars: [Star, Star, Star, Star, Star],
+  },
+  {
+    img: Product7,
+    title: "Oil Filter",
+    price: "$100",
+    stars: [Star, Star, Star, Star, Star],
+  },
+  {
+    img: Product1,
+    title: "Clutch Pad",
+    price: "$200",
+    stars: [Star, Star, Star, Star, Star],
+  },
 ];

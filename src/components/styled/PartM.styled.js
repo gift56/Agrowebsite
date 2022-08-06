@@ -22,7 +22,7 @@ export const PleftSide = styled.div`
     padding: 2rem;
     background-color: ${({ theme }) => theme.whiteColor};
     width: 691px;
-    height: 658px;
+    min-height: 658px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px 8px 95px 8px;
     h2 {
@@ -46,7 +46,12 @@ export const PleftSide = styled.div`
     button {
       background-color: #efe503;
       border-color: #efe503;
-      color: #45914A;
+      color: #45914a;
+    }
+    img{
+        position: absolute;
+        right: 3%;
+        top: 1%;
     }
   }
 `;

@@ -8,6 +8,11 @@ export const PartArea = styled.div`
   padding: 25px 0 20px;
   display: flex;
   justify-content: center;
+  @media screen and (max-width: ${({ theme }) => theme.mobile.tab2}) {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
 `;
 
 export const PleftSide = styled.div`
@@ -72,6 +77,22 @@ export const PleftSide = styled.div`
       }
     }
   }
+  @media screen and (max-width: 375px) {
+    div {
+      width: 100%;
+      border-radius: 8px;
+      padding: 1rem;
+      h2 {
+        line-height: 20px;
+      }
+      button {
+        font-size: 13px;
+      }
+      img {
+        width: 7%;
+      }
+    }
+  }
 `;
 
 export const PrightSide = styled.div`
@@ -79,5 +100,10 @@ export const PrightSide = styled.div`
   align-items: center;
   img {
     width: 90%;
+  }
+  @media screen and (max-width: 375px) {
+    img {
+      width: 100%;
+    }
   }
 `;

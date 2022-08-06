@@ -5,11 +5,18 @@ import {
   TitleServe,
   NextBtns,
 } from "./styled/Service.styled";
+import { Container } from "./styled/Container.styled";
 
 const Consultarea = () => {
-  return <ServiceCon>
-    <Container></Container>
-  </ServiceCon>;
+  return (
+    <ServiceCon>
+      <Container>
+        <ServiceArea>
+            <TitleServe></TitleServe>
+        </ServiceArea>
+      </Container>
+    </ServiceCon>
+  );
 };
 
 export default Consultarea;

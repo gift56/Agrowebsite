@@ -98,4 +98,17 @@ export const Greencard = styled.div`
     line-height: 19px;
     color: ${({ theme }) => theme.whiteColor};
   }
+  .starP {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      img {
+        cursor: pointer;
+      }
+    }
+  }
 `;

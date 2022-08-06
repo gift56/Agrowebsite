@@ -21,31 +21,33 @@ const PMfeatures = () => {
           <TitleText>
             <h2>Featured Products</h2>
           </TitleText>
+          <Featurecontainer>
+            {FeatureData2.map((item, index) => (
+              <Featurecards key={index}>
+                <Imgcontainer>
+                  <img src={item.img} alt="/" />
+                </Imgcontainer>
+                {item.greenCard.map((item, index) => (
+                  <Greencard key={index}>
+                    <h3>{item.title}</h3>
+                    <div className="starP">
+                      <p>{item.price}</p>
+                      <div>
+                        {stars.map((star, i) => (
+                          <img src={star} alt="" key={i} />
+                        ))}
+                      </div>
+                    </div>
+                    <Buttons>
+                      <button className="btn">Add to Cart</button>
+                      <button className="btn">View</button>
+                    </Buttons>
+                  </Greencard>
+                ))}
+              </Featurecards>
+            ))}
+          </Featurecontainer>
         </Featuresarea>
-        <Featurecontainer>
-          {FeatureData2.map((item, index) => (
-            <Featurecards key={index}>
-              <Imgcontainer>
-                <img src={item.img} alt="/" />
-              </Imgcontainer>
-              {item.greenCard.map((item, index) => (
-                <Greencard key={index}>
-                  <h3>{item.title}</h3>
-                  <div>
-                    <p>{item.price}</p>
-                    {stars.map((star, i) => (
-                      <img src={star} alt="" key={index} />
-                    ))}
-                  </div>
-                  <Buttons>
-                    <button className="btn">View</button>
-                    <button className="btn">Add to Cart</button>
-                  </Buttons>
-                </Greencard>
-              ))}
-            </Featurecards>
-          ))}
-        </Featurecontainer>
       </Container>
     </ServiceCon>
   );

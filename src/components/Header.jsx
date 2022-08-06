@@ -83,8 +83,12 @@ const Header = () => {
             <li>
               <Link to="partandmaintenace">Parts & Maintenance </Link>
             </li>
-            <li>FAQs</li>
-            <li>Contact Us</li>
+            <li>
+              <Link to="faq">FAQs</Link>
+            </li>
+            <li>
+              <Link to="contact">Contact Us</Link>
+            </li>
           </ul>
         </Container>
       </HeaderTwo>

@@ -8,6 +8,8 @@ import Service from "../page/Service";
 import Gallery from "../page/Gallery";
 import Consultion from "../page/Consultion";
 import Partandmaintenace from "../page/Partandmaintenace";
+import Faq from "../page/Faq";
+import Contact from "../page/Contact";
 
 const Pageroutes = () => {
   return (
@@ -20,6 +22,8 @@ const Pageroutes = () => {
         <Route path="gallerys" element={<Gallery />} />
         <Route path="consultion" element={<Consultion />} />
         <Route path="partandmaintenace" element={<Partandmaintenace />} />
+        <Route path="faq" element={<Faq />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
       <Footer />
     </>

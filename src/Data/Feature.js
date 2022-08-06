@@ -11,6 +11,7 @@ import Product4 from "../agroImg/pm4.png";
 import Product5 from "../agroImg/pm5.png";
 import Product6 from "../agroImg/pm6.png";
 import Product7 from "../agroImg/pm7.png";
+import Star from "../agroImg/starg.png";
 
 export const FeatureData = [
   {
@@ -156,5 +157,56 @@ export const FeatureData = [
         price: "$35,000",
       },
     ],
+  },
+];
+
+export const FeatureData2 = [
+  {
+    img: Product1,
+    title: "Clutch Pad",
+    price: "$200",
+    stars: [Star, Star, Star, Star, Star],
+  },
+  {
+    img: Product2,
+    title: "Oil Filter",
+    price: "$100",
+    stars: [Star, Star, Star, Star, Star],
+  },
+  {
+    img: Product3,
+    title: "Brake Pad",
+    price: "$150",
+    stars: [Star, Star, Star, Star, Star],
+  },
+  {
+    img: Product4,
+    title: "Engine Oil",
+    price: "$165",
+    stars: [Star, Star, Star, Star, Star],
+  },
+  {
+    img: Product5,
+    title: "Oil Filter",
+    price: "$200",
+    stars: [Star, Star, Star, Star, Star],
+  },
+  {
+    img: Product6,
+    title: "Gear Oil",
+    price: "$200",
+    stars: [Star, Star, Star, Star, Star],
+  },
+  {
+    img: Product7,
+    title: "Oil Filter",
+    price: "$100",
+    stars: [Star, Star, Star, Star, Star],
+  },
+  {
+    img: Product1,
+    title: "Clutch Pad",
+    price: "$200",
+    stars: [Star, Star, Star, Star, Star],
   },
 ];

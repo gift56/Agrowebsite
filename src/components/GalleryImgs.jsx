@@ -10,10 +10,8 @@ import {
 } from "./styled/Service.styled";
 import { ChooseCardContainer } from "./styled/Choose.styled";
 import { Container } from "./styled/Container.styled";
-import {
-  MdOutlineNavigateNext,
-  MdOutlineArrowBackIosNew,
-} from "react-icons/md";
+import { MdOutlineNavigateNext } from "react-icons/md";
+import {IoChevronBackSharp} from 'react-icons/io5'
 import { AiFillBackward, AiFillForward } from "react-icons/ai";
 
 const GalleryImgs = () => {
@@ -48,14 +46,14 @@ const GalleryImgs = () => {
           </ChooseCardContainer>
           <NextBtns>
             <AiFillBackward className="icons back" />
-            <MdOutlineArrowBackIosNew className="icons  back" />
+            <IoChevronBackSharp className="icons  back" />
             <div className="numbers">
               <span>1</span>
               <span>2</span>
               <span>3</span>
             </div>
-            <AiFillForward className="icons" />
-            <MdOutlineNavigateNext className="icons" />
+            <MdOutlineNavigateNext className="icons next" />
+            <AiFillForward className="icons next" />
           </NextBtns>
         </ServiceArea>
       </Container>

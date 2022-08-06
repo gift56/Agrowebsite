@@ -95,7 +95,8 @@ export const NextBtns = styled.div`
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  .icons {
+  .icons,
+  span {
     font-size: 18px;
     font-weight: 400;
     background-color: ${({ theme }) => theme.whiteColor};
@@ -103,8 +104,8 @@ export const NextBtns = styled.div`
     padding: 1px;
     cursor: pointer;
     color: #000000;
-    width: 21px;
-    height: 21px;
+    width: 31px;
+    height: 31px;
   }
   .numbers {
     display: flex;
@@ -112,17 +113,19 @@ export const NextBtns = styled.div`
     align-items: center;
     gap: 2rem;
     span {
-      font-size: 15px;
       font-weight: 400;
-      background-color: ${({ theme }) => theme.whiteColor};
-      border: 1px solid ${({ theme }) => theme.Greenbg};
-      width: 21px;
-      height: 21px;
-      cursor: pointer;
       text-align: center;
     }
   }
   .back {
     color: rgba(0, 0, 0, 0.28);
+    border: 1px solid rgba(33, 124, 44, 0.36);
+    font-size: 6px !important;
+  }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
+    gap: 0.5rem;
+    .numbers {
+      gap: 0.5rem;
+    }
   }
 `;

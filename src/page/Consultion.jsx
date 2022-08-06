@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import { AboutHsec } from "../components/styled/Hero";
+import AboutH from "../components/AboutH";
+import ConsultBg from "../agroImg/consultBg.png";
+import Consultarea from "../components/Consultarea";
 
 const Consultion = () => {
   return (
-    <div>Consultion</div>
-  )
-}
+    <>
+      <AboutHsec bg={ConsultBg}>
+        <AboutH title="Consultation" detailsT="Consultation" />
+      </AboutHsec>
+      <Consultarea />
+    </>
+  );
+};
 
-export default Consultion
+export default Consultion;

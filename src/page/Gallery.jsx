@@ -3,7 +3,7 @@ import { AboutHsec } from "../components/styled/Hero";
 import AboutH from "../components/AboutH";
 import GalleryBg from "../agroImg/galleryBg.png";
 import GalleryImgs from "../components/GalleryImgs";
-
+import Join from "../components/Join";
 
 const Gallery = () => {
   return (
@@ -12,6 +12,7 @@ const Gallery = () => {
         <AboutH title="Image Gallery" detailsT="Gallery " />
       </AboutHsec>
       <GalleryImgs />
+      <Join />
     </>
   );
 };

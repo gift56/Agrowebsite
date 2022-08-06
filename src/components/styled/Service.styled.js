@@ -129,3 +129,19 @@ export const NextBtns = styled.div`
     }
   }
 `;
+export const TitleText = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  h2 {
+    color: ${({ theme }) => theme.Greenbg};
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 34px;
+  }
+  p {
+    color: ${({ theme }) => theme.Greenbg};
+  }
+`;

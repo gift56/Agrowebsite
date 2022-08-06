@@ -5,6 +5,7 @@ import AboutH from "../components/AboutH";
 import PartM from "../components/PartM";
 import PMfeatures from "../components/PMfeatures";
 import { AboutHsec } from "../components/styled/Hero";
+import Join from "../components/Join";
 
 const Partandmaintenace = () => {
   return (
@@ -18,6 +19,7 @@ const Partandmaintenace = () => {
       <AboutClients />
       <PartM />
       <PMfeatures />
+      <Join />
     </>
   );
 };

@@ -54,12 +54,30 @@ export const PleftSide = styled.div`
       top: 1%;
     }
   }
+  @media screen and (max-width: 1290px) {
+    div {
+      width: 90%;
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.optionminLap}) {
+    div {
+      h2 {
+        font-size: 18px;
+      }
+      p {
+        line-height: 20px;
+      }
+    }
+  }
 `;
 
 export const PrightSide = styled.div`
   display: flex;
   align-items: center;
-  img{
+  img {
     width: 90%;
   }
 `;

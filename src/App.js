@@ -10,6 +10,7 @@ const App = () => {
     buttonBg: "#FFDD00",
     featureBg: "#FFFDE6",
     textColor: "#333333",
+    PBg: "#EFFBF0",
     mobile: {
       minLap: "1080px",
       optionminLap: "1175px",

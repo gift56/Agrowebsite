@@ -19,7 +19,7 @@ const PMfeatures = () => {
       <Container>
         <Featuresarea>
           <TitleText>
-            <h2>Featured Products</h2>
+            <h2 style={{ marginBottom: "20px" }}>Featured Products</h2>
           </TitleText>
           <Featurecontainer>
             {FeatureData2.map((item, index) => (

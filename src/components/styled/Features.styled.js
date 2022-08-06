@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Featuresarea = styled.section`
   background-color: ${({ theme }) => theme.featureBg};
-  padding: 20px 0 35px;
+  padding: 20px 0 45px;
 `;
 
 export const Title = styled.h2`

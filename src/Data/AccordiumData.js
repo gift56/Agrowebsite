@@ -1,4 +1,4 @@
-export const Accordium = [
+export const AccordiumData = [
   {
     questions: "How do i place an order ?",
     answer:

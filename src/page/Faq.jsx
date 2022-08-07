@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import Accordium from "../components/Accordium";
 
 const Faq = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <Accordium />
+    </>
+  );
+};
 
-export default Faq
+export default Faq;

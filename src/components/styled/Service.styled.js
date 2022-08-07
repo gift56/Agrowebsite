@@ -115,6 +115,9 @@ export const NextBtns = styled.div`
     span {
       font-weight: 400;
       text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
   .back {

@@ -10,8 +10,7 @@ import Consultion from "../page/Consultion";
 import Partandmaintenace from "../page/Partandmaintenace";
 import Faq from "../page/Faq";
 import Contact from "../page/Contact";
-import Signin from "../page/Signin";
-import Signup from "../page/Signup";
+
 
 const Pageroutes = () => {
   return (
@@ -26,8 +25,6 @@ const Pageroutes = () => {
         <Route path="partandmaintenace" element={<Partandmaintenace />} />
         <Route path="faq" element={<Faq />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="login" element={<Signin />} />
-        <Route path="signup" element={<Signup />} />
       </Routes>
       <Footer />
     </>

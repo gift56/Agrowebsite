@@ -53,6 +53,24 @@ export const FaqTitlearea = styled.div`
       height: 10.4rem;
     }
   }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.tab}) {
+    width: 100%;
+    .leftside {
+      h2 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    .leftside,
+    .rightside {
+      width: 100%;
+    }
+  }
 `;
 
 export const AccordiumWrap = styled.div`
@@ -87,6 +105,14 @@ export const SearchWrap = styled.div`
       font-weight: 400;
       font-size: 18px;
     }
+  }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
+    width: 70%;
+    padding: 12px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    transform: none;
   }
 `;
 
@@ -138,5 +164,8 @@ export const AccordiumBox = styled.div`
       text-align: center;
       color: rgba(255, 255, 255, 0.86);
     }
+  }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.minLap}) {
+    width: 100%;
   }
 `;

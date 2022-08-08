@@ -48,7 +48,7 @@ const Accordium = () => {
           </AccordiumTitlearea>
           <AccordiumBox>
             {AccordiumData.map((item, index) => (
-              <AccordiumWrap>
+              <AccordiumWrap key={index}>
                 <Wrap onClick={() => toggle(index)} key={index}>
                   <h2>{item.question}</h2>
                   <span>

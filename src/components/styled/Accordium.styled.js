@@ -58,7 +58,7 @@ export const FaqTitlearea = styled.div`
 export const AccordiumWrap = styled.div`
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 1px solid ${({ theme }) => theme.whiteColor};
+  border-bottom: 1px solid #B3B3B3;
 `;
 
 export const SearchWrap = styled.div`

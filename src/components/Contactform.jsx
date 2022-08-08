@@ -22,8 +22,13 @@ const Contactform = () => {
                     <input type="text" placeholder="First Name" id="name" />
                   </div>
                 </div>
-                <div className="inputControls">
-                  <input type="text" placeholder="First Name" id="name" />
+                <div className="input">
+                  <label htmlFor="name" className="last">
+                    Last
+                  </label>
+                  <div className="inputControls">
+                    <input type="text" placeholder="Last Name" id="name" />
+                  </div>
                 </div>
               </div>
               <div className="formControl">

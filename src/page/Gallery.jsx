@@ -5,6 +5,7 @@ import GalleryBg from "../agroImg/galleryBg.png";
 import GalleryImgs from "../components/GalleryImgs";
 import Join from "../components/Join";
 
+
 const Gallery = () => {
   return (
     <>

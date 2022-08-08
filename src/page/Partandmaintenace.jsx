@@ -7,6 +7,7 @@ import PMfeatures from "../components/PMfeatures";
 import { AboutHsec } from "../components/styled/Hero";
 import Join from "../components/Join";
 
+
 const Partandmaintenace = () => {
   return (
     <>

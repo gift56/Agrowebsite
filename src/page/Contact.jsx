@@ -1,8 +1,12 @@
 import React from 'react'
+import { AboutHsec } from '../components/styled/Hero'
+import Contactbg from '../agroImg/contact.png'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <AboutHsec bg={Contactbg}>
+
+    </AboutHsec>
   )
 }
 

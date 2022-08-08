@@ -116,7 +116,15 @@ export const Wrappedarea = styled.div`
 
 export const AccordiumBox = styled.div`
   width: 1010px;
-  min-height: 814px;
+  min-height: 790px;
   background: #406a3a;
   padding: 5rem;
+  .moreQ{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 30px;
+  }
 `;

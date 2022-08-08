@@ -16,6 +16,7 @@ import Plus from "../agroImg/plus.png";
 import Minus from "../agroImg/minus.png";
 import RightImg from "../agroImg/Faq.png";
 import Search from "../agroImg/search.png";
+import People from "../agroImg/people.png";
 
 const Accordium = () => {
   const [clicked, setClicked] = useState(false);
@@ -52,9 +53,9 @@ const Accordium = () => {
                   <h2>{item.question}</h2>
                   <span>
                     {clicked === index ? (
-                      <img src={Minus} alt="/"  />
+                      <img src={Minus} alt="/" />
                     ) : (
-                      <img src={Plus} alt="/"  />
+                      <img src={Plus} alt="/" />
                     )}
                   </span>
                 </Wrap>
@@ -63,6 +64,14 @@ const Accordium = () => {
                 ) : null}
               </AccordiumWrap>
             ))}
+            <div className="moreQ">
+              <p className="have">Still have Questions?</p>
+              <span>
+                Can’t find the answer you are looking for? Talk to our friendly
+                team
+              </span>
+              <img src={People} alt="/" />
+            </div>
           </AccordiumBox>
         </Accordiumarea>
       </Container>

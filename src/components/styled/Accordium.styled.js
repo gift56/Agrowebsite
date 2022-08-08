@@ -20,6 +20,11 @@ export const AccordiumTitlearea = styled.div`
     line-height: 21px;
     color: ${({ theme }) => theme.textColor};
   }
+  @media screen and (max-width: 480px) {
+    .ques {
+      font-size: 14px;
+    }
+  }
 `;
 
 export const FaqTitlearea = styled.div`
@@ -129,6 +134,11 @@ export const Wrap = styled.div`
     font-size: 18px;
     padding-top: 10px;
   }
+  @media screen and (max-width: 480px) {
+    h2 {
+      font-size: 15px;
+    }
+  }
 `;
 
 export const Wrappedarea = styled.div`
@@ -167,5 +177,11 @@ export const AccordiumBox = styled.div`
   }
   @media screen and (max-width: ${({ theme }) => theme.mobile.minLap}) {
     width: 100%;
+  }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
+    padding: 2rem;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 1rem;
   }
 `;

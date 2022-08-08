@@ -3,6 +3,7 @@ import { Contactarea, FormContainer, FormTitle } from "./styled/Contact.styled";
 import { Container } from "./styled/Container.styled";
 import { ServiceCon } from "./styled/Service.styled";
 import Mail from "../agroImg/mail.png";
+import Down from "../agroImg/textdown.png";
 
 const Contactform = () => {
   return (
@@ -18,7 +19,7 @@ const Contactform = () => {
               <div className="formControl">
                 <div className="input">
                   <label htmlFor="name">Name</label>
-                  <div className="inputControls">
+                  <div>
                     <input type="text" placeholder="First Name" id="name" />
                   </div>
                 </div>
@@ -26,7 +27,7 @@ const Contactform = () => {
                   <label htmlFor="name" className="last">
                     Last
                   </label>
-                  <div className="inputControls">
+                  <div>
                     <input type="text" placeholder="Last Name" id="name" />
                   </div>
                 </div>
@@ -34,7 +35,7 @@ const Contactform = () => {
               <div className="formControl">
                 <div className="input">
                   <label htmlFor="email">Email</label>
-                  <div className="inputControls">
+                  <div>
                     <input
                       type="text"
                       placeholder="example@gmail.com"
@@ -44,16 +45,31 @@ const Contactform = () => {
                 </div>
                 <div className="input">
                   <label htmlFor="tel">Phone</label>
-                  <div className="inputControls">
+                  <div>
                     <input type="tel" placeholder="+234 90674748883" id="tel" />
                   </div>
                 </div>
               </div>
               <div className="formControl">
-                <div className="input">
+                <div className="input f-width">
                   <label htmlFor="company">Group or Company</label>
+                  <div>
+                    <input type="text" id="company" className="f-width" />
+                  </div>
+                </div>
+              </div>
+              <div className="formControl">
+                <div className="input f-width">
+                  <label htmlFor="help">How can we help ?</label>
                   <div className="inputControls">
-                    <input type="text" id="company" />
+                    <textarea
+                      name="help"
+                      id="help"
+                      cols="30"
+                      rows="10"
+                      className="f-width textfield"
+                    ></textarea>
+                    <img src={Down} alt="/" />
                   </div>
                 </div>
               </div>

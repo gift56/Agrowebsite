@@ -18,7 +18,8 @@ export const FormContainer = styled.div`
   .last {
     visibility: hidden;
   }
-  input {
+  input,
+  textarea {
     background: rgba(33, 124, 44, 0.05);
     border: 1px solid ${({ theme }) => theme.Greenbg};
     border-radius: 4px;
@@ -50,6 +51,23 @@ export const FormContainer = styled.div`
         font-weight: 400;
         font-size: 14.4961px;
         line-height: 22px;
+      }
+    }
+    .f-width {
+      width: 100%;
+    }
+    .textfield {
+      border: none;
+      background-color: transparent;
+    }
+    .inputControls {
+      position: relative;
+      border-bottom: 1px solid ${({ theme }) => theme.textColor};
+      padding-bottom: 10px;
+      img {
+        position: absolute;
+        bottom: 15%;
+        right: 0.05%;
       }
     }
   }

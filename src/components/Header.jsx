@@ -16,7 +16,7 @@ const Header = () => {
     <Headers>
       <Container>
         <Headerone>
-          <img src={LogoImg} alt="logo" className="logo" />
+          <Link to="/" className="logo"><img src={LogoImg} alt="logo" className="logo" /></Link>
           <form>
             <input type="text" />
             <button className="btn">Search</button>

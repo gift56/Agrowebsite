@@ -9,7 +9,9 @@ export const Headerone = styled.div`
   align-items: center;
   padding: 10px 0;
   .logo {
-    width: 14%;
+    img {
+      width: 90%;
+    }
   }
   form {
     display: flex;

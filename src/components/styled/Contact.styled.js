@@ -5,10 +5,19 @@ export const Contactarea = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  /* background-color: ${({ theme }) => theme.whiteColor}; */
+  padding: 10px 0 30px;
 `;
 
-export const FormContainer = styled.div``;
+export const FormContainer = styled.div`
+  background-color: ${({ theme }) => theme.whiteColor};
+  padding: 3rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+`;
 
-export const FormTitle = styled.div``;
+export const FormTitle = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;

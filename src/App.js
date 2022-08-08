@@ -5,6 +5,7 @@ import Pageroutes from "./Routes/Pageroutes";
 const App = () => {
   const theme = {
     Greenbg: "#217C2C",
+    Faqbg: "#406A3A",
     whiteColor: "#FFFFFF",
     inputColor: "#F2F2F2",
     buttonBg: "#FFDD00",

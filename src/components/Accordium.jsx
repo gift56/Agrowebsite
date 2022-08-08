@@ -52,9 +52,9 @@ const Accordium = () => {
                   <h2>{item.question}</h2>
                   <span>
                     {clicked === index ? (
-                      <img src={Minus} alt="" srcset="" />
+                      <img src={Minus} alt="/"  />
                     ) : (
-                      <img src={Plus} alt="" srcset="" />
+                      <img src={Plus} alt="/"  />
                     )}
                   </span>
                 </Wrap>

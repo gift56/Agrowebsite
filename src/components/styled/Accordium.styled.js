@@ -58,6 +58,7 @@ export const FaqTitlearea = styled.div`
 export const AccordiumWrap = styled.div`
   display: flex;
   flex-wrap: wrap;
+  border-bottom: 1px solid ${({ theme }) => theme.whiteColor};
 `;
 
 export const SearchWrap = styled.div`
@@ -94,11 +95,24 @@ export const Wrap = styled.div`
   width: 100%;
   justify-content: space-between;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 27px;
+  cursor: pointer;
+  padding: 10px 0;
+  h2 {
+    color: ${({ theme }) => theme.whiteColor};
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 10px;
+  }
 `;
 
-export const Wrappedarea = styled.div``;
+export const Wrappedarea = styled.div`
+  color: rgba(255, 255, 255, 0.86);
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding-bottom: 18px;
+`;
 
 export const AccordiumBox = styled.div`
   width: 1010px;

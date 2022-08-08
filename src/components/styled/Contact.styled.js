@@ -5,7 +5,10 @@ export const Contactarea = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px 0 30px;
+  padding: 10px 0 0px;
+  @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
+    padding: 30px 0;
+  }
 `;
 
 export const FormContainer = styled.div`
@@ -15,6 +18,7 @@ export const FormContainer = styled.div`
   flex-direction: column;
   border-radius: 7px;
   gap: 1rem;
+  transform: translateY(-190px);
   .last {
     visibility: hidden;
   }
@@ -79,6 +83,24 @@ export const FormContainer = styled.div`
     button {
       background-color: ${({ theme }) => theme.Greenbg};
       color: ${({ theme }) => theme.whiteColor};
+    }
+  }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
+    padding: 1rem;
+    transform: none;
+    .formControl {
+      .input {
+        width: 100%;
+      }
+      input,
+      textarea {
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 590px) {
+    .formControl {
+      flex-direction: column;
     }
   }
 `;

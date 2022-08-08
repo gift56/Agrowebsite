@@ -16,22 +16,26 @@ const Header = () => {
     <Headers>
       <Container>
         <Headerone>
-          <Link to="/" className="logo"><img src={LogoImg} alt="logo" className="logo" /></Link>
+          <Link to="/" className="logo">
+            <img src={LogoImg} alt="logo" className="logo" />
+          </Link>
           <form>
             <input type="text" />
             <button className="btn">Search</button>
           </form>
           <Nav>
+            <Link to="signup">
+              <div>
+                <img src={User} alt="/" />
+                <span>Account</span>
+              </div>
+            </Link>
             <div>
-              <img src={User} alt="" />
-              <span>Account</span>
-            </div>
-            <div>
-              <img src={Heart} alt="" />
+              <img src={Heart} alt="/" />
               <span>Wishlist</span>
             </div>
             <div>
-              <img src={Cart} alt="" />
+              <img src={Cart} alt="/" />
               <span>Cart</span>
             </div>
           </Nav>

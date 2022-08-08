@@ -1,4 +1,5 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 import { Contactarea, FormContainer, FormTitle } from "./styled/Contact.styled";
 import { Container } from "./styled/Container.styled";
 import { ServiceCon } from "./styled/Service.styled";
@@ -6,6 +7,15 @@ import Mail from "../agroImg/mail.png";
 import Down from "../agroImg/textdown.png";
 
 const Contactform = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => console.log(data);
+
+  console.log(errors);
   return (
     <ServiceCon>
       <Container>
@@ -15,20 +25,36 @@ const Contactform = () => {
               <h3>Send us a Message</h3>
               <img src={Mail} alt="/" />
             </FormTitle>
-            <form>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div className="formControl">
                 <div className="input">
-                  <label htmlFor="name">Name</label>
+                  <label htmlFor="firstname">Name</label>
                   <div>
-                    <input type="text" placeholder="First Name" id="name" />
+                    <input
+                      type="text"
+                      placeholder="First Name"
+                      id="firstname"
+                      {...register("firstname", {
+                        required: true,
+                        maxLength: 80,
+                      })}
+                    />
                   </div>
                 </div>
                 <div className="input">
-                  <label htmlFor="name" className="last">
+                  <label htmlFor="lastname" className="last">
                     Last
                   </label>
                   <div>
-                    <input type="text" placeholder="Last Name" id="name" />
+                    <input
+                      type="text"
+                      placeholder="Last Name"
+                      id="lastname"
+                      {...register("lastname", {
+                        required: true,
+                        maxLength: 80,
+                      })}
+                    />
                   </div>
                 </div>
               </div>
@@ -40,13 +66,26 @@ const Contactform = () => {
                       type="text"
                       placeholder="example@gmail.com"
                       id="email"
+                      {...register("email", {
+                        required: true,
+                        pattern: /\S+@\S+\.\S+/,
+                      })}
                     />
                   </div>
                 </div>
                 <div className="input">
                   <label htmlFor="tel">Phone</label>
                   <div>
-                    <input type="tel" placeholder="+234 90674748883" id="tel" />
+                    <input
+                      type="tel"
+                      placeholder="+234 90674748883"
+                      id="tel"
+                      {...register("tel", {
+                        required: true,
+                        minLength: 9,
+                        maxLength: 12,
+                      })}
+                    />
                   </div>
                 </div>
               </div>

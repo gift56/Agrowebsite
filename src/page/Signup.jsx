@@ -7,6 +7,7 @@ import { Container } from "../components/styled/Container.styled";
 import Createimg from "../agroImg/createImg.png";
 import Logo from "../agroImg/logo.svg";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
+import { Buttons } from "../components/styled/Features.styled";
 
 const Signup = () => {
   return (
@@ -51,6 +52,9 @@ const Signup = () => {
             <div className="option">
               <p>or</p>
             </div>
+            <Buttons>
+                <button className="btn"></button>
+            </Buttons>
           </div>
           <div className="rightside"></div>
         </SignupFormcontainer>

@@ -6,8 +6,11 @@ import {
 import { Container } from "../components/styled/Container.styled";
 import Createimg from "../agroImg/createImg.png";
 import Logo from "../agroImg/logo.svg";
+import Goggle from "../agroImg/goggles.png";
+import Facebook from "../agroImg/facebooks.png";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { Buttons } from "../components/styled/Features.styled";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   return (
@@ -53,10 +56,22 @@ const Signup = () => {
               <p>or</p>
             </div>
             <Buttons>
-                <button className="btn"></button>
+              <button className="btn sign">
+                <img src={Goggle} alt="/" />
+                Sign up with Google
+              </button>
+              <button className="btn sign">
+                <img src={Facebook} alt="/" />
+                Sign up with Facebook
+              </button>
             </Buttons>
+            <span>
+              Already have an account yet? <Link to="login">Sign in</Link>
+            </span>
           </div>
-          <div className="rightside"></div>
+          <div className="rightside">
+            <img src={Createimg} alt="/" />
+          </div>
         </SignupFormcontainer>
       </Container>
     </Signuparea>

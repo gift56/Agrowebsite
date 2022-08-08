@@ -71,6 +71,16 @@ export const FormContainer = styled.div`
       }
     }
   }
+  .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    button {
+      background-color: ${({ theme }) => theme.Greenbg};
+      color: ${({ theme }) => theme.whiteColor};
+    }
+  }
 `;
 
 export const FormTitle = styled.div`

@@ -58,7 +58,7 @@ const Contactform = () => {
                   </div>
                 </div>
               </div>
-              <div className="formControl">
+              <div className="formControl lastp">
                 <div className="input f-width">
                   <label htmlFor="help">How can we help ?</label>
                   <div className="inputControls">
@@ -72,6 +72,9 @@ const Contactform = () => {
                     <img src={Down} alt="/" />
                   </div>
                 </div>
+              </div>
+              <div className="submit">
+                <button className="btn">Submit</button>
               </div>
             </form>
           </FormContainer>

@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { Contactarea, FormContainer, FormTitle } from "./styled/Contact.styled";
 import { Container } from "./styled/Container.styled";
@@ -7,13 +8,17 @@ import Mail from "../agroImg/mail.png";
 import Down from "../agroImg/textdown.png";
 
 const Contactform = () => {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    navigate("/");
+    console.log(data);
+  };
 
   console.log(errors);
   return (

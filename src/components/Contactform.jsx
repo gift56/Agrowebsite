@@ -107,6 +107,10 @@ const Contactform = () => {
                       cols="30"
                       rows="10"
                       className="f-width textfield"
+                      {...register("help", {
+                        required: true,
+                        maxLength: 80,
+                      })}
                     ></textarea>
                     <img src={Down} alt="/" />
                   </div>

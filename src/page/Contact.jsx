@@ -3,6 +3,8 @@ import { AboutHsec } from "../components/styled/Hero";
 import Contactbg from "../agroImg/contact.png";
 import AboutH from "../components/AboutH";
 import Contactform from "../components/Contactform";
+import AboutClients from "../components/AboutClients";
+import Join from "../components/Join";
 
 const Contact = () => {
   return (
@@ -11,6 +13,8 @@ const Contact = () => {
         <AboutH title="Contact Us" detailsT="Contact Us" />
       </AboutHsec>
       <Contactform />
+      <AboutClients />
+      <Join />
     </>
   );
 };

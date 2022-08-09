@@ -18,6 +18,11 @@ const Signup = () => {
   const showPassword = () => {
     setEye(!eye);
   };
+  const [confirmEye, setConfirmeye] = useState(false);
+
+  const showConfirmPassword = () => {
+    setConfirmeye(!eye);
+  };
   return (
     <Signuparea>
       <Container>
@@ -37,44 +42,53 @@ const Signup = () => {
               <div className="formControl">
                 <label htmlFor="password">Password</label>
                 <input
-                  type="text"
+                  type={!eye ? "password" : "text"}
                   id="password"
                   placeholder="*********************"
                 />
                 <div className="show">
-                  <AiFillEyeInvisible onClick={showPassword} />
-                  <AiFillEye onClick={showPassword} />
+                  {!eye ? (
+                    <AiFillEyeInvisible onClick={showPassword} />
+                  ) : (
+                    <AiFillEye onClick={showPassword} />
+                  )}
                 </div>
               </div>
               <div className="formControl">
                 <label htmlFor="confirmPassword">Confirm Password</label>
                 <input
-                  type="text"
+                  type={!confirmEye ? "password" : "text"}
                   id="confirmPassword"
                   placeholder="*********************"
                 />
                 <div className="show">
-                  <AiFillEyeInvisible />
-                  <AiFillEye />
+                  {!confirmEye ? (
+                    <AiFillEyeInvisible onClick={showConfirmPassword} />
+                  ) : (
+                    <AiFillEye onClick={showConfirmPassword} />
+                  )}
                 </div>
               </div>
+              <button className="btn">Sign up</button>
             </form>
-            <div className="option">
-              <p>or</p>
+            <div className="moreInfo">
+              <div className="option">
+                <p>or</p>
+              </div>
+              <Buttons>
+                <button className="btn sign">
+                  <img src={Goggle} alt="/" />
+                  Sign up with Google
+                </button>
+                <button className="btn sign">
+                  <img src={Facebook} alt="/" />
+                  Sign up with Facebook
+                </button>
+              </Buttons>
+              <span>
+                Already have an account yet? <Link to="login">Sign in</Link>
+              </span>
             </div>
-            <Buttons>
-              <button className="btn sign">
-                <img src={Goggle} alt="/" />
-                Sign up with Google
-              </button>
-              <button className="btn sign">
-                <img src={Facebook} alt="/" />
-                Sign up with Facebook
-              </button>
-            </Buttons>
-            <span>
-              Already have an account yet? <Link to="login">Sign in</Link>
-            </span>
           </div>
           <div className="rightside">
             <img src={Createimg} alt="/" />

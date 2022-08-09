@@ -55,6 +55,7 @@ export const FormContainer = styled.div`
         font-weight: 400;
         font-size: 14.4961px;
         line-height: 22px;
+        color: ${({ theme }) => theme.textColor};
       }
     }
     .f-width {

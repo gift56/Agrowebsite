@@ -154,4 +154,9 @@ export const SignupFormcontainer = styled.div`
       height: 790px;
     }
   }
+  @media screen and (max-width: 1488px) {
+    .secondbtn {
+      gap: 1rem !important;      
+    }
+  }
 `;

@@ -13,11 +13,22 @@ export const SignupFormcontainer = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     background-color: ${({ theme }) => theme.whiteColor};
     width: 40%;
     height: 700px;
-    padding: 3rem;
+    padding: 2rem;
+    .logo {
+      img {
+        width: 90%;
+      }
+    }
+    h2 {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 45px;
+      color: ${({ theme }) => theme.textColor};
+    }
   }
   .rightside {
     img {

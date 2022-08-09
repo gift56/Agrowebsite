@@ -44,7 +44,7 @@ export const Joinarea = styled.div`
     transform: translateX(15px);
     input {
       width: 100%;
-      padding: 11px 0;
+      padding: 12px 0;
       background-color: ${({ theme }) => theme.inputColor};
       border: 1px solid ${({ theme }) => theme.buttonBg};
       border-radius: 6px 0px 0px 6px;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Signuparea,
   SignupFormcontainer,
@@ -13,13 +13,20 @@ import { Buttons } from "../components/styled/Features.styled";
 import { Link } from "react-router-dom";
 
 const Signup = () => {
+  const [eye, setEye] = useState(false);
+
+  const showPassword = () => {
+    setEye(!eye);
+  };
   return (
     <Signuparea>
       <Container>
         <SignupFormcontainer>
           <div className="leftside">
             <div className="logo">
-              <img src={Logo} alt="/" />
+              <Link to="/">
+                <img src={Logo} alt="/" />
+              </Link>
             </div>
             <h2>Create Account</h2>
             <form>
@@ -35,8 +42,8 @@ const Signup = () => {
                   placeholder="*********************"
                 />
                 <div className="show">
-                  <AiFillEyeInvisible />
-                  <AiFillEye />
+                  <AiFillEyeInvisible onClick={showPassword} />
+                  <AiFillEye onClick={showPassword} />
                 </div>
               </div>
               <div className="formControl">

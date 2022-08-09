@@ -95,6 +95,19 @@ export const SignupFormcontainer = styled.div`
           font-size: 18px;
           font-weight: 400;
           line-height: 27px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 1px;
+            background-color: red;
+          }
         }
       }
     }

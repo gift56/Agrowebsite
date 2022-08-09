@@ -75,7 +75,7 @@ const Signup = () => {
               <div className="option">
                 <p>or</p>
               </div>
-              <Buttons>
+              <Buttons className="secondbtn">
                 <button className="btn sign">
                   <img src={Goggle} alt="/" />
                   Sign up with Google

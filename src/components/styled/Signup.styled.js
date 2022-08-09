@@ -86,6 +86,8 @@ export const SignupFormcontainer = styled.div`
       display: flex;
       gap: 0.5rem;
       flex-direction: column;
+      width: 100%;
+      padding: 10px 0;
       .option {
         display: flex;
         justify-content: center;
@@ -103,8 +105,8 @@ export const SignupFormcontainer = styled.div`
             content: "";
             position: absolute;
             top: 56%;
-            left: -14%;
-            width: 58%;
+            left: 0%;
+            width: 45%;
             height: 1px;
             background-color: ${({ theme }) => theme.textColor};
           }
@@ -112,11 +114,25 @@ export const SignupFormcontainer = styled.div`
             content: "";
             position: absolute;
             top: 56%;
-            right: -14%;
-            width: 58%;
+            right: 0%;
+            width: 45%;
             height: 1px;
             background-color: ${({ theme }) => theme.textColor};
           }
+        }
+      }
+      .secondbtn {
+        display: flex;
+        gap: 5rem;
+        width: 100%;
+        .sign {
+          background: #fbfbfb;
+          border: 0.818886px solid ${({ theme }) => theme.Greenbg};
+          border-radius: 3.27555px;
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          font-weight: 400;
         }
       }
     }

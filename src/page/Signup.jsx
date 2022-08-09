@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useForm, useWatch } from "react-hook-form";
 import {
   Signuparea,
   SignupFormcontainer,
@@ -10,19 +11,34 @@ import Goggle from "../agroImg/goggles.png";
 import Facebook from "../agroImg/facebooks.png";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { Buttons } from "../components/styled/Features.styled";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const [eye, setEye] = useState(false);
+  const [confirmEye, setConfirmeye] = useState(false);
+  const navigate = useNavigate();
 
   const showPassword = () => {
     setEye(!eye);
   };
-  const [confirmEye, setConfirmeye] = useState(false);
 
   const showConfirmPassword = () => {
     setConfirmeye(!eye);
   };
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm({
+    mode: "onChange",
+  });
+  const onSubmit = (data) => {
+    navigate("/");
+    console.log(data);
+  };
+
+  const password = watch("password");
   return (
     <Signuparea>
       <Container className="con">
@@ -34,10 +50,17 @@ const Signup = () => {
               </Link>
             </div>
             <h2>Create Account</h2>
-            <form>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div className="formControl">
                 <label htmlFor="email">Email Address</label>
-                <input type="text" placeholder="Enter your email" />
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  {...register("email", {
+                    required: true,
+                    pattern: /\S+@\S+\.\S+/,
+                  })}
+                />
               </div>
               <div className="formControl">
                 <label htmlFor="password">Password</label>
@@ -45,6 +68,17 @@ const Signup = () => {
                   type={!eye ? "password" : "text"}
                   id="password"
                   placeholder="*********************"
+                  {...register("password", {
+                    required: true,
+                    minLength: {
+                      value: 6,
+                      message: "Password must be longer than six Character",
+                    },
+                    maxLength: {
+                      value: 20,
+                      message: "Maximum should be at least 20",
+                    },
+                  })}
                 />
                 <div className="show">
                   {!eye ? (
@@ -53,6 +87,7 @@ const Signup = () => {
                     <AiFillEye onClick={showPassword} />
                   )}
                 </div>
+                {errors.password && <span>{errors.password.message}</span>}
               </div>
               <div className="formControl">
                 <label htmlFor="confirmPassword">Confirm Password</label>
@@ -60,6 +95,11 @@ const Signup = () => {
                   type={!confirmEye ? "password" : "text"}
                   id="confirmPassword"
                   placeholder="*********************"
+                  {...register("confirmPassword", {
+                    required: true,
+                    validate: (value) =>
+                      value === password || "Password does not match",
+                  })}
                 />
                 <div className="show">
                   {!confirmEye ? (
@@ -68,6 +108,9 @@ const Signup = () => {
                     <AiFillEye onClick={showConfirmPassword} />
                   )}
                 </div>
+                {errors.confirmPassword && (
+                  <span>{errors.confirmPassword.message}</span>
+                )}
               </div>
               <button className="btn">Sign up</button>
             </form>

@@ -102,11 +102,20 @@ export const SignupFormcontainer = styled.div`
           &::before {
             content: "";
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 50px;
+            top: 56%;
+            left: -14%;
+            width: 58%;
             height: 1px;
-            background-color: red;
+            background-color: ${({ theme }) => theme.textColor};
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: 56%;
+            right: -14%;
+            width: 58%;
+            height: 1px;
+            background-color: ${({ theme }) => theme.textColor};
           }
         }
       }

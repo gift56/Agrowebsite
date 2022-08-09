@@ -156,7 +156,49 @@ export const SignupFormcontainer = styled.div`
   }
   @media screen and (max-width: 1488px) {
     .secondbtn {
-      gap: 1rem !important;      
+      gap: 1rem !important;
+    }
+  }
+  @media screen and (max-width: 1314px) {
+    .secondbtn {
+      .sign {
+        gap: 0 !important;
+      }
+    }
+  }
+  @media screen and (max-width: 1278px) {
+    .secondbtn {
+      .sign {
+        img {
+          display: none;
+        }
+        justify-content: center;
+      }
+    }
+  }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.optionminLap}) {
+    .secondbtn {
+      .sign {
+        font-size: 12px;
+      }
+    }
+  }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.tab2}) {
+    .rightside {
+      img {
+        display: none;
+      }
+    }
+    .leftside {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 403px) {
+    .leftside {
+      padding: 1rem;
+      .sign {
+        line-height: 14px;
+      }
     }
   }
 `;

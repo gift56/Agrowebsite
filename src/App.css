@@ -25,7 +25,12 @@ img {
     display: none !important;
   }
 }
-a{
+a {
   color: inherit;
   text-decoration: none;
+}
+@media screen and (max-width: 403px) {
+  .con {
+    padding: 0 !important;
+  }
 }

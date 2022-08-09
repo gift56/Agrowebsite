@@ -25,7 +25,7 @@ const Signup = () => {
   };
   return (
     <Signuparea>
-      <Container>
+      <Container className="con">
         <SignupFormcontainer>
           <div className="leftside">
             <div className="logo">

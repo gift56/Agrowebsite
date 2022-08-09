@@ -196,9 +196,21 @@ export const SignupFormcontainer = styled.div`
   @media screen and (max-width: 403px) {
     .leftside {
       padding: 1rem;
+      h2 {
+        font-size: 25px;
+        line-height: 30px;
+      }
+      form {
+        label {
+          font-size: 14px !important;
+        }
+      }
       .sign {
         line-height: 14px;
       }
+    }
+    span {
+      font-size: 14px !important;
     }
   }
 `;

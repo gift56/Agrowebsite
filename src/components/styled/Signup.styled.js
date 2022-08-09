@@ -135,6 +135,13 @@ export const SignupFormcontainer = styled.div`
           font-weight: 400;
         }
       }
+      span {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(51, 51, 51, 0.8);
+        padding: 20px 0;
+      }
     }
   }
   .rightside {

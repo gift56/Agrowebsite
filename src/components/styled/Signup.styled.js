@@ -141,6 +141,10 @@ export const SignupFormcontainer = styled.div`
         line-height: 24px;
         color: rgba(51, 51, 51, 0.8);
         padding: 20px 0;
+        a {
+          color: ${({ theme }) => theme.Greenbg};
+          font-weight: 500;
+        }
       }
     }
   }

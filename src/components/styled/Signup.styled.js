@@ -16,7 +16,7 @@ export const SignupFormcontainer = styled.div`
     gap: 1rem;
     background-color: ${({ theme }) => theme.whiteColor};
     width: 40%;
-    min-height: 700px;
+    min-height: 710px;
     padding: 2.5rem;
     .logo {
       img {
@@ -150,6 +150,7 @@ export const SignupFormcontainer = styled.div`
   }
   .rightside {
     img {
+      margin-top: 5px;
       height: 790px;
     }
   }

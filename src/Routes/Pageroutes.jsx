@@ -12,6 +12,7 @@ import Faq from "../page/Faq";
 import Signin from "../page/Signin";
 import Contact from "../page/Contact";
 import Signup from "../page/Signup";
+import Account from "../page/Account";
 
 const Pageroutes = () => {
   const HeaderRoutes = () => {
@@ -28,16 +29,17 @@ const Pageroutes = () => {
       <Routes>
         <Route path="/" element={<HeaderRoutes />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="service" element={<Service />} />
-          <Route path="gallerys" element={<Gallery />} />
-          <Route path="consultion" element={<Consultion />} />
-          <Route path="partandmaintenace" element={<Partandmaintenace />} />
-          <Route path="faq" element={<Faq />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/service" element={<Service />} />
+          <Route path="/gallerys" element={<Gallery />} />
+          <Route path="/consultion" element={<Consultion />} />
+          <Route path="/partandmaintenace" element={<Partandmaintenace />} />
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/contact" element={<Contact />} />
         </Route>
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Signin />} />
+        <Route path="/account" element={<Account />} />
       </Routes>
     </>
   );

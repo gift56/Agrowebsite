@@ -24,7 +24,7 @@ const Header = () => {
             <button className="btn">Search</button>
           </form>
           <Nav>
-            <Link to="signup">
+            <Link to="/signup">
               <div>
                 <img src={User} alt="/" />
                 <span>Account</span>
@@ -67,31 +67,31 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="about" onClick={() => setIsmobile(false)}>
+              <Link to="/about" onClick={() => setIsmobile(false)}>
                 About Us
               </Link>
             </li>
             <li>
-              <Link to="service" onClick={() => setIsmobile(false)}>
+              <Link to="/service" onClick={() => setIsmobile(false)}>
                 Services
               </Link>
             </li>
             <li>Stock</li>
             <li>Hire</li>
             <li>
-              <Link to="gallerys">Gallery</Link>
+              <Link to="/gallerys">Gallery</Link>
             </li>
             <li>
-              <Link to="consultion">Consultation</Link>
+              <Link to="/consultion">Consultation</Link>
             </li>
             <li>
-              <Link to="partandmaintenace">Parts & Maintenance </Link>
+              <Link to="/partandmaintenace">Parts & Maintenance </Link>
             </li>
             <li>
-              <Link to="faq">FAQs</Link>
+              <Link to="/faq">FAQs</Link>
             </li>
             <li>
-              <Link to="contact">Contact Us</Link>
+              <Link to="/contact">Contact Us</Link>
             </li>
           </ul>
         </Container>

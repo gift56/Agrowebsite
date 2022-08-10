@@ -30,7 +30,7 @@ const Signin = () => {
     mode: "onChange",
   });
   const onSubmit = (data) => {
-    navigate("/");
+    navigate("/account");
     console.log(data);
   };
   return (

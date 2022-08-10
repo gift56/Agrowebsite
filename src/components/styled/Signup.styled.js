@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const Signuparea = styled.section`
-  background: #e5e5e5;
+  background-image: url(${({ bg }) => bg});
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 export const SignupFormcontainer = styled.div`
@@ -80,10 +82,10 @@ export const SignupFormcontainer = styled.div`
             cursor: pointer;
           }
         }
-        span{
-            color: red;
-            font-size: 14px;
-            line-height: 0;
+        span {
+          color: red;
+          font-size: 14px;
+          line-height: 0;
         }
       }
     }
@@ -199,10 +201,10 @@ export const SignupFormcontainer = styled.div`
     }
   }
   @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
-    .formControl{
-     span{
+    .formControl {
+      span {
         line-height: 18px !important;
-     }   
+      }
     }
   }
   @media screen and (max-width: 403px) {

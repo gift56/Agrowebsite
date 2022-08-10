@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useForm, useWatch } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import {
   Signuparea,
   SignupFormcontainer,
@@ -8,6 +8,7 @@ import { Container } from "../components/styled/Container.styled";
 import Createimg from "../agroImg/createImg.png";
 import Logo from "../agroImg/logo.svg";
 import Goggle from "../agroImg/goggles.png";
+import Bg from "../agroImg/forgetBg.png";
 import Facebook from "../agroImg/facebooks.png";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { Buttons } from "../components/styled/Features.styled";
@@ -40,7 +41,7 @@ const Signup = () => {
 
   const password = watch("password");
   return (
-    <Signuparea>
+    <Signuparea bg={Bg}>
       <Container className="con">
         <SignupFormcontainer>
           <div className="leftside">

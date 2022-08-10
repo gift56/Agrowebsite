@@ -121,8 +121,10 @@ const Signup = () => {
               </div>
               <Buttons className="secondbtn">
                 <button className="btn sign">
-                  <img src={Goggle} alt="/" />
-                  Sign up with Google
+                  <a href="" target="_blank" >
+                    <img src={Goggle} alt="/" />
+                    Sign up with Google
+                  </a>
                 </button>
                 <button className="btn sign">
                   <img src={Facebook} alt="/" />

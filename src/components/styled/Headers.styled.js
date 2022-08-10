@@ -29,7 +29,7 @@ export const Headerone = styled.div`
       color: ${({ theme }) => theme.textColor};
       &:focus {
         outline: none;
-        border: 2px solid ${({ theme }) => theme.Greenbg};
+        border: 1px solid ${({ theme }) => theme.Greenbg};
       }
     }
     button {

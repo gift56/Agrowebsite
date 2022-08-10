@@ -4,13 +4,14 @@ export const Signuparea = styled.section`
   background-image: url(${({ bg }) => bg});
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: hidden;
 `;
 
 export const SignupFormcontainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 110vh;
+  min-height: 100vh;
   .leftside {
     display: flex;
     align-items: center;
@@ -136,10 +137,12 @@ export const SignupFormcontainer = styled.div`
           background: #fbfbfb;
           border: 0.818886px solid ${({ theme }) => theme.Greenbg};
           border-radius: 3.27555px;
-          display: flex;
-          gap: 10px;
-          align-items: center;
           font-weight: 400;
+          a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
         }
       }
       span {
@@ -187,6 +190,7 @@ export const SignupFormcontainer = styled.div`
     .secondbtn {
       .sign {
         font-size: 12px;
+        line-height: 14px;
       }
     }
   }
@@ -218,9 +222,6 @@ export const SignupFormcontainer = styled.div`
         label {
           font-size: 14px !important;
         }
-      }
-      .sign {
-        line-height: 14px;
       }
     }
     span {

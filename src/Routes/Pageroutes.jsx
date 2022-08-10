@@ -36,8 +36,8 @@ const Pageroutes = () => {
           <Route path="faq" element={<Faq />} />
           <Route path="contact" element={<Contact />} />
         </Route>
-        <Route path="signup" element={<Signup />} />
-        <Route path="login" element={<Signin />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Signin />} />
       </Routes>
     </>
   );

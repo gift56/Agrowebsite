@@ -37,7 +37,7 @@ const Signin = () => {
     <Signuparea bg={Bg}>
       <Container className="con">
         <SignupFormcontainer>
-          <div className="leftside">
+          <div className="leftside radius">
             <div className="logo">
               <Link to="/">
                 <img src={Logo} alt="/" />

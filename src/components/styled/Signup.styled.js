@@ -5,6 +5,9 @@ export const Signuparea = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   overflow-y: hidden;
+  .radius {
+    border-radius: 7px !important;
+  }
 `;
 
 export const SignupFormcontainer = styled.div`

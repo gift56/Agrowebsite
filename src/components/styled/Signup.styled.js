@@ -80,6 +80,11 @@ export const SignupFormcontainer = styled.div`
             cursor: pointer;
           }
         }
+        span{
+            color: red;
+            font-size: 14px;
+            line-height: 0;
+        }
       }
     }
     .moreInfo {
@@ -191,6 +196,13 @@ export const SignupFormcontainer = styled.div`
     }
     .leftside {
       width: 100%;
+    }
+  }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
+    .formControl{
+     span{
+        line-height: 18px !important;
+     }   
     }
   }
   @media screen and (max-width: 403px) {

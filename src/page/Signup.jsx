@@ -121,14 +121,16 @@ const Signup = () => {
               </div>
               <Buttons className="secondbtn">
                 <button className="btn sign">
-                  <a href="" target="_blank" >
+                  <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
                     <img src={Goggle} alt="/" />
                     Sign up with Google
                   </a>
                 </button>
                 <button className="btn sign">
-                  <img src={Facebook} alt="/" />
-                  Sign up with Facebook
+                  <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <img src={Facebook} alt="/" />
+                    Sign up with Facebook
+                  </a>
                 </button>
               </Buttons>
               <span>

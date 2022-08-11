@@ -8,7 +8,7 @@ const Dashboard = () => {
     <ServiceCon>
       <Container>
         <DashboardCon>
-            hello world
+          <LeftSideDash></LeftSideDash>
         </DashboardCon>
       </Container>
     </ServiceCon>

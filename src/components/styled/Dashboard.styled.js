@@ -35,8 +35,8 @@ export const LeftSideDash = styled.nav`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      form{
-        positon:relative
+      form {
+        position: relative;
       }
     }
   }

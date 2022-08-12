@@ -27,7 +27,13 @@ const Dashboard = () => {
                   />
                 </form>
               </div>
-
+              <ul>
+                <li>Profile</li>
+                <li>Orders</li>
+                <li>Notifications</li>
+                <li>Change Password</li>
+                <li>Newsletter Preferences</li>
+              </ul>
             </div>
           </LeftSideDash>
           <DashboardPages />

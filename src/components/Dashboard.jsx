@@ -1,8 +1,7 @@
 import React from "react";
 import DashboardPages from "../page/DashboardPages";
 import { Container } from "./styled/Container.styled";
-import { DashboardCon, LeftSideDash } from "./styled/Dashboard.styled";
-import { ServiceCon } from "./styled/Service.styled";
+import { DashboardCon, DashCon, LeftSideDash } from "./styled/Dashboard.styled";
 import Box from "../agroImg/square.png";
 import Pencil from "../agroImg/pencil.png";
 import { FaUserAlt } from "react-icons/fa";
@@ -10,10 +9,11 @@ import { IoMailUnreadOutline } from "react-icons/io5";
 import { RiLockPasswordLine } from "react-icons/ri";
 import { BsCreditCard2Back } from "react-icons/bs";
 import { FiClipboard } from "react-icons/fi";
+import { BiLogOut } from "react-icons/bi";
 
 const Dashboard = () => {
   return (
-    <ServiceCon>
+    <DashCon>
       <Container>
         <DashboardCon>
           <LeftSideDash>
@@ -54,11 +54,15 @@ const Dashboard = () => {
                 </li>
               </ul>
             </div>
+            <button className="btn">
+              <BiLogOut />
+              Log out
+            </button>
           </LeftSideDash>
           <DashboardPages />
         </DashboardCon>
       </Container>
-    </ServiceCon>
+    </DashCon>
   );
 };
 

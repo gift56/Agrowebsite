@@ -6,7 +6,7 @@ import { ServiceCon } from "./styled/Service.styled";
 import Box from "../agroImg/square.png";
 import Pencil from "../agroImg/pencil.png";
 import { FaUserAlt } from "react-icons/fa";
-import { IoMailUnreadOutline } from "react-icons/io";
+import { IoMailUnreadOutline } from "react-icons/io5";
 import { RiLockPasswordLine } from "react-icons/ri";
 import { BsCreditCard2Back } from "react-icons/bs";
 import { FiClipboard } from "react-icons/fi";
@@ -33,11 +33,25 @@ const Dashboard = () => {
                 </form>
               </div>
               <ul>
-                <li>Profile</li>
-                <li>Orders</li>
-                <li>Notifications</li>
-                <li>Change Password</li>
-                <li>Newsletter Preferences</li>
+                <li>
+                  <FaUserAlt /> Profile
+                </li>
+                <li>
+                  <FiClipboard />
+                  Orders
+                </li>
+                <li>
+                  <IoMailUnreadOutline />
+                  Notifications
+                </li>
+                <li>
+                  <RiLockPasswordLine />
+                  Change Password
+                </li>
+                <li>
+                  <BsCreditCard2Back />
+                  Newsletter Preferences
+                </li>
               </ul>
             </div>
           </LeftSideDash>

@@ -9,6 +9,7 @@ const Dashboard = () => {
       <Container>
         <DashboardCon>
           <LeftSideDash></LeftSideDash>
+          <DashboardPages />
         </DashboardCon>
       </Container>
     </ServiceCon>

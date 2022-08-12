@@ -31,6 +31,7 @@ const Dashboard = () => {
                     accept="*.png *.jpg *.jpeg"
                   />
                 </form>
+                <h2>Simon Daniel</h2>
               </div>
               <ul>
                 <li>

@@ -28,5 +28,16 @@ export const LeftSideDash = styled.nav`
     gap: 5rem;
     padding: 1rem;
     border-radius: 12px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07);
+    z-index: 1;
+    .fileForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      form{
+        positon:relative
+      }
+    }
   }
 `;

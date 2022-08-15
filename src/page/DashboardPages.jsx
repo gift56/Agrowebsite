@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Profile from "../components/Profile";
 
 const DashboardPages = () => {
   return (
-    <div>DashboardPages</div>
-  )
-}
+    <>
+      <Profile />
+    </>
+  );
+};
 
-export default DashboardPages
+export default DashboardPages;

@@ -39,6 +39,7 @@ export const LeftSideDash = styled.nav`
         position: relative;
         .editPen {
           position: absolute;
+          top: 0;
         }
       }
     }

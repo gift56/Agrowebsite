@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const DashCon = styled.section`
   background-color: ${({ theme }) => theme.featureBg};
-  min-height: 100vh;
 `;
 
 export const DashboardCon = styled.div`

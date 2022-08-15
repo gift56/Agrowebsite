@@ -18,9 +18,6 @@ export const LeftSideDash = styled.nav`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  svg {
-    font-size: 18px;
-  }
   .sidebar {
     background-color: ${({ theme }) => theme.whiteColor};
     min-height: 530px;
@@ -75,6 +72,9 @@ export const LeftSideDash = styled.nav`
           font-size: 16px;
           font-weight: 600;
         }
+        svg {
+          font-size: 18px;
+        }
         &:hover {
           background-color: ${({ theme }) => theme.Greenbg};
           cursor: pointer;
@@ -87,7 +87,7 @@ export const LeftSideDash = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.3rem;
     background-color: ${({ theme }) => theme.Greenbg};
     color: ${({ theme }) => theme.whiteColor};
   }

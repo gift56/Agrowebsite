@@ -56,7 +56,7 @@ const Dashboard = () => {
               </ul>
             </div>
             <button className="btn">
-              <BiLogOut />
+              <BiLogOut size={25}/>
               Log out
             </button>
           </LeftSideDash>

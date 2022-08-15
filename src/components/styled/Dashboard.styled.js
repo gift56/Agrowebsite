@@ -13,11 +13,14 @@ export const DashboardCon = styled.div`
 `;
 
 export const LeftSideDash = styled.nav`
-  width: 307px;
+  width: 300px;
   min-height: 600px;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  svg {
+    font-size: 18px;
+  }
   .sidebar {
     background-color: ${({ theme }) => theme.whiteColor};
     min-height: 530px;
@@ -26,7 +29,7 @@ export const LeftSideDash = styled.nav`
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 12px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07);
     z-index: 1;
@@ -35,8 +38,15 @@ export const LeftSideDash = styled.nav`
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      h2 {
+        font-size: 20px;
+        font-weight: 600;
+      }
       form {
         position: relative;
+        .profileImg {
+          width: 88%;
+        }
         img {
           cursor: pointer;
         }
@@ -52,15 +62,19 @@ export const LeftSideDash = styled.nav`
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
-      gap: 1rem;
       li {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        gap: 1rem;
+        gap: 0.5rem;
         width: 100%;
         padding: 1rem;
         color: ${({ theme }) => theme.textColor};
+        border-radius: 4px;
+        span {
+          font-size: 16px;
+          font-weight: 600;
+        }
         &:hover {
           background-color: ${({ theme }) => theme.Greenbg};
           cursor: pointer;
@@ -74,7 +88,7 @@ export const LeftSideDash = styled.nav`
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background-color:  ${({ theme }) => theme.Greenbg};
-    color:  ${({ theme }) => theme.whiteColor};
+    background-color: ${({ theme }) => theme.Greenbg};
+    color: ${({ theme }) => theme.whiteColor};
   }
 `;

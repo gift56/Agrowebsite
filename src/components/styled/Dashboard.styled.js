@@ -25,7 +25,7 @@ export const LeftSideDash = styled.nav`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 2rem;
     padding: 1rem;
     border-radius: 12px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07);
@@ -37,11 +37,44 @@ export const LeftSideDash = styled.nav`
       align-items: center;
       form {
         position: relative;
+        img {
+          cursor: pointer;
+        }
         .editPen {
           position: absolute;
-          top: 0;
+          bottom: 0;
+          right: -7.2%;
         }
       }
     }
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 1rem;
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        width: 100%;
+        padding: 1rem;
+        color: ${({ theme }) => theme.textColor};
+        &:hover {
+          background-color: ${({ theme }) => theme.Greenbg};
+          cursor: pointer;
+          color: ${({ theme }) => theme.whiteColor};
+        }
+      }
+    }
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color:  ${({ theme }) => theme.Greenbg};
+    color:  ${({ theme }) => theme.whiteColor};
   }
 `;

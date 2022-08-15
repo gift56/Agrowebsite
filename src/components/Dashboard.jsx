@@ -35,23 +35,23 @@ const Dashboard = () => {
               </div>
               <ul>
                 <li>
-                  <FaUserAlt /> Profile
+                  <FaUserAlt /> <span>Profile</span>
                 </li>
                 <li>
                   <FiClipboard />
-                  Orders
+                  <span>Orders</span>
                 </li>
                 <li>
                   <IoMailUnreadOutline />
-                  Notifications
+                  <span>Notifications</span>
                 </li>
                 <li>
                   <RiLockPasswordLine />
-                  Change Password
+                  <span>Change Password</span>
                 </li>
                 <li>
                   <BsCreditCard2Back />
-                  Newsletter Preferences
+                  <span>Newsletter Preferences</span>
                 </li>
               </ul>
             </div>

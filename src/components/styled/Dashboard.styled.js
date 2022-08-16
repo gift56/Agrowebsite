@@ -170,15 +170,49 @@ export const NotificationCon = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-
   border-radius: 12px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07);
-  min-height: 669px;
+  min-height: 610px;
   .titleCon {
     background-color: ${({ theme }) => theme.whiteColor};
     padding: 1rem;
     margin-bottom: 10px;
     border: 0.5px solid ${({ theme }) => theme.Greenbg};
     border-radius: 12px;
+    h3 {
+      font-size: 20px;
+      font-weight: 400;
+      padding-left: 20px;
+    }
+  }
+  .inboxArea {
+    background-color: ${({ theme }) => theme.whiteColor};
+    min-height: inherit;
+    border: 0.5px solid ${({ theme }) => theme.Greenbg};
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      width: 80%;
+      form {
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 30px;
+        #radio {
+          accent-color: ${({ theme }) => theme.Greenbg};
+        }
+      }
+      .MailArea{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
+    }
   }
 `;

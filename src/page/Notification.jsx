@@ -80,7 +80,7 @@ const Notification = () => {
               <div className="inboxArea">
                 <div className="container">
                   <form>
-                    <input type="radio" id="radio" />
+                    <input type="radio" id="radio" defaultChecked />
                     <label htmlFor="radio">Recieve push notifications</label>
                   </form>
                   <div className="MailArea">

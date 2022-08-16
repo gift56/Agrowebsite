@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import { ProfileCon } from "./styled/Dashboard.styled";
 import { Container } from "../components/styled/Container.styled";
@@ -15,9 +15,22 @@ import { RiLockPasswordLine } from "react-icons/ri";
 import { BsCreditCard2Back } from "react-icons/bs";
 import { FiClipboard } from "react-icons/fi";
 import { BiLogOut } from "react-icons/bi";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useForm } from "react-hook-form";
 
 const Profile = () => {
+  const navigate = useNavigate();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    mode: "onChange",
+  });
+  const onSubmit = (data) => {
+    navigate("/");
+    console.log(data);
+  };
   return (
     <>
       <Header />
@@ -78,15 +91,29 @@ const Profile = () => {
             </LeftSideDash>
             <ProfileCon>
               <h2> Profile Settings</h2>
-              <form>
+              <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="formContainer">
                   <div className="formControl">
                     <label htmlFor="firstname">First Name</label>
-                    <input type="text" id="firstname" placeholder="Simon" />
+                    <input
+                      type="text"
+                      id="firstname"
+                      placeholder="Simon"
+                      {...register("firstname", {
+                        required: true,
+                      })}
+                    />
                   </div>
                   <div className="formControl">
-                    <label htmlFor="firstname">Last Name</label>
-                    <input type="text" id="firstname" placeholder="Daniel" />
+                    <label htmlFor="lastname">Last Name</label>
+                    <input
+                      type="text"
+                      id="lastname"
+                      placeholder="Daniel"
+                      {...register("lastname", {
+                        required: true,
+                      })}
+                    />
                   </div>
                 </div>
                 <div className="formContainer">
@@ -96,11 +123,24 @@ const Profile = () => {
                       type="email"
                       id="email"
                       placeholder="Simondaniel159@gmail.com"
+                      {...register("email", {
+                        required: true,
+                        pattern: /\S+@\S+\.\S+/,
+                      })}
                     />
                   </div>
                   <div className="formControl">
                     <label htmlFor="tel">Phone Number</label>
-                    <input type="tel" id="tel" placeholder="+447 49064556443" />
+                    <input
+                      type="tel"
+                      id="tel"
+                      placeholder="+447 49064556443"
+                      {...register("tel", {
+                        required: true,
+                        minLength: 9,
+                        maxLength: 12,
+                      })}
+                    />
                   </div>
                 </div>
                 <div className="formContainer">
@@ -110,6 +150,11 @@ const Profile = () => {
                       type="text"
                       id="address"
                       placeholder="44, Boulevard d’Alsace"
+                      {...register("address", {
+                        required: true,
+                        minLength: 9,
+                        maxLength: 12,
+                      })}
                     />
                   </div>
                   <div className="formControl">
@@ -120,21 +165,57 @@ const Profile = () => {
                 <div className="formContainer">
                   <div className="formControl">
                     <label htmlFor="country">Country</label>
-                    <input type="text" id="country" placeholder="France" />
+                    <input
+                      type="text"
+                      id="country"
+                      placeholder="France"
+                      {...register("country", {
+                        required: true,
+                        minLength: 3,
+                        maxLength: 12,
+                      })}
+                    />
                   </div>
                   <div className="formControl">
                     <label htmlFor="code">Postal Code </label>
-                    <input type="text" id="code" placeholder="69200" />
+                    <input
+                      type="text"
+                      id="code"
+                      placeholder="69200"
+                      {...register("code", {
+                        required: true,
+                        minLength: 5,
+                        maxLength: 12,
+                      })}
+                    />
                   </div>
                 </div>
                 <div className="formContainer">
                   <div className="formControl">
                     <label htmlFor="city">City</label>
-                    <input type="text" id="city" placeholder="Manosque" />
+                    <input
+                      type="text"
+                      id="city"
+                      placeholder="Manosque"
+                      {...register("city", {
+                        required: true,
+                        minLength: 4,
+                        maxLength: 12,
+                      })}
+                    />
                   </div>
                   <div className="formControl">
                     <label htmlFor="state">State</label>
-                    <input type="text" id="state" placeholder="Lorraine" />
+                    <input
+                      type="text"
+                      id="state"
+                      placeholder="Lorraine"
+                      {...register("state", {
+                        required: true,
+                        minLength: 4,
+                        maxLength: 12,
+                      })}
+                    />
                   </div>
                 </div>
                 <div className="button">

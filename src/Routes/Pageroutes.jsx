@@ -12,7 +12,6 @@ import Faq from "../page/Faq";
 import Signin from "../page/Signin";
 import Contact from "../page/Contact";
 import Signup from "../page/Signup";
-import Account from "../page/Account";
 import Notification from "../page/Notification";
 import Profile from "../components/Profile";
 
@@ -41,10 +40,8 @@ const Pageroutes = () => {
         </Route>
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Signin />} />
-        <Route path="/account" element={<Account />}>
-          <Route path="/account" element={<Profile />} />
-          <Route path="notification" element={<Notification />} />
-        </Route>
+        <Route path="/account" element={<Profile />} />
+        <Route path="/notification" element={<Notification />} />
       </Routes>
     </>
   );

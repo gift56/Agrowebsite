@@ -74,11 +74,15 @@ export const LeftSideDash = styled.nav`
         }
         svg {
           font-size: 18px;
+          color: ${({ theme }) => theme.Greenbg};
         }
         &:hover {
           background-color: ${({ theme }) => theme.Greenbg};
           cursor: pointer;
           color: ${({ theme }) => theme.whiteColor};
+          svg {
+            color: ${({ theme }) => theme.whiteColor};
+          }
         }
       }
     }

@@ -206,12 +206,30 @@ export const NotificationCon = styled.div`
           accent-color: ${({ theme }) => theme.Greenbg};
         }
       }
-      .MailArea{
+      .MailArea {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
+        gap: 2rem;
+        .text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: ${({ theme }) => theme.textColor};
+          h4 {
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+            line-height: 25px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;
+            text-align: center;
+          }
+        }
       }
     }
   }

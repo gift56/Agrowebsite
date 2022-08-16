@@ -85,11 +85,13 @@ const Notification = () => {
                   </form>
                   <div className="MailArea">
                     <img src={MailBox} alt="/" />
-                    <h4>You don’t have any messages</h4>
-                    <p>
-                      Here you will be able to see all the messages we send you,
-                      stay tuned
-                    </p>
+                    <div className="text">
+                      <h4>You don’t have any messages</h4>
+                      <p>
+                        Here you will be able to see all the messages we send you,
+                        stay tuned
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

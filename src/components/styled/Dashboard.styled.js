@@ -58,6 +58,12 @@ export const LeftSideDash = styled.nav`
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
+      a{
+        color: inherit;
+        display: inherit;
+        align-items: inherit;
+        gap: inherit;
+      }
       li {
         display: flex;
         align-items: center;

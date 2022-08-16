@@ -1,5 +1,5 @@
 import React from "react";
-import Dashboard from "../components/Dashboard";
+import Dashboard from "../page/Dashboard";
 import Header from "../components/Header";
 
 const Account = () => {

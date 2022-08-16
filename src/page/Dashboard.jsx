@@ -1,7 +1,11 @@
 import React from "react";
 import DashboardPages from "../page/DashboardPages";
-import { Container } from "./styled/Container.styled";
-import { DashboardCon, DashCon, LeftSideDash } from "./styled/Dashboard.styled";
+import { Container } from "../components/styled/Container.styled";
+import {
+  DashboardCon,
+  DashCon,
+  LeftSideDash,
+} from "../components/styled/Dashboard.styled";
 import Box from "../agroImg/square.png";
 import Pencil from "../agroImg/pencil.png";
 import { FaUserAlt } from "react-icons/fa";
@@ -10,6 +14,7 @@ import { RiLockPasswordLine } from "react-icons/ri";
 import { BsCreditCard2Back } from "react-icons/bs";
 import { FiClipboard } from "react-icons/fi";
 import { BiLogOut } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   return (
@@ -35,15 +40,19 @@ const Dashboard = () => {
               </div>
               <ul>
                 <li>
-                  <FaUserAlt /> <span>Profile</span>
+                  <Link to="/account">
+                    <FaUserAlt /> <span>Profile</span>
+                  </Link>
                 </li>
                 <li>
                   <FiClipboard />
                   <span>Orders</span>
                 </li>
                 <li>
-                  <IoMailUnreadOutline />
-                  <span>Notifications</span>
+                  <Link to="notification">
+                    <IoMailUnreadOutline />
+                    <span>Notifications</span>
+                  </Link>
                 </li>
                 <li>
                   <RiLockPasswordLine />
@@ -56,7 +65,7 @@ const Dashboard = () => {
               </ul>
             </div>
             <button className="btn">
-              <BiLogOut size={25}/>
+              <BiLogOut size={25} />
               Log out
             </button>
           </LeftSideDash>

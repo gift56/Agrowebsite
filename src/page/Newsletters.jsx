@@ -84,19 +84,21 @@ const Newsletters = () => {
                   <h3>SUBSCRIBE TO</h3>
                 </div>
                 <form className="options">
-                  <div>
-                    <input type="radio" name="daily" id="daily" />
-                    <label htmlFor="daily">Daily Newsletter</label>
-                  </div>
-                  <div>
-                    <input type="radio" name="week" id="week" />
-                    <label htmlFor="week">Weekly Newsletter</label>
-                  </div>
-                  <div>
-                    <input type="radio" name="not" id="not" />
-                    <label htmlFor="not">
-                      I don’t want to receive notifications from newsletter
-                    </label>
+                  <div className="optionradio">
+                    <div>
+                      <input type="radio" name="radio" id="daily" />
+                      <label htmlFor="daily">Daily Newsletter</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="radio" id="week" />
+                      <label htmlFor="week">Weekly Newsletter</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="radio" id="not" />
+                      <label htmlFor="not">
+                        I don’t want to receive notifications from newsletter
+                      </label>
+                    </div>
                   </div>
                   <button className="btn">SAVE</button>
                   <p>UNSUBSCRIBE FROM NEWSLETTER</p>

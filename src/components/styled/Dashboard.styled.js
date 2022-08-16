@@ -243,5 +243,40 @@ export const NotificationCon = styled.div`
         padding-left: 20px;
       }
     }
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .optionradio {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        div {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          input {
+            accent-color: ${({ theme }) => theme.Greenbg};
+          }
+          label {
+            font-size: 15px;
+            font-weight: 400;
+          }
+        }
+      }
+      button {
+        background-color: ${({ theme }) => theme.Greenbg};
+        color: ${({ theme }) => theme.whiteColor};
+        font-size: 16px;
+        font-weight: 300;
+      }
+      p {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        color: ${({ theme }) => theme.Greenbg};
+      }
+    }
   }
 `;

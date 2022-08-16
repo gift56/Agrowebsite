@@ -24,7 +24,7 @@ const Signup = () => {
   };
 
   const showConfirmPassword = () => {
-    setConfirmeye(!eye);
+    setConfirmeye(!confirmEye);
   };
   const {
     register,

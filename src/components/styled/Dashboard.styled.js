@@ -190,6 +190,9 @@ export const NotificationCon = styled.div`
     display: flex;
     justify-content: center;
   }
+  .form{
+    padding: 2rem;
+  }
   .inboxArea {
     background-color: ${({ theme }) => theme.whiteColor};
     min-height: inherit;

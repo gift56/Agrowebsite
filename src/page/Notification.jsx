@@ -9,6 +9,7 @@ import {
 } from "../components/styled/Dashboard.styled";
 import Box from "../agroImg/square.png";
 import Pencil from "../agroImg/pencil.png";
+import MailBox from "../agroImg/notificationImg.png";
 import { FaUserAlt } from "react-icons/fa";
 import { IoMailUnreadOutline } from "react-icons/io5";
 import { RiLockPasswordLine } from "react-icons/ri";
@@ -73,7 +74,25 @@ const Notification = () => {
               </button>
             </LeftSideDash>
             <NotificationCon>
-              
+              <div className="titleCon">
+                <h3>Inbox Messages</h3>
+              </div>
+              <div className="inboxArea">
+                <div className="container">
+                  <form>
+                    <input type="radio" id="radio" />
+                    <label htmlFor="radio">Recieve push notifications</label>
+                  </form>
+                  <div className="MailArea">
+                    <img src={MailBox} alt="/" />
+                    <h4>You don’t have any messages</h4>
+                    <p>
+                      Here you will be able to see all the messages we send you,
+                      stay tuned
+                    </p>
+                  </div>
+                </div>
+              </div>
             </NotificationCon>
           </DashboardCon>
         </Container>

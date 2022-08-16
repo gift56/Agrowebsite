@@ -167,12 +167,10 @@ export const ProfileCon = styled.div`
 `;
 
 export const NotificationCon = styled.div`
-  background-color: ${({ theme }) => theme.whiteColor};
+  /* background-color: ${({ theme }) => theme.whiteColor}; */
   width: 100%;
   display: flex;
-  gap: 2rem;
   flex-direction: column;
-  padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07);
 `;

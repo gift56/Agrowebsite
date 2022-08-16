@@ -255,6 +255,7 @@ export const NotificationCon = styled.div`
       gap: 2rem;
       .formControl {
         position: relative;
+        width: 50%;
         input {
           background: rgba(33, 124, 44, 0.05);
           border: 1px solid ${({ theme }) => theme.Greenbg};
@@ -264,14 +265,25 @@ export const NotificationCon = styled.div`
           padding-left: 20px;
           font-weight: 500;
           font-size: 15px;
-          color: #b3b3b3;
+          color: ${({ theme }) => theme.textColor};
           &:focus {
             outline: none;
             border: 1px solid ${({ theme }) => theme.Greenbg};
           }
           &::placeholder {
             font-size: 15px;
-            color: #b3b3b3;
+            color: ${({ theme }) => theme.textColor};
+          }
+        }
+        .show {
+          position: relative;
+          svg {
+            position: absolute;
+            bottom: 15px;
+            right: 3%;
+            color: ${({ theme }) => theme.Greenbg};
+            font-size: 20px;
+            cursor: pointer;
           }
         }
       }

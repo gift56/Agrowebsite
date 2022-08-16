@@ -1,11 +1,11 @@
 import React from "react";
 import Header from "../components/Header";
-import { ProfileCon } from "../components/styled/Dashboard.styled";
 import { Container } from "../components/styled/Container.styled";
 import {
   DashboardCon,
   DashCon,
   LeftSideDash,
+  NotificationCon,
 } from "../components/styled/Dashboard.styled";
 import Box from "../agroImg/square.png";
 import Pencil from "../agroImg/pencil.png";
@@ -72,9 +72,9 @@ const Notification = () => {
                 Log out
               </button>
             </LeftSideDash>
-            <ProfileCon>
+            <NotificationCon>
               
-            </ProfileCon>
+            </NotificationCon>
           </DashboardCon>
         </Container>
       </DashCon>

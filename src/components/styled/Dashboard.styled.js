@@ -58,7 +58,7 @@ export const LeftSideDash = styled.nav`
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
-      a{
+      a {
         color: inherit;
         display: inherit;
         align-items: inherit;
@@ -164,4 +164,15 @@ export const ProfileCon = styled.div`
       font-weight: 600;
     }
   }
+`;
+
+export const NotificationCon = styled.div`
+  background-color: ${({ theme }) => theme.whiteColor};
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07);
 `;

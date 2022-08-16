@@ -185,14 +185,16 @@ export const NotificationCon = styled.div`
       padding-left: 20px;
     }
   }
+  .inbox {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+  }
   .inboxArea {
     background-color: ${({ theme }) => theme.whiteColor};
     min-height: inherit;
     border: 0.5px solid ${({ theme }) => theme.Greenbg};
     border-radius: 12px;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
     .container {
       display: flex;
       flex-direction: column;
@@ -230,6 +232,15 @@ export const NotificationCon = styled.div`
             text-align: center;
           }
         }
+      }
+    }
+    .titlearea {
+      padding: 1rem;
+      border-bottom: 0.5px solid ${({ theme }) => theme.Greenbg};
+      h3 {
+        font-size: 16px;
+        font-weight: 400;
+        padding-left: 20px;
       }
     }
   }

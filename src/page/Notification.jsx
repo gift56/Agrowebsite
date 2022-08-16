@@ -63,8 +63,10 @@ const Notification = () => {
                     <span>Change Password</span>
                   </li>
                   <li>
-                    <BsCreditCard2Back />
-                    <span>Newsletter Preferences</span>
+                    <Link to="/newsletter">
+                      <BsCreditCard2Back />
+                      <span>Newsletter Preferences</span>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -77,7 +79,7 @@ const Notification = () => {
               <div className="titleCon">
                 <h3>Inbox Messages</h3>
               </div>
-              <div className="inboxArea">
+              <div className="inboxArea inbox">
                 <div className="container">
                   <form>
                     <input type="radio" id="radio" defaultChecked />
@@ -88,8 +90,8 @@ const Notification = () => {
                     <div className="text">
                       <h4>You don’t have any messages</h4>
                       <p>
-                        Here you will be able to see all the messages we send you,
-                        stay tuned
+                        Here you will be able to see all the messages we send
+                        you, stay tuned
                       </p>
                     </div>
                   </div>

@@ -13,6 +13,7 @@ import Signin from "../page/Signin";
 import Contact from "../page/Contact";
 import Signup from "../page/Signup";
 import Notification from "../page/Notification";
+import Newsletters from "../page/Newsletters";
 import Profile from "../components/Profile";
 
 const Pageroutes = () => {
@@ -42,6 +43,7 @@ const Pageroutes = () => {
         <Route path="/login" element={<Signin />} />
         <Route path="/account" element={<Profile />} />
         <Route path="/notification" element={<Notification />} />
+        <Route path="/newsletter" element={<Newsletters />} />
       </Routes>
     </>
   );

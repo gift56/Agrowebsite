@@ -62,8 +62,10 @@ const Profile = () => {
                     <span>Change Password</span>
                   </li>
                   <li>
-                    <BsCreditCard2Back />
-                    <span>Newsletter Preferences</span>
+                    <Link to="/newsletter">
+                      <BsCreditCard2Back />
+                      <span>Newsletter Preferences</span>
+                    </Link>
                   </li>
                 </ul>
               </div>

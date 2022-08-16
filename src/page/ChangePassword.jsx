@@ -15,7 +15,7 @@ import { RiLockPasswordLine } from "react-icons/ri";
 import { BsCreditCard2Back } from "react-icons/bs";
 import { FiClipboard } from "react-icons/fi";
 import { BiLogOut } from "react-icons/bi";
-import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
+import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
@@ -133,9 +133,9 @@ const ChangePassword = () => {
                     />
                     <div className="show">
                       {!currenteye ? (
-                        <AiFillEyeInvisible onClick={showCurrentPassword} />
+                        <AiOutlineEyeInvisible onClick={showCurrentPassword} />
                       ) : (
-                        <AiFillEye onClick={showCurrentPassword} />
+                        <AiOutlineEye onClick={showCurrentPassword} />
                       )}
                     </div>
                     {errors.currentpassword && <span>{errors.currentpassword.message}</span>}
@@ -159,9 +159,9 @@ const ChangePassword = () => {
                     />
                     <div className="show">
                       {!eye ? (
-                        <AiFillEyeInvisible onClick={showPassword} />
+                        <AiOutlineEyeInvisible onClick={showPassword} />
                       ) : (
-                        <AiFillEye onClick={showPassword} />
+                        <AiOutlineEye onClick={showPassword} />
                       )}
                     </div>
                     {errors.password && <span>{errors.password.message}</span>}
@@ -179,9 +179,9 @@ const ChangePassword = () => {
                     />
                     <div className="show">
                       {!confirmEye ? (
-                        <AiFillEyeInvisible onClick={showConfirmPassword} />
+                        <AiOutlineEyeInvisible onClick={showConfirmPassword} />
                       ) : (
-                        <AiFillEye onClick={showConfirmPassword} />
+                        <AiOutlineEye onClick={showConfirmPassword} />
                       )}
                     </div>
                     {errors.confirmPassword && (

@@ -194,6 +194,10 @@ export const NotificationCon = styled.div`
     padding: 2rem;
     .align-start {
       align-items: flex-start;
+      button {
+        width: 50%;
+        margin-top: 20px;
+      }
     }
   }
   .inboxArea {
@@ -257,7 +261,7 @@ export const NotificationCon = styled.div`
         position: relative;
         width: 50%;
         input {
-          background: rgba(33, 124, 44, 0.05);
+          background: transparent;
           border: 1px solid ${({ theme }) => theme.Greenbg};
           border-radius: 4px;
           width: 100%;
@@ -279,7 +283,7 @@ export const NotificationCon = styled.div`
           position: relative;
           svg {
             position: absolute;
-            bottom: 15px;
+            bottom: 18px;
             right: 3%;
             color: ${({ theme }) => theme.Greenbg};
             font-size: 20px;

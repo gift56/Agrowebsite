@@ -14,13 +14,12 @@ export const DashboardCon = styled.div`
 
 export const LeftSideDash = styled.nav`
   width: 407px;
-  min-height: 600px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   .sidebar {
     background-color: ${({ theme }) => theme.whiteColor};
-    min-height: 611px;
+    min-height: 620px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,7 +145,7 @@ export const ProfileCon = styled.div`
           }
           &::placeholder {
             font-size: 15px;
-            color: #b3b3b3;
+            color: ${({ theme }) => theme.textColor};
           }
         }
       }

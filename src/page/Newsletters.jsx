@@ -9,7 +9,6 @@ import {
 } from "../components/styled/Dashboard.styled";
 import Box from "../agroImg/square.png";
 import Pencil from "../agroImg/pencil.png";
-import MailBox from "../agroImg/notificationImg.png";
 import { FaUserAlt } from "react-icons/fa";
 import { IoMailUnreadOutline } from "react-icons/io5";
 import { RiLockPasswordLine } from "react-icons/ri";
@@ -59,8 +58,10 @@ const Newsletters = () => {
                     </Link>
                   </li>
                   <li>
-                    <RiLockPasswordLine />
-                    <span>Change Password</span>
+                    <Link to="/changepassword">
+                      <RiLockPasswordLine />
+                      <span>Change Password</span>
+                    </Link>
                   </li>
                   <li>
                     <Link to="/newsletter">

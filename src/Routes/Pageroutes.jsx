@@ -15,6 +15,7 @@ import Signup from "../page/Signup";
 import Notification from "../page/Notification";
 import Newsletters from "../page/Newsletters";
 import Profile from "../components/Profile";
+import ChangePassword from "../page/ChangePassword";
 
 const Pageroutes = () => {
   const HeaderRoutes = () => {
@@ -44,6 +45,7 @@ const Pageroutes = () => {
         <Route path="/account" element={<Profile />} />
         <Route path="/notification" element={<Notification />} />
         <Route path="/newsletter" element={<Newsletters />} />
+        <Route path="/changepassword" element={<ChangePassword />} />
       </Routes>
     </>
   );

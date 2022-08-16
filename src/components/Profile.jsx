@@ -58,8 +58,10 @@ const Profile = () => {
                     </Link>
                   </li>
                   <li>
-                    <RiLockPasswordLine />
-                    <span>Change Password</span>
+                    <Link to="/changepassword">
+                      <RiLockPasswordLine />
+                      <span>Change Password</span>
+                    </Link>
                   </li>
                   <li>
                     <Link to="/newsletter">

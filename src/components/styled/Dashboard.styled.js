@@ -190,8 +190,11 @@ export const NotificationCon = styled.div`
     display: flex;
     justify-content: center;
   }
-  .form{
+  .form {
     padding: 2rem;
+    .align-start {
+      align-items: flex-start;
+    }
   }
   .inboxArea {
     background-color: ${({ theme }) => theme.whiteColor};
@@ -250,6 +253,28 @@ export const NotificationCon = styled.div`
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      .formControl {
+        position: relative;
+        input {
+          background: rgba(33, 124, 44, 0.05);
+          border: 1px solid ${({ theme }) => theme.Greenbg};
+          border-radius: 4px;
+          width: 100%;
+          height: 53.06px;
+          padding-left: 20px;
+          font-weight: 500;
+          font-size: 15px;
+          color: #b3b3b3;
+          &:focus {
+            outline: none;
+            border: 1px solid ${({ theme }) => theme.Greenbg};
+          }
+          &::placeholder {
+            font-size: 15px;
+            color: #b3b3b3;
+          }
+        }
+      }
       .optionradio {
         padding: 2rem;
         display: flex;

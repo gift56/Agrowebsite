@@ -113,7 +113,7 @@ const ChangePassword = () => {
                 <h3>Change Password</h3>
               </div>
               <div className="inboxArea form">
-                <form onSubmit={handleSubmit(onSubmit)} className="option">
+                <form onSubmit={handleSubmit(onSubmit)} className="options align-start">
                   <div className="formControl">
                     <input
                       type={!currenteye ? "password" : "text"}

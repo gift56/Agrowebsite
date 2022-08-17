@@ -63,7 +63,9 @@ const Consultarea = () => {
                     <label htmlFor="msg">Compose Message</label>
                     <input type="text" id="msg" />
                   </div>
-                  <button className="btn">Compose Message</button>
+                  <div className="button">
+                    <button className="btn">Compose Message</button>
+                  </div>
                 </form>
                 <span>Find Us</span>
                 <div className="modalFooter">
@@ -117,8 +119,8 @@ const Modal = styled.div`
     background-color: ${({ theme }) => theme.Greenbg};
     width: 1340px;
     padding: 1rem;
+    margin: 30px 0;
     .container {
-      height: 100%;
       padding: 2rem;
       .heading {
         display: flex;
@@ -177,7 +179,25 @@ const Modal = styled.div`
             transition: 3s;
           }
         }
+        .button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          margin-top: 20px;
+          button {
+            background-color: ${({ theme }) => theme.whiteColor};
+            color: ${({ theme }) => theme.Greenbg};
+            font-size: 17px;
+            font-weight: 500;
+          }
+        }
       }
+    }
+    span {
+      color: ${({ theme }) => theme.whiteColor};
+      font-size: 16px;
+      font-weight: 500;
     }
   }
 `;

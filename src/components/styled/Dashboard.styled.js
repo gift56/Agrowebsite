@@ -70,6 +70,7 @@ export const LeftSideDash = styled.nav`
         display: inherit;
         align-items: inherit;
         gap: inherit;
+        width: inherit;
       }
       li {
         display: flex;
@@ -108,6 +109,15 @@ export const LeftSideDash = styled.nav`
     color: ${({ theme }) => theme.whiteColor};
     font-weight: 600;
     font-size: 16px;
+    a {
+      display: inherit;
+      align-items: inherit;
+      justify-content: inherit;
+      gap: inherit;
+      background-color: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+    }
   }
   @media screen and (max-width: 570px) {
     width: 100%;

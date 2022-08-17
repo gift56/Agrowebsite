@@ -104,8 +104,10 @@ const ChangePassword = () => {
                 </ul>
               </div>
               <button className="btn">
-                <BiLogOut size={25} />
-                Log out
+                <Link to="/" style={{ width: "100%" }}>
+                  <BiLogOut size={25} />
+                  Log out
+                </Link>
               </button>
             </LeftSideDash>
             <NotificationCon>
@@ -113,7 +115,10 @@ const ChangePassword = () => {
                 <h3>Change Password</h3>
               </div>
               <div className="inboxArea form">
-                <form onSubmit={handleSubmit(onSubmit)} className="options align-start">
+                <form
+                  onSubmit={handleSubmit(onSubmit)}
+                  className="options align-start"
+                >
                   <div className="formControl">
                     <input
                       type={!currenteye ? "password" : "text"}
@@ -138,7 +143,9 @@ const ChangePassword = () => {
                         <AiOutlineEye onClick={showCurrentPassword} />
                       )}
                     </div>
-                    {errors.currentpassword && <span>{errors.currentpassword.message}</span>}
+                    {errors.currentpassword && (
+                      <span>{errors.currentpassword.message}</span>
+                    )}
                   </div>
                   <div className="formControl">
                     <input

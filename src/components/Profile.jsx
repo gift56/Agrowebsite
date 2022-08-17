@@ -85,8 +85,10 @@ const Profile = () => {
                 </ul>
               </div>
               <button className="btn">
-                <BiLogOut size={25} />
-                Log out
+                <Link to="/" style={{ width: "100%" }}>
+                  <BiLogOut size={25} />
+                  Log out
+                </Link>
               </button>
             </LeftSideDash>
             <ProfileCon>

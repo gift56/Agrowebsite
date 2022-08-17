@@ -10,6 +10,13 @@ export const DashboardCon = styled.div`
   align-items: center;
   padding: 1rem;
   padding-bottom: 3rem !important;
+  @media screen and (max-width: ${({ theme }) => theme.mobile.tab}) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  @media screen and (max-width: 570px) {
+    padding: 1rem 0;
+  }
 `;
 
 export const LeftSideDash = styled.nav`
@@ -17,6 +24,9 @@ export const LeftSideDash = styled.nav`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  @media screen and (max-width: 570px) {
+    width: 100%;
+  }
   .sidebar {
     background-color: ${({ theme }) => theme.whiteColor};
     min-height: 620px;
@@ -113,6 +123,13 @@ export const ProfileCon = styled.div`
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07);
+  @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
+    form {
+      .formContainer {
+        flex-direction: column;
+      }
+    }
+  }
   form {
     display: flex;
     flex-direction: column;
@@ -290,6 +307,10 @@ export const NotificationCon = styled.div`
             cursor: pointer;
           }
         }
+        span {
+          color: red;
+          font-size: 12px;
+        }
       }
       .optionradio {
         padding: 2rem;
@@ -320,6 +341,34 @@ export const NotificationCon = styled.div`
         font-size: 16px;
         font-weight: 300;
         color: ${({ theme }) => theme.Greenbg};
+      }
+    }
+  }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
+    .titleCon {
+      h3 {
+        font-size: 18px !important;
+      }
+    }
+    .inboxArea {
+      .options {
+        .formControl {
+          width: 100%;
+        }
+      }
+      .optionradio {
+        label {
+          font-size: 13px !important;
+        }
+      }
+    }
+    .form {
+      padding: 1rem !important;
+      padding-top: 30px !important;
+      .align-start {
+        button {
+          width: 100% !important;
+        }
       }
     }
   }

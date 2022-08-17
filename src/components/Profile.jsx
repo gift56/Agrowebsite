@@ -152,13 +152,22 @@ const Profile = () => {
                       placeholder="44, Boulevard d’Alsace"
                       {...register("address", {
                         required: true,
-                        minLength: 9,
-                        maxLength: 12,
+                        minLength: 5,
                       })}
                     />
                   </div>
                   <div className="formControl">
-                    <label htmlFor="address2">Home Address 2</label>
+                    <label htmlFor="address2">
+                      Home Address 2{" "}
+                      <small
+                        style={{
+                          marginLeft: "10px",
+                          color: "rgba(51, 51, 51, 0.5)",
+                        }}
+                      >
+                        Optional
+                      </small>
+                    </label>
                     <input type="text" id="address2" placeholder="Address" />
                   </div>
                 </div>

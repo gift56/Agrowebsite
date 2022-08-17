@@ -4,6 +4,14 @@ import { Container } from "./styled/Container.styled";
 import styled from "styled-components";
 import ContactLogo from "../agroImg/contactlg.png";
 import CloseModal from "../agroImg/closeX.png";
+import {
+  FaTwitterSquare,
+  FaFacebookSquare,
+  FaInstagramSquare,
+} from "react-icons/fa";
+import { GoLocation } from "react-icons/go";
+import { GrMail } from "react-icons/gr";
+import { AiOutlineWhatsApp } from "react-icons/ai";
 
 const Consultarea = () => {
   const [showModal, setShowModal] = useState(false);
@@ -33,8 +41,50 @@ const Consultarea = () => {
           <div className="container">
             <div className="heading">
               <img src={ContactLogo} alt="/" />
-
               <img src={CloseModal} alt="/" />
+            </div>
+            <div className="consultionForm">
+              <h3>Complete the form or email agromech@gmail.com</h3>
+              <form>
+                <div className="form-control">
+                  <label htmlFor="name">Name</label>
+                  <input type="text" id="name" />
+                </div>
+                <div className="form-control">
+                  <label htmlFor="email">Email Address</label>
+                  <input type="email" id="email" />
+                </div>
+                <div className="form-control">
+                  <label htmlFor="tel">Phone Number</label>
+                  <input type="tel" id="tel" />
+                </div>
+                <div className="form-control">
+                  <label htmlFor="msg">Compose Message</label>
+                  <input type="text" id="msg" />
+                </div>
+              </form>
+              <span>Find Us</span>
+              <div className="modalFooter">
+                <div className="social">
+                  <FaTwitterSquare />
+                  <FaFacebookSquare />
+                  <FaInstagramSquare />
+                </div>
+                <div className="info">
+                  <div>
+                    <GoLocation />
+                    <span>Global</span>
+                  </div>
+                  <div>
+                    <AiOutlineWhatsApp />
+                    <span>+1 575 567 5673</span>
+                  </div>
+                  <div>
+                    <GrMail />
+                    <span>agromech@gmail.com</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

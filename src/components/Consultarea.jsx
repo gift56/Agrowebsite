@@ -43,45 +43,48 @@ const Consultarea = () => {
               <img src={ContactLogo} alt="/" />
               <img src={CloseModal} alt="/" />
             </div>
-            <div className="consultionForm">
-              <h3>Complete the form or email agromech@gmail.com</h3>
-              <form>
-                <div className="form-control">
-                  <label htmlFor="name">Name</label>
-                  <input type="text" id="name" />
-                </div>
-                <div className="form-control">
-                  <label htmlFor="email">Email Address</label>
-                  <input type="email" id="email" />
-                </div>
-                <div className="form-control">
-                  <label htmlFor="tel">Phone Number</label>
-                  <input type="tel" id="tel" />
-                </div>
-                <div className="form-control">
-                  <label htmlFor="msg">Compose Message</label>
-                  <input type="text" id="msg" />
-                </div>
-              </form>
-              <span>Find Us</span>
-              <div className="modalFooter">
-                <div className="social">
-                  <FaTwitterSquare />
-                  <FaFacebookSquare />
-                  <FaInstagramSquare />
-                </div>
-                <div className="info">
-                  <div>
-                    <GoLocation />
-                    <span>Global</span>
+            <div className="content">
+              <div className="consultionForm">
+                <h3>Complete the form or email agromech@gmail.com</h3>
+                <form>
+                  <div className="form-control">
+                    <label htmlFor="name">Name</label>
+                    <input type="text" id="name" />
                   </div>
-                  <div>
-                    <AiOutlineWhatsApp />
-                    <span>+1 575 567 5673</span>
+                  <div className="form-control">
+                    <label htmlFor="email">Email Address</label>
+                    <input type="email" id="email" />
                   </div>
-                  <div>
-                    <GrMail />
-                    <span>agromech@gmail.com</span>
+                  <div className="form-control">
+                    <label htmlFor="tel">Phone Number</label>
+                    <input type="tel" id="tel" />
+                  </div>
+                  <div className="form-control">
+                    <label htmlFor="msg">Compose Message</label>
+                    <input type="text" id="msg" />
+                  </div>
+                  <button className="btn">Compose Message</button>
+                </form>
+                <span>Find Us</span>
+                <div className="modalFooter">
+                  <div className="social">
+                    <FaTwitterSquare />
+                    <FaFacebookSquare />
+                    <FaInstagramSquare />
+                  </div>
+                  <div className="info">
+                    <div>
+                      <GoLocation />
+                      <span>Global</span>
+                    </div>
+                    <div>
+                      <AiOutlineWhatsApp />
+                      <span>+1 575 567 5673</span>
+                    </div>
+                    <div>
+                      <GrMail />
+                      <span>agromech@gmail.com</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -128,6 +131,22 @@ const Modal = styled.div`
             width: 15%;
           }
         }
+      }
+    }
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .consultionForm {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      h3 {
+        font-size: 24px;
+        font-weight: 500;
+        color: ${({ theme }) => theme.whiteColor};
       }
     }
   }

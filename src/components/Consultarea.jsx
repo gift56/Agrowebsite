@@ -109,4 +109,26 @@ const Modal = styled.div`
   place-items: center;
   width: 100vw;
   height: 100%;
+  .card {
+    background-color: ${({ theme }) => theme.Greenbg};
+    width: 1340px;
+    height: 700px;
+    padding: 1rem;
+    .container {
+      height: 100%;
+      padding: 2rem;
+      .heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        img {
+          cursor: pointer;
+          &:nth-child(1) {
+            width: 15%;
+          }
+        }
+      }
+    }
+  }
 `;

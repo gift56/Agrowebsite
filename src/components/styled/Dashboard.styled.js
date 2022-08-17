@@ -24,9 +24,6 @@ export const LeftSideDash = styled.nav`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  @media screen and (max-width: 570px) {
-    width: 100%;
-  }
   .sidebar {
     background-color: ${({ theme }) => theme.whiteColor};
     min-height: 620px;
@@ -112,6 +109,18 @@ export const LeftSideDash = styled.nav`
     font-weight: 600;
     font-size: 16px;
   }
+  @media screen and (max-width: 570px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 290px) {
+    ul {
+      li {
+        span {
+          line-height: 24px;
+        }
+      }
+    }
+  }
 `;
 
 export const ProfileCon = styled.div`
@@ -123,13 +132,7 @@ export const ProfileCon = styled.div`
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07);
-  @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
-    form {
-      .formContainer {
-        flex-direction: column;
-      }
-    }
-  }
+
   form {
     display: flex;
     flex-direction: column;
@@ -179,6 +182,26 @@ export const ProfileCon = styled.div`
       color: ${({ theme }) => theme.whiteColor};
       font-size: 16px;
       font-weight: 600;
+    }
+  }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
+    form {
+      .formContainer {
+        flex-direction: column;
+      }
+    }
+  }
+  @media screen and (max-width: 570px) {
+    padding: 1rem;
+    h2 {
+      font-size: 18px;
+    }
+    form {
+      .formContainer {
+        input {
+          padding-left: 10px !important;
+        }
+      }
     }
   }
 `;

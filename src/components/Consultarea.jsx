@@ -112,10 +112,10 @@ const Modal = styled.div`
   place-items: center;
   width: 100vw;
   height: 100%;
+  z-index: 2;
   .card {
     background-color: ${({ theme }) => theme.Greenbg};
     width: 1340px;
-    height: 700px;
     padding: 1rem;
     .container {
       height: 100%;
@@ -139,14 +139,27 @@ const Modal = styled.div`
     justify-content: center;
     align-items: center;
     .consultionForm {
-      width: 60%;
+      width: 58%;
       display: flex;
       flex-direction: column;
       gap: 2rem;
       h3 {
-        font-size: 24px;
+        font-size: 27px;
         font-weight: 500;
         color: ${({ theme }) => theme.whiteColor};
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        .form-control {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
       }
     }
   }

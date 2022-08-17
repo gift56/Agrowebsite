@@ -159,6 +159,15 @@ const Modal = styled.div`
           justify-content: flex-start;
           flex-direction: column;
           gap: 0.5rem;
+          width: 100%;
+          label {
+            font-size: 17px;
+            font-weight: 500;
+            color: ${({ theme }) => theme.whiteColor};
+          }
+          input {
+            width: 100%;
+          }
         }
       }
     }

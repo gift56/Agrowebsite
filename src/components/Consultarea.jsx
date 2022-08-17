@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { ServiceCon, ServiceArea, TitleText } from "./styled/Service.styled";
 import { Container } from "./styled/Container.styled";
 import styled from "styled-components";
+import ContactLogo from "../agroImg/contactlg.png";
+import CloseModal from "../agroImg/closeX.png";
 
 const Consultarea = () => {
   const [showModal, setShowModal] = useState(false);
@@ -28,8 +30,12 @@ const Consultarea = () => {
       </ServiceCon>
       <Modal showModal={!showModal}>
         <div className="card">
-          <div className="heading">
-            
+          <div className="container">
+            <div className="heading">
+              <img src={ContactLogo} alt="/" />
+
+              <img src={CloseModal} alt="/" />
+            </div>
           </div>
         </div>
       </Modal>

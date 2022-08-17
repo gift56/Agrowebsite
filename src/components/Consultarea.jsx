@@ -166,7 +166,15 @@ const Modal = styled.div`
             color: ${({ theme }) => theme.whiteColor};
           }
           input {
+            border: none;
+            background-color: transparent;
+            color: ${({ theme }) => theme.whiteColor};
             width: 100%;
+            border-bottom: 2px solid ${({ theme }) => theme.whiteColor};
+            padding: 10px 3px;
+            outline: none;
+            font-size: 15px;
+            transition: 3s;
           }
         }
       }

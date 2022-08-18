@@ -48,7 +48,7 @@ export const LeftSideDash = styled.nav`
       .imgChanger {
         position: relative;
         .profileImg {
-          width: 88%;
+          width: 123px;
         }
         img {
           cursor: pointer;

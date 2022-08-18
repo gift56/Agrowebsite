@@ -45,7 +45,7 @@ export const LeftSideDash = styled.nav`
         font-size: 20px;
         font-weight: 600;
       }
-      form {
+      .imgChanger {
         position: relative;
         .profileImg {
           width: 88%;

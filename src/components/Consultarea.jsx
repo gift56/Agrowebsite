@@ -15,6 +15,7 @@ import { AiOutlineWhatsApp } from "react-icons/ai";
 
 const Consultarea = () => {
   const [showModal, setShowModal] = useState(false);
+
   return (
     <>
       <ServiceCon>
@@ -31,7 +32,9 @@ const Consultarea = () => {
                   customer service agents ensures smooth shopping experience
                 </span>
               </p>
-              <button className="btn">Contact Us</button>
+              <button className="btn" onClick={() => setShowModal(true)}>
+                Contact Us
+              </button>
             </TitleText>
           </ServiceArea>
         </Container>
@@ -41,7 +44,11 @@ const Consultarea = () => {
           <div className="container">
             <div className="heading">
               <img src={ContactLogo} alt="/" />
-              <img src={CloseModal} alt="/" />
+              <img
+                src={CloseModal}
+                alt="/"
+                onClick={() => setShowModal(false)}
+              />
             </div>
             <div className="content">
               <div className="consultionForm">
@@ -101,9 +108,7 @@ const Consultarea = () => {
 export default Consultarea;
 
 const Modal = styled.div`
-  /* display: ${({ showModal }) => (!showModal ? "flex" : "none")};
-   */
-  display: flex;
+  display: ${({ showModal }) => (!showModal ? "flex" : "none")};
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -198,6 +203,35 @@ const Modal = styled.div`
       color: ${({ theme }) => theme.whiteColor};
       font-size: 16px;
       font-weight: 500;
+    }
+    .modalFooter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      .social,
+      .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        svg {
+          color: ${({ theme }) => theme.whiteColor};
+          font-size: 17px;
+          cursor: pointer;
+        }
+      }
+      .info {
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          span {
+            font-weight: 400;
+          }
+        }
+      }
     }
   }
 `;

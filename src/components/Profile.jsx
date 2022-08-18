@@ -7,7 +7,7 @@ import {
   DashCon,
   LeftSideDash,
 } from "../components/styled/Dashboard.styled";
-import Box from "../agroImg/square.png";
+// import Box from "../agroImg/square.png";
 import Pencil from "../agroImg/pencil.png";
 import { FaUserAlt } from "react-icons/fa";
 import { IoMailUnreadOutline } from "react-icons/io5";
@@ -19,17 +19,26 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
 const Profile = () => {
+  const [userImg, setUserimg] = useState(
+    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAYAAABUx/9/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHvSURBVHgB7dOhUSxBFEbh2z3z3Aqee/XUSCSEABGQARABSCQSCRlABhABhLASOTjkInDLXrqrSII55xMz1dee+kv8mC6nvbpaXWSWsyg5hX63jHUp8bjbbh/mm9e5n0r/TFf7UxmG5yhlCi1L5pxfX0c9eDE0QA/++edwrON4mm3coeXqQ15tL2sLfRJavJJ5Wtv/ILR8bd01hGFsEGODGBvE2CDGBjE2iLFBjA1ibBBjgxgbxNggxgYxNoixQYwNYmwQY4MYG8TYIMYGMTaIsUGMDWJsEGODGBvE2CDGBjE2iLFBjA1ibBBjgxgbxNggxgYxNoixQYwNYmwQY4MYG8TYIMYGMTaIsUGMDWJsEGODGBvE2CDGBjE2iLFBjA1ibBBjgxgbxNggxgYxNoixQYwNYmwQY4MYG8TYIMYGMTaIsUGMDWJsEGODGBvE2CDGBjE2iLFBjA1ibBBjgxgbxNggxgYxNoixQYwNYmwQY4MYG8TYIMYGMTaIsUGMDWJsEGODGBvE2CDGBjE2iLFBjA1ibBBjgxgbxNggxgYxNoixQWpmmUME6xolH0KLlxFPNcbxNorrXrTedxzv63y93uQwHBl8oVrX3rd1nof+3ry8b/aO/z/FbvdRIv6207/Q75bxliXu2qLPW+j3fvoGF99LGjzzYvYAAAAASUVORK5CYII="
+  );
   const navigate = useNavigate();
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm({
+  const { register, handleSubmit } = useForm({
     mode: "onChange",
   });
   const onSubmit = (data) => {
     navigate("/");
     console.log(data);
+  };
+  const handleImageChange = (e) => {
+    const reader = new FileReader();
+
+    reader.onload = () => {
+      if (reader.readyState === 2) {
+        setUserimg(reader.result);
+      }
+    };
+    reader.readAsDataURL(e.target.files[0]);
   };
   return (
     <>
@@ -40,18 +49,19 @@ const Profile = () => {
             <LeftSideDash>
               <div className="sidebar">
                 <div className="fileForm">
-                  <form>
+                  <div className="imgChanger">
                     <label htmlFor="editProfile" className="imgLabel">
-                      <img src={Box} alt="" className="profileImg" />
+                      <img src={userImg} alt="" className="profileImg" />
                       <img src={Pencil} alt="" className="editPen" />
                     </label>
                     <input
                       type="file"
                       id="editProfile"
                       style={{ display: "none" }}
-                      accept="*.png *.jpg *.jpeg"
+                      accept="image/*"
+                      onChange={handleImageChange}
                     />
-                  </form>
+                  </div>
                   <h2>Simon Daniel</h2>
                 </div>
                 <ul>

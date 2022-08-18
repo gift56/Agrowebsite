@@ -20,7 +20,7 @@ export const Headerone = styled.div`
     width: 50%;
     input {
       width: 100%;
-      padding: 10px 0;
+      padding: 13px 0;
       background-color: ${({ theme }) => theme.inputColor};
       border: 1px solid ${({ theme }) => theme.Greenbg};
       border-radius: 8px 0px 0px 8px;

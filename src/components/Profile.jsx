@@ -7,7 +7,6 @@ import {
   DashCon,
   LeftSideDash,
 } from "../components/styled/Dashboard.styled";
-// import Box from "../agroImg/square.png";
 import Pencil from "../agroImg/pencil.png";
 import { FaUserAlt } from "react-icons/fa";
 import { IoMailUnreadOutline } from "react-icons/io5";

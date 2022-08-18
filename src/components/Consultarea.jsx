@@ -12,9 +12,24 @@ import {
 import { GoLocation } from "react-icons/go";
 import { GrMail } from "react-icons/gr";
 import { AiOutlineWhatsApp } from "react-icons/ai";
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 
 const Consultarea = () => {
   const [showModal, setShowModal] = useState(false);
+  const navigate = useNavigate();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    mode: "onChange",
+  });
+  const onSubmit = (data) => {
+    setShowModal(false);
+    navigate("/");
+    console.log(data);
+  };
 
   return (
     <>
@@ -53,22 +68,52 @@ const Consultarea = () => {
             <div className="content">
               <div className="consultionForm">
                 <h3>Complete the form or email agromech@gmail.com</h3>
-                <form>
+                <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="form-control">
                     <label htmlFor="name">Name</label>
-                    <input type="text" id="name" />
+                    <input
+                      type="text"
+                      id="name"
+                      {...register("name", {
+                        required: true,
+                      })}
+                      className={errors ? "" : "error"}
+                    />
                   </div>
                   <div className="form-control">
                     <label htmlFor="email">Email Address</label>
-                    <input type="email" id="email" />
+                    <input
+                      type="email"
+                      id="email"
+                      {...register("email", {
+                        required: true,
+                        pattern: /\S+@\S+\.\S+/,
+                      })}
+                      className={errors ? "" : "error"}
+                    />
                   </div>
                   <div className="form-control">
                     <label htmlFor="tel">Phone Number</label>
-                    <input type="tel" id="tel" />
+                    <input
+                      type="tel"
+                      id="tel"
+                      {...register("tel", {
+                        required: true,
+                        minLength: 9,
+                        maxLength: 12,
+                      })}
+                    />
                   </div>
                   <div className="form-control">
                     <label htmlFor="msg">Compose Message</label>
-                    <input type="text" id="msg" />
+                    <input
+                      type="text"
+                      id="msg"
+                      {...register("msg", {
+                        required: true,
+                        minLength: 5,
+                      })}
+                    />
                   </div>
                   <div className="button">
                     <button className="btn">Compose Message</button>
@@ -111,11 +156,10 @@ const Modal = styled.div`
   display: ${({ showModal }) => (!showModal ? "flex" : "none")};
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 382px;
   left: 0;
   text-align: center;
-  background-color: #21202060;
   place-items: center;
   width: 100vw;
   height: 100%;
@@ -123,8 +167,8 @@ const Modal = styled.div`
   .card {
     background-color: ${({ theme }) => theme.Greenbg};
     width: 1340px;
-    padding: 1rem;
     margin: 30px 0;
+    padding: 1rem;
     .container {
       padding: 2rem;
       .heading {
@@ -150,6 +194,9 @@ const Modal = styled.div`
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      .error {
+        border-color: red !important;
+      }
       h3 {
         font-size: 27px;
         font-weight: 500;
@@ -229,6 +276,105 @@ const Modal = styled.div`
           gap: 0.5rem;
           span {
             font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1326px) {
+    .card {
+      width: 100%;
+      .content {
+        .consultionForm {
+          width: 70%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.minLap}) {
+    .card {
+      .content {
+        .consultionForm {
+          width: 90%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.tab}) {
+    .card {
+      .content {
+        .consultionForm {
+          h3 {
+            font-size: 20px;
+          }
+          form {
+            .form-control {
+              label {
+                font-size: 14px;
+              }
+            }
+          }
+          span {
+            font-size: 14px;
+          }
+          .modalFooter {
+            gap: 1rem;
+            .social,
+            .info {
+              gap: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {
+    .card {
+      .container {
+        .heading {
+          img {
+            &:nth-child(1) {
+              width: 25%;
+            }
+          }
+        }
+      }
+      .content {
+        .modalFooter {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 586px) {
+    .card {
+      .container {
+        padding: 1rem !important;
+        .heading {
+          img {
+            &:nth-child(1) {
+              width: 50%;
+            }
+          }
+        }
+      }
+      .content {
+        .consultionForm {
+          h3 {
+            font-size: 16px;
+          }
+          form {
+            .button {
+              button {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .modalFooter {
+          flex-direction: column;
+          .info {
+            flex-direction: column;
           }
         }
       }

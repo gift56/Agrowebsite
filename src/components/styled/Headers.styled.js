@@ -20,7 +20,7 @@ export const Headerone = styled.div`
     width: 50%;
     input {
       width: 100%;
-      padding: 13px 0;
+      padding: 10px 0;
       background-color: ${({ theme }) => theme.inputColor};
       border: 1px solid ${({ theme }) => theme.Greenbg};
       border-radius: 8px 0px 0px 8px;
@@ -93,6 +93,9 @@ export const Nav = styled.nav`
 export const HeaderTwo = styled.div`
   background-color: ${({ theme }) => theme.Greenbg};
   position: relative;
+  .active-link {
+    color: red !important;
+  }
   .ul {
     display: flex;
     justify-content: space-between;

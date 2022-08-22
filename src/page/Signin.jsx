@@ -5,7 +5,6 @@ import {
   SignupFormcontainer,
 } from "../components/styled/Signup.styled";
 import { Container } from "../components/styled/Container.styled";
-import Createimg from "../agroImg/createImg.png";
 import Logo from "../agroImg/logo.svg";
 import Goggle from "../agroImg/goggles.png";
 import Bg from "../agroImg/forgetBg.png";
@@ -30,7 +29,7 @@ const Signin = () => {
     mode: "onChange",
   });
   const onSubmit = (data) => {
-    navigate("/account");
+    navigate("/account/profile");
     console.log(data);
   };
   return (

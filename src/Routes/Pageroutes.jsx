@@ -42,10 +42,10 @@ const Pageroutes = () => {
         </Route>
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Signin />} />
-        <Route path="/account" element={<Profile />} />
-        <Route path="/notification" element={<Notification />} />
-        <Route path="/newsletter" element={<Newsletters />} />
-        <Route path="/changepassword" element={<ChangePassword />} />
+        <Route path="/account/profile" element={<Profile />} />
+        <Route path="/account/notification" element={<Notification />} />
+        <Route path="/account/newsletter" element={<Newsletters />} />
+        <Route path="/account/changepassword" element={<ChangePassword />} />
       </Routes>
     </>
   );

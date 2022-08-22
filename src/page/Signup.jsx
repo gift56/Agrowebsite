@@ -35,7 +35,7 @@ const Signup = () => {
     mode: "onChange",
   });
   const onSubmit = (data) => {
-    navigate("/account");
+    navigate("/account/profile");
     console.log(data);
   };
 

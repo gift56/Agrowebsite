@@ -44,7 +44,7 @@ const Notification = () => {
                 </div>
                 <ul>
                   <li>
-                    <Link to="/account">
+                    <Link to="/account/profile">
                       <FaUserAlt /> <span>Profile</span>
                     </Link>
                   </li>
@@ -53,19 +53,19 @@ const Notification = () => {
                     <span>Orders</span>
                   </li>
                   <li>
-                    <Link to="/notification">
+                    <Link to="/account/notification">
                       <IoMailUnreadOutline />
                       <span>Notifications</span>
                     </Link>
                   </li>
                   <li>
-                    <Link to="/changepassword">
+                    <Link to="/account/changepassword">
                       <RiLockPasswordLine />
                       <span>Change Password</span>
                     </Link>
                   </li>
                   <li>
-                    <Link to="/newsletter">
+                    <Link to="/account/newsletter">
                       <BsCreditCard2Back />
                       <span>Newsletter Preferences</span>
                     </Link>

@@ -11,6 +11,9 @@ export const Signuparea = styled.section`
   &::-webkit-scrollbar {
     display: none;
   }
+  @media screen and (max-width:403px){
+    background: white;
+  }
 `;
 
 export const SignupFormcontainer = styled.div`

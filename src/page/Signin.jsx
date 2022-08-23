@@ -99,7 +99,7 @@ const Signin = () => {
                     Sign up with Google
                   </a>
                 </button>
-                <button className="btn sign">
+                <button className="btn sign https://app.slack.com/client/T03UNHBBGQM/C03UNHPMFRB">
                   <a
                     href="https://facebook.com/"
                     target="_blank"

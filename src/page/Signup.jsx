@@ -126,7 +126,7 @@ const Signup = () => {
                     Sign up with Google
                   </a>
                 </button>
-                <button className="btn sign">
+                <button className="btn sign fb">
                   <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
                     <img src={Facebook} alt="/" />
                     Sign up with Facebook

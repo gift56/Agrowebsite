@@ -179,6 +179,13 @@ export const SignupFormcontainer = styled.div`
       }
     }
   }
+  @media screen and (max-width: 1329px) {
+    .secondbtn {
+      .fb {
+        font-size: 12px !important;
+      }
+    }
+  }
   @media screen and (max-width: 1278px) {
     .secondbtn {
       .sign {

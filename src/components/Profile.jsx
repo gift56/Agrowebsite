@@ -16,6 +16,7 @@ import { FiClipboard } from "react-icons/fi";
 import { BiLogOut } from "react-icons/bi";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import '../App.css'
 
 const Profile = () => {
   const [userImg, setUserimg] = useState(

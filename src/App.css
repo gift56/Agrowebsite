@@ -30,6 +30,20 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.imgChanger {
+  position: relative;
+}
+.profileImg {
+  width: 123px;
+}
+.editPen {
+  position: absolute;
+  bottom: 0;
+  right: -7.2%;
+}
+img {
+  cursor: pointer;
+}
 @media screen and (max-width: 403px) {
   .con {
     padding: 0 !important;

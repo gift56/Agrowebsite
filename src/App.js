@@ -1,6 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import Pageroutes from "./Routes/Pageroutes";
+import './App.css'
 
 const App = () => {
   const theme = {

@@ -45,20 +45,6 @@ export const LeftSideDash = styled.nav`
         font-size: 20px;
         font-weight: 600;
       }
-      .imgChanger {
-        position: relative;
-        .profileImg {
-          width: 123px;
-        }
-        img {
-          cursor: pointer;
-        }
-        .editPen {
-          position: absolute;
-          bottom: 0;
-          right: -7.2%;
-        }
-      }
     }
     ul {
       display: flex;

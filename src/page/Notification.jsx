@@ -7,7 +7,6 @@ import {
   LeftSideDash,
   NotificationCon,
 } from "../components/styled/Dashboard.styled";
-import Box from "../agroImg/square.png";
 import Pencil from "../agroImg/pencil.png";
 import MailBox from "../agroImg/notificationImg.png";
 import { FaUserAlt } from "react-icons/fa";

@@ -4,9 +4,12 @@ export const Signuparea = styled.section`
   background-image: url(${({ bg }) => bg});
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-y: hidden;
+  overflow: hidden;
   .radius {
     border-radius: 7px !important;
+  }
+  &::-webkit-scrollbar {
+    display: none;
   }
 `;
 
@@ -19,10 +22,8 @@ export const SignupFormcontainer = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 1rem;
     background-color: ${({ theme }) => theme.whiteColor};
     width: 40%;
-    min-height: 710px;
     padding: 2.5rem;
     .logo {
       img {
@@ -37,7 +38,7 @@ export const SignupFormcontainer = styled.div`
     }
     form {
       display: flex;
-      gap: 1.5rem;
+      gap: 0.5rem;
       flex-direction: column;
       width: 100%;
       button {
@@ -163,8 +164,8 @@ export const SignupFormcontainer = styled.div`
   }
   .rightside {
     img {
-      margin-top: 5px;
-      height: 790px;
+      margin-top: 8px;
+      height: 43.5rem;
     }
   }
   @media screen and (max-width: 1488px) {

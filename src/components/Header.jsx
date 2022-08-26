@@ -85,13 +85,13 @@ const Header = () => {
               <Link to="/consultion" onClick={() => setIsmobile(false)}>Consultation</Link>
             </li>
             <li>
-              <Link to="/partandmaintenace">Parts & Maintenance </Link>
+              <Link to="/partandmaintenace" onClick={() => setIsmobile(false)}>Parts & Maintenance </Link>
             </li>
             <li>
-              <Link to="/faq">FAQs</Link>
+              <Link to="/faq" onClick={() => setIsmobile(false)}>FAQs</Link>
             </li>
             <li>
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/contact" onClick={() => setIsmobile(false)}>Contact Us</Link>
             </li>
           </ul>
         </Container>

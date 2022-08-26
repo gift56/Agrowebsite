@@ -82,7 +82,7 @@ const Header = () => {
               <Link to="/gallerys" onClick={() => setIsmobile(false)}>Gallery</Link>
             </li>
             <li>
-              <Link to="/consultion">Consultation</Link>
+              <Link to="/consultion" onClick={() => setIsmobile(false)}>Consultation</Link>
             </li>
             <li>
               <Link to="/partandmaintenace">Parts & Maintenance </Link>

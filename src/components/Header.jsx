@@ -79,7 +79,7 @@ const Header = () => {
             <li>Stock</li>
             <li>Hire</li>
             <li>
-              <Link to="/gallerys">Gallery</Link>
+              <Link to="/gallerys" onClick={() => setIsmobile(false)}>Gallery</Link>
             </li>
             <li>
               <Link to="/consultion">Consultation</Link>

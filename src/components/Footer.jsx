@@ -7,6 +7,7 @@ import Facebook from "../agroImg/facebook.png";
 import Instagram from "../agroImg/instagram.png";
 import Whatsapp from "../agroImg/chat.png";
 import Mail from "../agroImg/mail.png";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   const Quicklinks = ["About Us", "Services", "Faqs"];
@@ -42,8 +43,8 @@ const Footer = () => {
   return (
     <FooterArea>
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0, y: "100px" }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 2 }}
       >
         <Container>

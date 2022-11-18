@@ -16,8 +16,12 @@ import Notification from "../page/Notification";
 import Newsletters from "../page/Newsletters";
 import Profile from "../components/Profile";
 import ChangePassword from "../page/ChangePassword";
+import { useState } from "react";
 
 const Pageroutes = () => {
+  const [cart, setCart] = useState(false);
+  const [cartId, setCartId] = useState(false);
+
   const HeaderRoutes = () => {
     return (
       <>

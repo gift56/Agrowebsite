@@ -57,9 +57,27 @@ const Offer = () => {
         <Cardcontainer>
           {CardData.map((item, index) => (
             <Card key={index}>
-              <img src={item.img} alt="" />
-              <h2>{item.title}</h2>
-              <p>{item.details}</p>
+              <motion.img
+                initial={{ opacity: 0, y: "-30px" }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 2 }}
+                src={item.img}
+                alt=""
+              />
+              <motion.h2
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 3 }}
+              >
+                {item.title}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: "20px" }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 2 }}
+              >
+                {item.details}
+              </motion.p>
             </Card>
           ))}
         </Cardcontainer>

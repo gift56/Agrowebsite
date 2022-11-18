@@ -9,6 +9,7 @@ import {
 } from "./styled/Offer.styled";
 import { Container } from "./styled/Container.styled";
 import { CardData } from "../Data/Cardcontent";
+import { motion } from "framer-motion";
 
 const Offer = () => {
   return (
@@ -16,16 +17,30 @@ const Offer = () => {
       <Container>
         <Welcometxt>
           <Leftside>
-            <h3>What we offer</h3>
+            <motion.h3
+              initial={{ opacity: 0, y: "-100px" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 2 }}
+            >
+              What we offer
+            </motion.h3>
             <div className="description">
-              <h3>
+              <motion.h3
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 2 }}
+              >
                 <span>First Class Provider of </span>
                 <span>Agricultural Machineries</span>
-              </h3>
+              </motion.h3>
             </div>
           </Leftside>
           <Rightside>
-            <p>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 2 }}
+            >
               <span>
                 AgroMech Company is an online based supplier of machines
               </span>{" "}
@@ -36,7 +51,7 @@ const Offer = () => {
                 dedicated to providing a first class service to all of our
               </span>
               <span>customers.</span>
-            </p>
+            </motion.p>
           </Rightside>
         </Welcometxt>
         <Cardcontainer>

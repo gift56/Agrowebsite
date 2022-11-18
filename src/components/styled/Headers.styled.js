@@ -23,16 +23,16 @@ export const Headerone = styled.div`
     p {
       width: 15px;
       height: 15px;
-      background-color: ${({ theme }) => theme.whiteColor};
+      background-color: #fff000;
       border-radius: 100%;
       position: absolute;
-      top: 3px;
+      top: 0;
       right: 40px;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 10px;
-      color: black;
+      color: ${({ theme }) => theme.whiteColor};
       font-weight: 600;
     }
   }

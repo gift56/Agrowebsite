@@ -36,7 +36,7 @@ const GalleryImgs = () => {
 
   const [itemOffset, setItemOffset] = useState(0);
 
-  const itemsPerPage = 12;
+  const itemsPerPage = 6;
   const endOffset = itemOffset + itemsPerPage;
 
   const currentData = GalleryW.slice(itemOffset, endOffset);

@@ -28,6 +28,7 @@ const Pageroutes = () => {
       setCartId(id);
       setCart(true);
     } else {
+      setCart(false);
       setCartId(null);
     }
   };

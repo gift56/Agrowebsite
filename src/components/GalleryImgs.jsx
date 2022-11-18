@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Gallery1 from "../agroImg/gall1.png";
 import Gallery2 from "../agroImg/gall2.png";
 import Gallery3 from "../agroImg/gall3.png";
@@ -11,10 +11,11 @@ import {
 import { ChooseCardContainer } from "./styled/Choose.styled";
 import { Container } from "./styled/Container.styled";
 import { MdOutlineNavigateNext } from "react-icons/md";
-import {IoChevronBackSharp} from 'react-icons/io5'
+import { IoChevronBackSharp } from "react-icons/io5";
 import { AiFillBackward, AiFillForward } from "react-icons/ai";
 
 const GalleryImgs = () => {
+  const [itemOffset, setItemOffset] = useState(0);
   const GalleryW = [
     Gallery1,
     Gallery2,
@@ -44,17 +45,6 @@ const GalleryImgs = () => {
               <img src={item} alt="" key={index} />
             ))}
           </ChooseCardContainer>
-          <NextBtns>
-            <AiFillBackward className="icons back" />
-            <IoChevronBackSharp className="icons  back" />
-            <div className="numbers">
-              <span>1</span>
-              <span>2</span>
-              <span>3</span>
-            </div>
-            <MdOutlineNavigateNext className="icons next" />
-            <AiFillForward className="icons next" />
-          </NextBtns>
         </ServiceArea>
       </Container>
     </ServiceCon>
@@ -62,3 +52,16 @@ const GalleryImgs = () => {
 };
 
 export default GalleryImgs;
+{
+  /* <NextBtns>
+<AiFillBackward className="icons back" />
+<IoChevronBackSharp className="icons  back" />
+<div className="numbers">
+  <span>1</span>
+  <span>2</span>
+  <span>3</span>
+</div>
+<MdOutlineNavigateNext className="icons next" />
+<AiFillForward className="icons next" />
+</NextBtns> */
+}

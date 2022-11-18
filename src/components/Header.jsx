@@ -37,8 +37,7 @@ const Header = ({ count, cart }) => {
             <div className="showIcon">
               <img src={Cart} alt="/" />
               <span>Cart</span>
-              {/* {cart ? <p>{count}</p> : null} */}
-              <p>{count}</p>
+              {cart ? <p>{count}</p> : null}
             </div>
           </Nav>
         </Headerone>

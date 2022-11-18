@@ -5,7 +5,7 @@ export const ServiceCon = styled.section`
 `;
 
 export const ServiceArea = styled.div`
-  padding: 30px 0 90px;
+  padding: 30px 0 20px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -94,7 +94,13 @@ export const NextBtns = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  .Pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0;
+  }
   .icons,
   span {
     font-size: 18px;
@@ -111,14 +117,17 @@ export const NextBtns = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    span {
-      font-weight: 400;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: ${({ theme }) => theme.whiteColor};
+    border: 1px solid ${({ theme }) => theme.Greenbg};
+    padding: 1px;
+    cursor: pointer;
+    width: 31px;
+    height: 31px;
   }
   .back {
     color: rgba(0, 0, 0, 0.28);

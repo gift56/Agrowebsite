@@ -33,7 +33,7 @@ const GalleryImgs = () => {
     Gallery2,
     Gallery3,
   ];
-  
+
   const [itemOffset, setItemOffset] = useState(0);
 
   const itemsPerPage = 12;
@@ -61,31 +61,22 @@ const GalleryImgs = () => {
             ))}
           </ChooseCardContainer>
         </ServiceArea>
-        <ReactPaginate
-          breakLabel="..."
-          nextLabel="next >"
-          onPageChange={handlePageClick}
-          pageRangeDisplayed={5}
-          pageCount={pageCount}
-          previousLabel="< previous"
-          renderOnZeroPageCount={null}
-        />
+        <NextBtns>
+          <ReactPaginate
+            breakLabel="..."
+            nextLabel={<AiFillForward className="icons next" />}
+            onPageChange={handlePageClick}
+            pageRangeDisplayed={5}
+            pageCount={pageCount}
+            previousLabel={<AiFillBackward className="icons back" />}
+            renderOnZeroPageCount={null}
+            containerClassName="Pagination"
+            pageLinkClassName="numbers"
+          />
+        </NextBtns>
       </Container>
     </ServiceCon>
   );
 };
 
 export default GalleryImgs;
-{
-  /* <NextBtns>
-<AiFillBackward className="icons back" />
-<IoChevronBackSharp className="icons  back" />
-<div className="numbers">
-  <span>1</span>
-  <span>2</span>
-  <span>3</span>
-</div>
-<MdOutlineNavigateNext className="icons next" />
-<AiFillForward className="icons next" />
-</NextBtns> */
-}

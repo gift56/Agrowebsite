@@ -10,7 +10,7 @@ import Cart from "../agroImg/cart.png";
 import { Headers, Headerone, Nav, HeaderTwo } from "./styled/Headers.styled";
 import "../App.css";
 
-const Header = () => {
+const Header = ({ count, cart }) => {
   const [isMobile, setIsmobile] = useState(false);
   return (
     <Headers>
@@ -37,7 +37,7 @@ const Header = () => {
             <div className="showIcon">
               <img src={Cart} alt="/" />
               <span>Cart</span>
-              <p></p>
+              <p>{count}</p>
             </div>
           </Nav>
         </Headerone>

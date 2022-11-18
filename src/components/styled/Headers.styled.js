@@ -21,13 +21,19 @@ export const Headerone = styled.div`
   .showIcon {
     position: relative;
     p {
-      width: 10px;
-      height: 10px;
-      background-color: red;
+      width: 15px;
+      height: 15px;
+      background-color: ${({ theme }) => theme.whiteColor};
       border-radius: 100%;
       position: absolute;
       top: 3px;
       right: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      color: black;
+      font-weight: 600;
     }
   }
   form {

@@ -21,6 +21,7 @@ import { useState } from "react";
 const Pageroutes = () => {
   const [cart, setCart] = useState(false);
   const [cartId, setCartId] = useState(null);
+  const [count, setCount] = useState(0);
 
   const ShowCarts = (id) => {
     if (cart !== true) {
@@ -34,7 +35,7 @@ const Pageroutes = () => {
   const HeaderRoutes = () => {
     return (
       <>
-        <Header />
+        <Header count={count} cart={cart} />
         <Outlet />
         <Footer />
       </>

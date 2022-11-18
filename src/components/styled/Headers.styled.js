@@ -25,6 +25,9 @@ export const Headerone = styled.div`
       height: 10px;
       background-color: red;
       border-radius: 100%;
+      position: absolute;
+      top: 3px;
+      right: 40px;
     }
   }
   form {

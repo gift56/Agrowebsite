@@ -20,7 +20,16 @@ import { useState } from "react";
 
 const Pageroutes = () => {
   const [cart, setCart] = useState(false);
-  const [cartId, setCartId] = useState(false);
+  const [cartId, setCartId] = useState(null);
+
+  const ShowCarts = (id) => {
+    if (cart !== true) {
+      setCartId(id);
+      setCart(true);
+    } else {
+      setCartId(null);
+    }
+  };
 
   const HeaderRoutes = () => {
     return (

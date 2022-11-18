@@ -34,6 +34,9 @@ export const Headerone = styled.div`
       padding: 10px;
       color: ${({ theme }) => theme.whiteColor};
       font-weight: 600;
+      @media screen and (max-width: 768px) {
+        right: 0%;
+      }
     }
   }
   form {

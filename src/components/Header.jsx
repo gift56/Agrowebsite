@@ -34,9 +34,10 @@ const Header = () => {
               <img src={Heart} alt="/" />
               <span>Wishlist</span>
             </div>
-            <div>
+            <div className="showIcon">
               <img src={Cart} alt="/" />
               <span>Cart</span>
+              <p></p>
             </div>
           </Nav>
         </Headerone>
@@ -79,19 +80,29 @@ const Header = () => {
             <li>Stock</li>
             <li>Hire</li>
             <li>
-              <Link to="/gallerys" onClick={() => setIsmobile(false)}>Gallery</Link>
+              <Link to="/gallerys" onClick={() => setIsmobile(false)}>
+                Gallery
+              </Link>
             </li>
             <li>
-              <Link to="/consultion" onClick={() => setIsmobile(false)}>Consultation</Link>
+              <Link to="/consultion" onClick={() => setIsmobile(false)}>
+                Consultation
+              </Link>
             </li>
             <li>
-              <Link to="/partandmaintenace" onClick={() => setIsmobile(false)}>Parts & Maintenance </Link>
+              <Link to="/partandmaintenace" onClick={() => setIsmobile(false)}>
+                Parts & Maintenance{" "}
+              </Link>
             </li>
             <li>
-              <Link to="/faq" onClick={() => setIsmobile(false)}>FAQs</Link>
+              <Link to="/faq" onClick={() => setIsmobile(false)}>
+                FAQs
+              </Link>
             </li>
             <li>
-              <Link to="/contact" onClick={() => setIsmobile(false)}>Contact Us</Link>
+              <Link to="/contact" onClick={() => setIsmobile(false)}>
+                Contact Us
+              </Link>
             </li>
           </ul>
         </Container>

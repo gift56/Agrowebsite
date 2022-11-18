@@ -18,6 +18,15 @@ export const Headerone = styled.div`
       width: 90%;
     }
   }
+  .showIcon {
+    position: relative;
+    p {
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      border-radius: 100%;
+    }
+  }
   form {
     display: flex;
     align-items: center;

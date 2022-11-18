@@ -24,7 +24,20 @@ const Footer = () => {
     },
   ];
 
-  const socialIcons = [Twiter, Facebook, Instagram];
+  const socialIcons = [
+    {
+      to: "https://m.facebook.com",
+      icon: Facebook,
+    },
+    {
+      to: "https://twitter.com/AsiughuE",
+      icon: Twiter,
+    },
+    {
+      to: "https://instagram.com",
+      icon: Instagram,
+    },
+  ];
 
   return (
     <FooterArea>
@@ -64,7 +77,9 @@ const Footer = () => {
           </Row>
           <SocialRow>
             {socialIcons.map((icon, index) => (
-              <img src={icon} key={index} />
+              <a href={`${icon.to}`} target="_blank" rel="noopener noreferrer">
+                <img src={icon.icon} key={index} />
+              </a>
             ))}
           </SocialRow>
         </FooterRow>

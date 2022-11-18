@@ -9,6 +9,7 @@ import {
   Joincontainer,
 } from "./styled/Join.styled";
 import Crank from "../agroImg/joinImg.png";
+import { motion } from "framer-motion";
 
 const Join = () => {
   return (
@@ -16,7 +17,13 @@ const Join = () => {
       <Container>
         <Joincontainer>
           <Imgarea>
-            <img src={Crank} alt="/" />
+            <motion.img
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 2 }}
+              src={Crank}
+              alt="/"
+            />
           </Imgarea>
           <Joinarea>
             <Title>New to AgroMech?</Title>

@@ -9,8 +9,9 @@ import Heart from "../agroImg/heart.png";
 import Cart from "../agroImg/cart.png";
 import { Headers, Headerone, Nav, HeaderTwo } from "./styled/Headers.styled";
 import "../App.css";
+import CartsConents from "./CartsConents";
 
-const Header = ({ count, cart }) => {
+const Header = ({ count, cart, cartId }) => {
   const [isMobile, setIsmobile] = useState(false);
   return (
     <Headers>
@@ -106,6 +107,7 @@ const Header = ({ count, cart }) => {
             </li>
           </ul>
         </Container>
+        <CartsConents id={cartId} />
       </HeaderTwo>
     </Headers>
   );

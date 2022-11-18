@@ -176,3 +176,4 @@ export const HeaderTwo = styled.div`
     }
   }
 `;
+export const CardContentsStyles = styled.div``;

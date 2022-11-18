@@ -36,7 +36,7 @@ const Pageroutes = () => {
   const HeaderRoutes = () => {
     return (
       <>
-        <Header count={count} cart={cart} />
+        <Header count={count} cart={cart} cartId={cartId} />
         <Outlet />
         <Footer />
       </>
@@ -46,7 +46,7 @@ const Pageroutes = () => {
     <>
       <Routes>
         <Route path="/" element={<HeaderRoutes />}>
-          <Route index element={<Home />} />
+          <Route index element={<Home ShowCarts={ShowCarts} />} />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
           <Route path="/gallerys" element={<Gallery />} />

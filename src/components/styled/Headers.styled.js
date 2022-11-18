@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
-export const Headers = styled.header``;
+export const Headers = styled.header`
+  position: sticky;
+  top: 0;
+  background-color: ${({ theme }) => theme.whiteColor};
+  z-index: 1000;
+`;
 
 export const Headerone = styled.div`
   background-color: ${({ theme }) => theme.whiteColor};

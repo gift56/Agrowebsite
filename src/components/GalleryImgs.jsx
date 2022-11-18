@@ -10,8 +10,6 @@ import {
 } from "./styled/Service.styled";
 import { ChooseCardContainer } from "./styled/Choose.styled";
 import { Container } from "./styled/Container.styled";
-import { MdOutlineNavigateNext } from "react-icons/md";
-import { IoChevronBackSharp } from "react-icons/io5";
 import { AiFillBackward, AiFillForward } from "react-icons/ai";
 import ReactPaginate from "react-paginate";
 

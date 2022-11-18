@@ -13,9 +13,9 @@ import { Container } from "./styled/Container.styled";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { IoChevronBackSharp } from "react-icons/io5";
 import { AiFillBackward, AiFillForward } from "react-icons/ai";
+import ReactPaginate from "react-paginate";
 
 const GalleryImgs = () => {
-  const [itemOffset, setItemOffset] = useState(0);
   const GalleryW = [
     Gallery1,
     Gallery2,
@@ -33,6 +33,21 @@ const GalleryImgs = () => {
     Gallery2,
     Gallery3,
   ];
+  
+  const [itemOffset, setItemOffset] = useState(0);
+
+  const itemsPerPage = 12;
+  const endOffset = itemOffset + itemsPerPage;
+
+  const currentData = GalleryW.slice(itemOffset, endOffset);
+  const pageCount = Math.ceil(GalleryW.length / itemsPerPage);
+
+  // Invoke when user click to request another page.
+  const handlePageClick = (event) => {
+    const newOffset = (event.selected * itemsPerPage) % GalleryW.length;
+    setItemOffset(newOffset);
+  };
+
   return (
     <ServiceCon>
       <Container>
@@ -41,11 +56,20 @@ const GalleryImgs = () => {
             <h2> Gallery</h2>
           </TitleServe>
           <ChooseCardContainer>
-            {GalleryW.map((item, index) => (
+            {currentData.map((item, index) => (
               <img src={item} alt="" key={index} />
             ))}
           </ChooseCardContainer>
         </ServiceArea>
+        <ReactPaginate
+          breakLabel="..."
+          nextLabel="next >"
+          onPageChange={handlePageClick}
+          pageRangeDisplayed={5}
+          pageCount={pageCount}
+          previousLabel="< previous"
+          renderOnZeroPageCount={null}
+        />
       </Container>
     </ServiceCon>
   );

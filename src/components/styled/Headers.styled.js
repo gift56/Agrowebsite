@@ -111,6 +111,8 @@ export const HeaderTwo = styled.div`
       font-weight: 400;
       cursor: pointer;
       padding-bottom: 5px;
+      border-bottom: 2px solid ${({ theme }) => theme.Greenbg};
+
       transition: all 300ms ease;
       &:hover {
         border-bottom: 2px solid ${({ theme }) => theme.whiteColor};

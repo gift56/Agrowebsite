@@ -77,8 +77,13 @@ const Footer = () => {
           </Row>
           <SocialRow>
             {socialIcons.map((icon, index) => (
-              <a href={`${icon.to}`} target="_blank" rel="noopener noreferrer">
-                <img src={icon.icon} key={index} />
+              <a
+                href={`${icon.to}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+              >
+                <img src={icon.icon} />
               </a>
             ))}
           </SocialRow>

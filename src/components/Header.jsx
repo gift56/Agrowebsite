@@ -9,9 +9,8 @@ import Heart from "../agroImg/heart.png";
 import Cart from "../agroImg/cart.png";
 import { Headers, Headerone, Nav, HeaderTwo } from "./styled/Headers.styled";
 import "../App.css";
-import CartsConents from "./CartsConents";
 
-const Header = ({ count, cart, cartId }) => {
+const Header = () => {
   const [isMobile, setIsmobile] = useState(false);
   return (
     <Headers>
@@ -35,10 +34,9 @@ const Header = ({ count, cart, cartId }) => {
               <img src={Heart} alt="/" />
               <span>Wishlist</span>
             </div>
-            <div className="showIcon">
+            <div>
               <img src={Cart} alt="/" />
               <span>Cart</span>
-              {cart ? <p>{count}</p> : null}
             </div>
           </Nav>
         </Headerone>
@@ -81,33 +79,22 @@ const Header = ({ count, cart, cartId }) => {
             <li>Stock</li>
             <li>Hire</li>
             <li>
-              <Link to="/gallerys" onClick={() => setIsmobile(false)}>
-                Gallery
-              </Link>
+              <Link to="/gallerys" onClick={() => setIsmobile(false)}>Gallery</Link>
             </li>
             <li>
-              <Link to="/consultion" onClick={() => setIsmobile(false)}>
-                Consultation
-              </Link>
+              <Link to="/consultion" onClick={() => setIsmobile(false)}>Consultation</Link>
             </li>
             <li>
-              <Link to="/partandmaintenace" onClick={() => setIsmobile(false)}>
-                Parts & Maintenance{" "}
-              </Link>
+              <Link to="/partandmaintenace" onClick={() => setIsmobile(false)}>Parts & Maintenance </Link>
             </li>
             <li>
-              <Link to="/faq" onClick={() => setIsmobile(false)}>
-                FAQs
-              </Link>
+              <Link to="/faq" onClick={() => setIsmobile(false)}>FAQs</Link>
             </li>
             <li>
-              <Link to="/contact" onClick={() => setIsmobile(false)}>
-                Contact Us
-              </Link>
+              <Link to="/contact" onClick={() => setIsmobile(false)}>Contact Us</Link>
             </li>
           </ul>
         </Container>
-        <CartsConents id={cartId} />
       </HeaderTwo>
     </Headers>
   );

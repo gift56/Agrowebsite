@@ -16,27 +16,12 @@ import Notification from "../page/Notification";
 import Newsletters from "../page/Newsletters";
 import Profile from "../components/Profile";
 import ChangePassword from "../page/ChangePassword";
-import { useState } from "react";
 
 const Pageroutes = () => {
-  const [cart, setCart] = useState(false);
-  const [cartId, setCartId] = useState(null);
-  const [count, setCount] = useState(0);
-
-  const ShowCarts = (id) => {
-    if (cart !== true) {
-      setCartId(id);
-      setCart(true);
-    } else {
-      setCart(false);
-      setCartId(null);
-    }
-  };
-
   const HeaderRoutes = () => {
     return (
       <>
-        <Header count={count} cart={cart} cartId={cartId} />
+        <Header />
         <Outlet />
         <Footer />
       </>
@@ -46,7 +31,7 @@ const Pageroutes = () => {
     <>
       <Routes>
         <Route path="/" element={<HeaderRoutes />}>
-          <Route index element={<Home ShowCarts={ShowCarts} />} />
+          <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
           <Route path="/gallerys" element={<Gallery />} />

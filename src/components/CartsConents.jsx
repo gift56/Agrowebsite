@@ -4,8 +4,12 @@ import { CardContentsStyles } from "./styled/Headers.styled";
 
 const CartsConents = ({ id }) => {
   const MachinesPart = FeatureData.find((item) => item.id === parseInt(id));
-  
-  return <CardContentsStyles>CartsConents</CardContentsStyles>;
+
+  return (
+    <CardContentsStyles>
+      <img src={`${MachinesPart.img}`} alt="" />
+    </CardContentsStyles>
+  );
 };
 
 export default CartsConents;

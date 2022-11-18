@@ -41,72 +41,78 @@ const Footer = () => {
 
   return (
     <FooterArea>
-      <Container>
-        <FooterRow>
-          <Row>
-            <div className="brand">
-              <img src={Logo} alt="" />
-            </div>
-          </Row>
-          <Row>
-            <h3>Quick Links</h3>
-            <ul>
-              {Quicklinks.map((link, index) => (
-                <li key={index}>{link}</li>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+      >
+        <Container>
+          <FooterRow>
+            <Row>
+              <div className="brand">
+                <img src={Logo} alt="" />
+              </div>
+            </Row>
+            <Row>
+              <h3>Quick Links</h3>
+              <ul>
+                {Quicklinks.map((link, index) => (
+                  <li key={index}>{link}</li>
+                ))}
+              </ul>
+            </Row>
+            <Row>
+              <h3>Useful Links</h3>
+              <ul>
+                {Usefullinks.map((link, index) => (
+                  <li key={index}>{link}</li>
+                ))}
+              </ul>
+            </Row>
+            <Row>
+              <h3>Contact Us</h3>
+              <ul className="contact">
+                {Contactus.map((link, index) => (
+                  <li key={index}>
+                    <img src={link.img} alt="" />
+                    <span>{link.phone}</span>
+                  </li>
+                ))}
+              </ul>
+            </Row>
+            <SocialRow>
+              {socialIcons.map((icon, index) => (
+                <a
+                  href={`${icon.to}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={index}
+                >
+                  <img src={icon.icon} />
+                </a>
               ))}
-            </ul>
-          </Row>
-          <Row>
-            <h3>Useful Links</h3>
-            <ul>
-              {Usefullinks.map((link, index) => (
-                <li key={index}>{link}</li>
-              ))}
-            </ul>
-          </Row>
-          <Row>
-            <h3>Contact Us</h3>
-            <ul className="contact">
-              {Contactus.map((link, index) => (
-                <li key={index}>
-                  <img src={link.img} alt="" />
-                  <span>{link.phone}</span>
-                </li>
-              ))}
-            </ul>
-          </Row>
-          <SocialRow>
-            {socialIcons.map((icon, index) => (
-              <a
-                href={`${icon.to}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                key={index}
-              >
-                <img src={icon.icon} />
-              </a>
-            ))}
-          </SocialRow>
-        </FooterRow>
-        <div className="recomemdations">
-          <p>
-            <span>
-              We have built a place where our customers can rely on to deliver
-              geninue and excellent products to care for their farming and
-              business
-            </span>{" "}
-            <span>
-              needs. We are able to supply a wide range of machinery from
-              reputable manufactures such as, New Holland, John Deere, JCB, Case
-              and
-            </span>{" "}
-            <span>Massey Ferguson, to name a few.</span>
-          </p>
-        </div>
-        <span className="copy">
-          Copyright &copy; 2022. All rights reserved. AgroMech - RC 203884
-        </span>
-      </Container>
+            </SocialRow>
+          </FooterRow>
+          <div className="recomemdations">
+            <p>
+              <span>
+                We have built a place where our customers can rely on to deliver
+                geninue and excellent products to care for their farming and
+                business
+              </span>{" "}
+              <span>
+                needs. We are able to supply a wide range of machinery from
+                reputable manufactures such as, New Holland, John Deere, JCB,
+                Case and
+              </span>{" "}
+              <span>Massey Ferguson, to name a few.</span>
+            </p>
+          </div>
+          <span className="copy">
+            Copyright &copy; 2022. All rights reserved. AgroMech - RC 203884
+          </span>
+        </Container>
+      </motion.div>
     </FooterArea>
   );
 };

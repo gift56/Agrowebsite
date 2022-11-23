@@ -38,8 +38,8 @@ const Signup = () => {
     navigate("/account/profile");
     console.log(data);
   };
-
   const password = watch("password");
+
   return (
     <Signuparea bg={Bg}>
       <Container className="con">
@@ -63,7 +63,9 @@ const Signup = () => {
                     message: "Invalid Email Address",
                   })}
                 />
-                {errors.email && <span>{errors.email.message}</span>}
+                {errors.email && (
+                  <span style={{ color: "red" }}>{errors.email.message}</span>
+                )}
               </div>
               <div className="formControl">
                 <label htmlFor="password">Password</label>

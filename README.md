@@ -3,7 +3,6 @@
 Visit the [AgroWebsite](https://agrowebsite.vercel.app/) for the finish product.
 
 ## Available Scripts
-
 In the project directory, you can run:
 
 ### `npm start`

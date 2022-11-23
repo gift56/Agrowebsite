@@ -51,7 +51,7 @@ const Choose = () => {
                 <motion.img
                   initial={{ opacity: 0, scale: 0 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 3 }}
+                  transition={{ duration: 2 }}
                   src={card.img}
                   alt="/"
                 />

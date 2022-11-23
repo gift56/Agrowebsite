@@ -63,6 +63,7 @@ const Signup = () => {
                     message: "Invalid Email Address",
                   })}
                 />
+                {errors.email && <span>{errors.email.message}</span>}
               </div>
               <div className="formControl">
                 <label htmlFor="password">Password</label>

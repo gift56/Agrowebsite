@@ -60,6 +60,7 @@ const Signup = () => {
                   {...register("email", {
                     required: true,
                     pattern: /\S+@\S+\.\S+/,
+                    message: "Invalid Email Address",
                   })}
                 />
               </div>

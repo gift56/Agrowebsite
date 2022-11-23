@@ -61,6 +61,7 @@ const Signin = () => {
                   type={!eye ? "password" : "text"}
                   id="password"
                   placeholder="*********************"
+                  autoComplete="off"
                   {...register("password", {
                     required: true,
                     minLength: {

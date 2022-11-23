@@ -69,6 +69,7 @@ const Signup = () => {
                   type={!eye ? "password" : "text"}
                   id="password"
                   placeholder="*********************"
+                  autoComplete="off"
                   {...register("password", {
                     required: true,
                     minLength: {
@@ -96,6 +97,7 @@ const Signup = () => {
                   type={!confirmEye ? "password" : "text"}
                   id="confirmPassword"
                   placeholder="*********************"
+                  autoComplete="off"
                   {...register("confirmPassword", {
                     required: true,
                     validate: (value) =>
@@ -121,13 +123,21 @@ const Signup = () => {
               </div>
               <Buttons className="secondbtn">
                 <button className="btn sign">
-                  <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://www.google.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img src={Goggle} alt="/" />
                     Sign up with Google
                   </a>
                 </button>
                 <button className="btn sign fb">
-                  <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img src={Facebook} alt="/" />
                     Sign up with Facebook
                   </a>

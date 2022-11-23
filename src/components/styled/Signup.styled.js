@@ -11,7 +11,7 @@ export const Signuparea = styled.section`
   &::-webkit-scrollbar {
     display: none;
   }
-  @media screen and (max-width:403px){
+  @media screen and (max-width: 403px) {
     background: white;
   }
 `;
@@ -21,13 +21,14 @@ export const SignupFormcontainer = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+
   .leftside {
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: ${({ theme }) => theme.whiteColor};
     width: 40%;
-    padding: 2.5rem;
+    padding: 2rem;
     .logo {
       img {
         width: 90%;
@@ -48,6 +49,7 @@ export const SignupFormcontainer = styled.div`
         background-color: ${({ theme }) => theme.Greenbg};
         border: 1px solid ${({ theme }) => theme.Greenbg};
         color: ${({ theme }) => theme.whiteColor};
+        margin-top: 1rem;
       }
       .formControl {
         display: flex;

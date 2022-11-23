@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const ChooseCon = styled.section`
@@ -41,7 +42,7 @@ export const ChooseCardContainer = styled.div`
   }
 `;
 
-export const ChooseCard = styled.div`
+export const ChooseCard = styled(motion.div)`
   padding: 2rem 2rem;
   background-color: ${({ theme }) => theme.whiteColor};
   display: flex;

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import Bg from "../../agroImg/thirdbg.png";
 
@@ -79,7 +80,7 @@ export const Cardcontainer = styled.div`
   }
 `;
 
-export const Card = styled.div`
+export const Card = styled(motion.div)`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;

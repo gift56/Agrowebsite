@@ -14,7 +14,7 @@ const Story = () => {
             <motion.h2
               initial={{ opacity: 0, y: "-30px" }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 2 }}
+              transition={{ duration: 1 }}
             >
               Our Story
             </motion.h2>
@@ -25,7 +25,11 @@ const Story = () => {
             >
               Who Are We?
             </motion.h4>
-            <p>
+            <motion.p
+              initial={{ opacity: 0, y: "100px" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 3 }}
+            >
               <span>
                 AgroMech Company is an online based supplier of machines and
               </span>
@@ -55,10 +59,14 @@ const Story = () => {
                 works are
               </span>
               <span>completed to the highest standard.</span>
-            </p>
+            </motion.p>
           </Textside>
           <Cardside>
-            <Card>
+            <Card
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 3 }}
+            >
               <img src={cardImg} alt="/" />
               <h2>Machinery Provider</h2>
               <p>

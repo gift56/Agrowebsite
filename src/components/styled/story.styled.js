@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const StoryCon = styled.section`
@@ -65,7 +66,7 @@ export const Textside = styled.div`
   }
 `;
 
-export const Cardside = styled.div`
+export const Cardside = styled(motion.div)`
   flex: 1;
   display: flex;
   justify-content: flex-end;

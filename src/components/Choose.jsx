@@ -9,6 +9,7 @@ import {
 import { Container } from "./styled/Container.styled";
 import Star from "../agroImg/star.png";
 import { ChooseData } from "../Data/ChooseData";
+import { motion } from "framer-motion";
 
 const Choose = () => {
   return (
@@ -16,14 +17,29 @@ const Choose = () => {
       <Container>
         <ChooseArea>
           <ChooseTitle>
-            <h2>Why Choose Us</h2>
-            <div className="star">
+            <motion.h2
+              initial={{ opacity: 0, y: "-30px" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 3 }}
+            >
+              Why Choose Us
+            </motion.h2>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 4 }}
+              className="star"
+            >
               <img src={Star} alt="" />
-            </div>
-            <p>
+            </motion.div>
+            <motion.p
+              initial={{ opacity: 0, y: "-30px" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 3 }}
+            >
               AgroMech is a First Class Provider of Agricultural Machineries and
               Equipments
-            </p>
+            </motion.p>
           </ChooseTitle>
           <ChooseCardContainer>
             {ChooseData.map((card, index) => (

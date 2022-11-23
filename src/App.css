@@ -43,6 +43,7 @@ a {
 }
 img {
   cursor: pointer;
+  /* use */
 }
 @media screen and (max-width: 403px) {
   .con {

@@ -12,6 +12,7 @@ import { ChooseCardContainer } from "./styled/Choose.styled";
 import { Container } from "./styled/Container.styled";
 import { AiFillBackward, AiFillForward } from "react-icons/ai";
 import ReactPaginate from "react-paginate";
+import { motion } from "framer-motion";
 
 const GalleryImgs = () => {
   const GalleryW = [
@@ -51,11 +52,25 @@ const GalleryImgs = () => {
       <Container>
         <ServiceArea>
           <TitleServe>
-            <h2> Gallery</h2>
+            <motion.h2
+              initial={{ opacity: 0, y: "-30px" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 3 }}
+            >
+              {" "}
+              Gallery
+            </motion.h2>
           </TitleServe>
           <ChooseCardContainer>
             {currentData.map((item, index) => (
-              <img src={item} alt="" key={index} />
+              <motion.img
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 3 }}
+                src={item}
+                alt=""
+                key={index}
+              />
             ))}
           </ChooseCardContainer>
         </ServiceArea>

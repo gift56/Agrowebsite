@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Header from "./Header";
+import Header from "./header/Header";
 import { ProfileCon } from "./styled/Dashboard.styled";
 import { Container } from "../components/styled/Container.styled";
 import {
@@ -16,7 +16,7 @@ import { FiClipboard } from "react-icons/fi";
 import { BiLogOut } from "react-icons/bi";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import '../App.css'
+import "../App.css";
 
 const Profile = () => {
   const [userImg, setUserimg] = useState(

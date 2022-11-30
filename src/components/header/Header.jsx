@@ -8,7 +8,7 @@ import User from "../../agroImg/user.png";
 import Heart from "../../agroImg/heart.png";
 import Cart from "../../agroImg/cart.png";
 import { Headers, Headerone, Nav, HeaderTwo } from "../styled/Headers.styled";
-import "../App.css";
+
 
 const Header = () => {
   const [isMobile, setIsmobile] = useState(false);

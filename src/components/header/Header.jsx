@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Container } from "../styled/Container.styled";
 import { BsGridFill } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
-import LogoImg from "../agroImg/logo.svg";
+import LogoImg from "../../agroImg/logo.svg";
 import User from "../agroImg/user.png";
 import Heart from "../agroImg/heart.png";
 import Cart from "../agroImg/cart.png";

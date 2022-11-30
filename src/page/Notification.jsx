@@ -16,7 +16,7 @@ import { BsCreditCard2Back } from "react-icons/bs";
 import { FiClipboard } from "react-icons/fi";
 import { BiLogOut } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import "../App.css";
+
 
 const Notification = () => {
   const [userImg, setUserimg] = useState(

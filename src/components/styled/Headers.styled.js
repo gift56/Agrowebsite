@@ -101,6 +101,9 @@ export const Nav = styled.nav`
       font-size: 17px;
       font-weight: 400;
       color: #000000;
+      &:hover {
+        color: ${({ theme }) => theme.Greenbg};
+      }
     }
   }
   @media screen and (max-width: ${({ theme }) => theme.mobile.phone}) {

@@ -102,7 +102,7 @@ export const Nav = styled.nav`
       font-weight: 400;
       color: #000000;
       &:hover {
-        color: ${({ theme }) => theme.Greenbg};
+        color: ${({ theme }) => theme.Greenbg} !important;
       }
     }
   }

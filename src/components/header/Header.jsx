@@ -4,9 +4,9 @@ import { Container } from "../styled/Container.styled";
 import { BsGridFill } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
 import LogoImg from "../../agroImg/logo.svg";
-import User from "../agroImg/user.png";
-import Heart from "../agroImg/heart.png";
-import Cart from "../agroImg/cart.png";
+import User from "../../agroImg/user.png";
+import Heart from "../../agroImg/heart.png";
+import Cart from "../../agroImg/cart.png";
 import { Headers, Headerone, Nav, HeaderTwo } from "../styled/Headers.styled";
 import "../App.css";
 

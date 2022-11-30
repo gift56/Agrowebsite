@@ -17,7 +17,6 @@ import { BiLogOut } from "react-icons/bi";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import "../App.css";
 
 const ChangePassword = () => {
   const [eye, setEye] = useState(false);
